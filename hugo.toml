@@ -9,3 +9,4 @@ DisablePathToLower = true
     BookTheme = 'auto'
     BookSection = '*'
     BookRepo = 'https://github.com/wsor4035/devwiki'
+    BookEditPath = 'edit/master'
