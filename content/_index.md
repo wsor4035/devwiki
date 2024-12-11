@@ -1,3 +1,7 @@
+---
+title: Main Page
+---
+
 # Minetest Developer Wiki
 
 Welcome to the **Minetest Developer Wiki**, here you learn how Minetest and games and mods for Minetest are developed.
