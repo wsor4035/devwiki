@@ -1,4 +1,4 @@
-# Engine/Script Engine - Minetest Developer Wiki
+# Engine/Script Engine
 Conventions
 -----------
 
