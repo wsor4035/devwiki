@@ -839,7 +839,7 @@ Released on 30 Jan 2022.
 * PostgreSQL fixes and improved error messages (_sfan5_)
 * Improved liquid documentation (_Wuzzy_)
 * Improved mipmapping-related code (_sfan5_)
-* Rendering engine was changed from Irrlicht to [IrrlichtMt](https://dev.minetest.net/index.php?title=IrrlichtMt&action=edit&redlink=1 "IrrlichtMt (page does not exist)") (Minetest's fork of Irrlicht) (_sfan5_)
+* Rendering engine was changed from Irrlicht to [IrrlichtMt](/index.php?title=IrrlichtMt&action=edit&redlink=1 "IrrlichtMt (page does not exist)") (Minetest's fork of Irrlicht) (_sfan5_)
 * Performance: Draw items as 2D images (instead of meshes) when possible (_sfan5_)
 * Sanity check: Block & report player self-interaction (_appgurueu_)
 * Multiple font code cleanups and improvements (_sfan5_)
@@ -2048,4 +2048,4 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 Older versions (pre-5.0.0)
 --------------------------
 
-If you want to see older versions (older than 5.0.0), please go to [this page](https://dev.minetest.net/OldChangelog "OldChangelog").
+If you want to see older versions (older than 5.0.0), please go to [this page](/OldChangelog "OldChangelog").

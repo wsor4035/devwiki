@@ -7,7 +7,7 @@ Troubleshooting
 
 ### OOM errors
 
-If your game or mod crashes due to an OOM error, it means that Luanti has ran out of memory (=OOM). This happens if your Lua code somewhere uses up a large amount of memory. This can happen if you construct large tables and fill them with lots of data and never free them, or you got a nice [memory leak](https://en.wikipedia.org/wiki/Memory_leak). Badly coded mapgens are a likely cause of OOM errors, if you implement a Lua API, you should always apply all [Mapgen memory optimisations](https://dev.minetest.net/Mapgen_memory_optimisations "Mapgen memory optimisations").
+If your game or mod crashes due to an OOM error, it means that Luanti has ran out of memory (=OOM). This happens if your Lua code somewhere uses up a large amount of memory. This can happen if you construct large tables and fill them with lots of data and never free them, or you got a nice [memory leak](https://en.wikipedia.org/wiki/Memory_leak). Badly coded mapgens are a likely cause of OOM errors, if you implement a Lua API, you should always apply all [Mapgen memory optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations").
 
 ### “Irrlicht: PNG warning: iCCP: known incorrect sRGB profile”
 
@@ -77,11 +77,11 @@ Set the setting `chat_log_level` to `warning` to enable this.
 
 ### Improving Lua mapgen memory performance
 
-If you created a Lua mapgen, it is strongly recommended to make sure you optimize the memory performance, otherwise you could quickly run into OOM (out-of-memory) errors. See [Mapgen memory optimisations](https://dev.minetest.net/Mapgen_memory_optimisations "Mapgen memory optimisations").
+If you created a Lua mapgen, it is strongly recommended to make sure you optimize the memory performance, otherwise you could quickly run into OOM (out-of-memory) errors. See [Mapgen memory optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations").
 
 ### More optimization tips
 
-For more optimization tips, go to [Lua Optimization Tips](https://dev.minetest.net/Lua_Optimization_Tips "Lua Optimization Tips").
+For more optimization tips, go to [Lua Optimization Tips](/Lua_Optimization_Tips "Lua Optimization Tips").
 
 ### Checking if a mod exists
 
@@ -95,14 +95,14 @@ This works because `minetest.get_modpath` returns nil if the mod is not loaded.
 
 ### Ensuring mod interopability
 
-A good mod is one that still works when a lot of other mods are used. Read [Mod\_interoperability](https://dev.minetest.net/Mod_interoperability "Mod interoperability") for a lot of useful hints.
+A good mod is one that still works when a lot of other mods are used. Read [Mod\_interoperability](/Mod_interoperability "Mod interoperability") for a lot of useful hints.
 
 Quality checklist
 -----------------
 
 Here's a list of things to check in your game or mod to improve general quality and to avoid common pitfalls. Not all things might apply for your game, always use good judgement.
 
-Note: Some of these can be checked quickly with [QA-Block](https://forum.minetest.net/viewtopic.php?t=15759). See also: [Development Tools](https://dev.minetest.net/Development_Tools "Development Tools").
+Note: Some of these can be checked quickly with [QA-Block](https://forum.minetest.net/viewtopic.php?t=15759). See also: [Development Tools](/Development_Tools "Development Tools").
 
 ### Preventing crashes, exploits and bugs
 
@@ -178,11 +178,11 @@ Footnotes
 4.  [↑](#cite_ref-4) Use `minetest.is_singleplayer` to check. Use Lua's `error` function to error out, or just kick all players.
 5.  [↑](#cite_ref-5) Detached inventories are sent to everyone unless you specify a name in the registration. So other players using a modified/hacked client could theoretically alter any detached inventory without an attached name.
 6.  [↑](#cite_ref-6) The keyword “`local`” should be your new friend. Everything that does not need to be visible outside should be made local. This will avoid a lot of weird bugs caused by mods overwriting their global variables each other. As a rule of thumb, your mod should only have up to 1 global variable which is also the same name as the mod. Make this a table in which you include all global stuff. You can use [QA-Block](https://forum.minetest.net/viewtopic.php?t=15759) to find suspicious global variables.
-7.  [↑](#cite_ref-7) See also: [MT-replace-deprecated.sh](https://dev.minetest.net/MT-replace-deprecated.sh "MT-replace-deprecated.sh")
-8.  [↑](#cite_ref-8) See also [Mapgen\_memory\_optimisations](https://dev.minetest.net/Mapgen_memory_optimisations "Mapgen memory optimisations")
-9.  [↑](#cite_ref-9) See also [Mapgen\_memory\_optimisations](https://dev.minetest.net/Mapgen_memory_optimisations "Mapgen memory optimisations")
+7.  [↑](#cite_ref-7) See also: [MT-replace-deprecated.sh](/MT-replace-deprecated.sh "MT-replace-deprecated.sh")
+8.  [↑](#cite_ref-8) See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
+9.  [↑](#cite_ref-9) See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
 10.  [↑](#cite_ref-10) Entities will forget most variables when they unload, which is easy to overlook for beginners. Make sure to make use of staticdata.
-11.  [↑](#cite_ref-11) If you don't apply any checks when overwriting player physics, this will very likely lead to very hilarious bugs if 2 mods want to change player physics directly, as they will constantly compete for “their” physics. This will likely screw up the player physics badly. To solve this, you should generally avoid setting player physics directly, unless you want to implement a physics interface yourselves. But for normal use, we highly recommend to use an [Mod\_interoperability#Player\_physics API](https://dev.minetest.net/Mod_interoperability#Player_physics_API "Mod interoperability").
+11.  [↑](#cite_ref-11) If you don't apply any checks when overwriting player physics, this will very likely lead to very hilarious bugs if 2 mods want to change player physics directly, as they will constantly compete for “their” physics. This will likely screw up the player physics badly. To solve this, you should generally avoid setting player physics directly, unless you want to implement a physics interface yourselves. But for normal use, we highly recommend to use an [Mod\_interoperability#Player\_physics API](/Mod_interoperability#Player_physics_API "Mod interoperability").
 12.  [↑](#cite_ref-12) Note this value is true by default, and can be forgotten easily.
 13.  [↑](#cite_ref-13) Of course, silence is also “appropriate” if that's what you intented.
 14.  [↑](#cite_ref-14) As a rule of thumb, try to match the graphics pixel-perfectly, if it makes sense. Selection boxes that are completely misplaced or just tiny are generally perceived as highly annoying by players.

@@ -9,7 +9,7 @@ Core developers
 
 Core developers have special privileges and responsibilities compared to other contributors:
 
-* Can vote for and against merging pull requests (See also [Git Guidelines](https://dev.minetest.net/Git_Guidelines "Git Guidelines"))
+* Can vote for and against merging pull requests (See also [Git Guidelines](/Git_Guidelines "Git Guidelines"))
 * Has write access to the Luanti's team's repositories on GitHub
 
 The core team should all be people who are trusted and capable of reviewing C++ code if you ask them to. They don't necessarily need to have the time. However, if a core developer doesn't write or review any code for a long time, the trust disappears.

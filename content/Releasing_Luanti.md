@@ -41,14 +41,14 @@ The feature freeze and release date is set by core developers.
 
 ### Autogenerate files
 
-Also update the [translation](https://dev.minetest.net/Translation "Translation") templates:
+Also update the [translation](/Translation "Translation") templates:
 
 *   Engine: Regenerate Gettext files with `util/updatepo.sh`. Note that before that, you most likely want to [import existing changes](#Update_translations_from_Weblate) first.
 *   Builtin: Change directory to `builtin`, then run `util/mod_translation_updater.py` from there
 
 Also ensure that the `language` setting enum values contains `en`: there is no "en" directory, but Luanti supports it.
 
-Read [Translation](https://dev.minetest.net/Translation "Translation") for details.
+Read [Translation](/Translation "Translation") for details.
 
 ### Update source strings on Weblate
 
@@ -61,13 +61,13 @@ Before releasing
 
 ### Verify special translation strings
 
-The translation files contain a special string: [LANG\_CODE](https://hosted.weblate.org/translate/minetest/minetest/en/?q=LANG_CODE&checksum=&offset=1#translations) (see [Translating](https://dev.minetest.net/Translating "Translating")).
+The translation files contain a special string: [LANG\_CODE](https://hosted.weblate.org/translate/minetest/minetest/en/?q=LANG_CODE&checksum=&offset=1#translations) (see [Translating](/Translating "Translating")).
 
 Verify that all \*.po files have a valid value for these strings because translators frequently misunderstand them and enter an invalid value. Fix any invalid values on Weblate by either entering the correct one or by removing the bad translation.
 
 ### Update translations from Weblate
 
-**How to do this** -> [Translating#How\_to\_merge\_translations\_from\_Hosted\_Weblate](https://dev.minetest.net/Translating#How_to_merge_translations_from_Hosted_Weblate "Translating")
+**How to do this** -> [Translating#How\_to\_merge\_translations\_from\_Hosted\_Weblate](/Translating#How_to_merge_translations_from_Hosted_Weblate "Translating")
 
 If doing a backported release, you can use the following command to cherry-pick all translation commits from weblate:
 
@@ -94,7 +94,7 @@ Once the credits are decided on in the previous step, update the website to be i
 
 ### Update changelog
 
-Changelog can be found [here](https://dev.minetest.net/Changelog "Changelog").
+Changelog can be found [here](/Changelog "Changelog").
 
 ### Ensure protocol version codes have been bumped
 
@@ -226,7 +226,7 @@ After releasing
 
 *   Don't forget to edit the luanti.org page ([Repo](https://github.com/minetest/minetest.github.io)).
     *   currently you will need to update machine readable metadata in \_data/release.yml and downloads.html itself.
-*   Post a new topic in the [News section](https://forum.minetest.net/viewforum.php?f=18) of the forum. **See [Changelog](https://dev.minetest.net/Changelog "Changelog").**
+*   Post a new topic in the [News section](https://forum.minetest.net/viewforum.php?f=18) of the forum. **See [Changelog](/Changelog "Changelog").**
     *   It is customary to sticky the newest release topic and lock older ones.
 *   Add a new post to the [blog](https://github.com/minetest/blog/)
 *   Announce the release on [Twitter](https://twitter.com/MinetestProject) and [Mastodon](https://mastodon.online/@Luanti@fosstodon.org). rubenwardy has access.

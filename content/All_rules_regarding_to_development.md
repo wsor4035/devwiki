@@ -9,16 +9,16 @@ Rules
 
 #### Core developers
 
-[Organisation](https://dev.minetest.net/Organisation)
+[Organisation](/Organisation)
 
 #### Git and github usage
 
-[Git Guidelines](https://dev.minetest.net/Git_Guidelines)
+[Git Guidelines](/Git_Guidelines)
 
 #### Coding style
 
-[Code style guidelines](https://dev.minetest.net/Code_style_guidelines)
+[Code style guidelines](/Code_style_guidelines)
 
-[Lua code style guidelines](https://dev.minetest.net/Lua_code_style_guidelines)
+[Lua code style guidelines](/Lua_code_style_guidelines)
 
-[Android code style guidelines](https://dev.minetest.net/Android_code_style_guidelines)
+[Android code style guidelines](/Android_code_style_guidelines)

@@ -15,7 +15,7 @@ Additional, schematics have the following features:
 ## Schematic specifier
 Functions that use schematics are passed a schematic specifier. A specifier can have 3 forms:
 
-* A .mts file name as a string (see [Minetest_Schematic_File_Format](https://dev.minetest.net/Minetest_Schematic_File_Format))
+* A .mts file name as a string (see [Minetest_Schematic_File_Format](/Minetest_Schematic_File_Format))
 * A raw data table
 * A registered schematic identifier as a number, returned by minetest.register_schematic
 

@@ -25,7 +25,7 @@ There's a mod that solves the problem of interoperability:
 
 Note the idea of this mod requires that ALL mods use it. If even just one mod (except \[playerphysics\], of course) uses `set_physics_override` directly, interoperability is destroyed.
 
-For further discussion of the problem with `set_physics_override`, see [Player physics](https://dev.minetest.net/Player_physics "Player physics").
+For further discussion of the problem with `set_physics_override`, see [Player physics](/Player_physics "Player physics").
 
 #### Internationalization
 
@@ -229,4 +229,4 @@ Groups
 
 Another way for interoperability is by using groups. If used properly, they can greatly increase ease-of-use when other modders want to work with our mod. The rule of thumb here is that you generally use groups which are already widely used if you can. Only if your needed group does not exist, you should define your own group.
 
-On this wiki, the [Groups/Custom groups](https://dev.minetest.net/Groups/Custom_groups "Groups/Custom groups") page tries to document the usage of groups and lists some commonly used groups. If your mod defines its own groups and they are \*not\* just to be used internally, please edit the Groups page to help other modders.
+On this wiki, the [Groups/Custom groups](/Groups/Custom_groups "Groups/Custom groups") page tries to document the usage of groups and lists some commonly used groups. If your mod defines its own groups and they are \*not\* just to be used internally, please edit the Groups page to help other modders.

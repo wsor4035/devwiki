@@ -1,5 +1,5 @@
 # L-system tree examples
-This wiki page is a collection of example [L-system trees](https://dev.minetest.net/Introduction_to_L-system_trees "Introduction to L-system trees"). The intention is to help newbies better understand L-system trees, but also to provide usable tree definitions which could be used in mods.
+This wiki page is a collection of example [L-system trees](/Introduction_to_L-system_trees "Introduction to L-system trees"). The intention is to help newbies better understand L-system trees, but also to provide usable tree definitions which could be used in mods.
 
 Giant dry shrub
 ---------------

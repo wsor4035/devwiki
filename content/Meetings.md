@@ -185,7 +185,7 @@ Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://i
 
 * PRs are on the rise and FOSDEM is coming. If it keeps going like this, it'll probably be PR hell all over again. What can we do to avoid both core devs burnouts and contributors being ignored/waiting for ages? Is the roadmap working? (Zughy)
 * Suggestion about core devs supporting PRs having to self-assign such PRs, see [here](https://irc.minetest.net/minetest-dev/2024-01-15#i_6146007). No general "we" should be accepted (Zughy)
-    * Added the assignment guideline to [Git Guidelines](https://dev.minetest.net/Git_Guidelines#Issue_and_Pull-Request_Management). (Krock)
+    * Added the assignment guideline to [Git Guidelines](/Git_Guidelines#Issue_and_Pull-Request_Management). (Krock)
     * Try to assign yourself to PRs that you support to ensure they're not forgotten - even more so on such that are not on the roadmap.
     * The guidelines are currently a mess: [https://irc.minetest.net/minetest-dev/2024-01-21#i\_6147476](https://irc.minetest.net/minetest-dev/2024-01-21#i_6147476) - need cleaning up into doc/
 
@@ -279,7 +279,7 @@ Concept approval for:
     * Generally agreed but needs addressing Desour's requirements before merge
     * It will have to be merged eventually (sfan5)
 * [Code style guidelines for Java code](https://github.com/minetest/minetest/pull/13700) There are already guidelines for C++ and Lua code, but not (Android-specific) Java code. It can be as simple as, "Use Android Studio's linter/formatter." (srifqi)
-    * Volunteers are welcome to extend this page, e.g. srifqi: [https://dev.minetest.net/Android\_code\_style\_guidelines](https://dev.minetest.net/Android_code_style_guidelines)
+    * Volunteers are welcome to extend this page, e.g. srifqi: [/Android\_code\_style\_guidelines](/Android_code_style_guidelines)
 * A follow up for [Issue 13583](https://github.com/minetest/minetest/issues/13583): Is there a draft already that I missed? This can be great for documenting supported OS/env. (srifqi)
     * The suggested document is currently WIP
     * Be clear how old toolchains we support, e.g. by supported Ubuntu LTS versions to use newer libraries or C++ revisions (Krock)
@@ -589,7 +589,7 @@ Roadmapped
 
 **PR discussion/reviews**
 
-* [#11545](https://github.com/minetest/minetest/pull/11545) <- someone should review this --[Sfan5](https://dev.minetest.net/User:Sfan5 "User:Sfan5") ([talk](https://dev.minetest.net/index.php?title=User_talk:Sfan5&action=edit&redlink=1 "User talk:Sfan5 (page does not exist)"))
+* [#11545](https://github.com/minetest/minetest/pull/11545) <- someone should review this --[Sfan5](/User:Sfan5 "User:Sfan5") ([talk](/index.php?title=User_talk:Sfan5&action=edit&redlink=1 "User talk:Sfan5 (page does not exist)"))
     * x2048
 * [#12367](https://github.com/minetest/minetest/pull/12367) some questions here
     * mostly answered before meeting

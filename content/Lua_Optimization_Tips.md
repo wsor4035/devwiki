@@ -76,11 +76,11 @@ end
 
 
   
-See also: [vmanip#Tips\_for\_handling\_indices](https://dev.minetest.net/vmanip#Tips_for_handling_indices "vmanip")  
+See also: [vmanip#Tips\_for\_handling\_indices](/vmanip#Tips_for_handling_indices "vmanip")  
 
 ### Benchmarking
 
-To test how often some function is executed in a second you can use something with a syntax similar to the one of [minetest.after](https://dev.minetest.net/index.php?title=minetest.after&action=edit&redlink=1 "minetest.after (page does not exist)"):
+To test how often some function is executed in a second you can use something with a syntax similar to the one of [minetest.after](/index.php?title=minetest.after&action=edit&redlink=1 "minetest.after (page does not exist)"):
 
 ```lua
 local TIME = 3

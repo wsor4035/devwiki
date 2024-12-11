@@ -80,7 +80,7 @@ example : `mapgen_limit = 4500`
 Flags parameter
 ---------------
 
-The flags parameter is a set of booleans indicating whether or not a certain option is enabled. Global flags applying to all map generators are listed in [mg\_flags](https://dev.minetest.net/mg_flags "mg flags"). Other map generator-specific flags are shown below.  
+The flags parameter is a set of booleans indicating whether or not a certain option is enabled. Global flags applying to all map generators are listed in [mg\_flags](/mg_flags "mg flags"). Other map generator-specific flags are shown below.  
 Like all other config and Lua flag fields, they are represented as a comma-delimited string. E.g. the flag string "trees, caves, flat" would direct the Mapgen to create flat terrain with trees and caves.  
 An exhaustive list of currently recognized Mapgen flags:
 

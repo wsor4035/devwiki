@@ -107,4 +107,4 @@ You can optionally set up a push URL in Weblate to automate this but this is out
 See also
 --------
 
-* [Translation/Mods and Games](https://dev.minetest.net/Translation/Mods_and_Games "Translation/Mods and Games")
+* [Translation/Mods and Games](/Translation/Mods_and_Games "Translation/Mods and Games")

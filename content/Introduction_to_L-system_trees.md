@@ -101,5 +101,5 @@ The symbols a, b, c, d work like the symbols A, B, C, and D, respectively, but t
 
 ### See also
 
-* [L-system tree examples](https://dev.minetest.net/L-system_tree_examples "L-system tree examples")
+* [L-system tree examples](/L-system_tree_examples "L-system tree examples")
 * [L-System Tree Utility](https://forum.minetest.net/viewtopic.php?f=11&t=9458) (a mod which helps to create L-system trees in-game)

@@ -1,9 +1,9 @@
 # Merging core pull requests to upstream
 This page contains **technical guidelines** for core developers when deciding whether to merge a pull request.
 
-For determining who is allowed to do what, see [Organisation](https://dev.minetest.net/Organisation "Organisation").
+For determining who is allowed to do what, see [Organisation](/Organisation "Organisation").
 
-For guidelines and rules on Git and Github, see [Git Guidelines](https://dev.minetest.net/Git_Guidelines "Git Guidelines").
+For guidelines and rules on Git and Github, see [Git Guidelines](/Git_Guidelines "Git Guidelines").
 
 Also see:
 
@@ -17,7 +17,7 @@ There are five major requirements that each pull request must fullfill in order 
 
 1.  It should follow a roadmap in some way, to make sure it fits the whole picture of the project. Different roadmaps and project guidance is managed in [https://github.com/minetest/minetest/blob/master/doc/direction.md](https://github.com/minetest/minetest/blob/master/doc/direction.md). A core dev can decide to review and merge something that doesn't follow direction.md if they consider it to be beneficial to the project.
 2.  It must work in the first place. Compile it and test it in game, or write mod code that uses it.
-3.  The code style must be correct. [http://dev.minetest.net/Code\_style\_guidelines](http://dev.minetest.net/Code_style_guidelines)
+3.  The code style must be correct. [/Code\_style\_guidelines](/Code_style_guidelines)
 4.  The internal interfaces of the code must be good, and it should be reasonably optimized, depending on how often the code is called.
 5.  The protocols and formats that it uses must be well designed, including the required compatibility in the part in question. On-disk formats are extremely important to get right. Modding API concerns are split between this and req2. This is about knowing the engine's design along with its pitfalls.
 

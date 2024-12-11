@@ -1,11 +1,11 @@
 # Git Guidelines
 This page is mostly directed to core team members with commit or triage access to upstream repositories.
 
-For instructions on basic usage, see [Git](https://dev.minetest.net/Git "Git").
+For instructions on basic usage, see [Git](/Git "Git").
 
-For determining who is allowed to do what, see [Organisation](https://dev.minetest.net/Organisation "Organisation").
+For determining who is allowed to do what, see [Organisation](/Organisation "Organisation").
 
-For guidelines about overall pull request quality, see [Merging core pull requests to upstream](https://dev.minetest.net/Merging_core_pull_requests_to_upstream "Merging core pull requests to upstream").
+For guidelines about overall pull request quality, see [Merging core pull requests to upstream](/Merging_core_pull_requests_to_upstream "Merging core pull requests to upstream").
 
 Rules
 -----
@@ -23,7 +23,7 @@ The `minetest` and `minetest_game` repositories contain the stable-0.4 branch, w
 
 ### Upstream commit rules
 
-* You can push something to upstream \[1\] only if two members of the core team \[2\] agree on it. (See also [Organisation](https://dev.minetest.net/Organisation "Organisation"))
+* You can push something to upstream \[1\] only if two members of the core team \[2\] agree on it. (See also [Organisation](/Organisation "Organisation"))
     * Two for-votes are required for code to be mergeable upstream. Any against vote has to be resolved in a meeting before merge.
     * For PRs: The second reviewer should invalidate the first review when major changes happened to the PR in the meantime.
 * Commit messages must start with a capital letter and must be in the present tense. (look at the commit log)

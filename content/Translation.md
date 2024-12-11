@@ -14,7 +14,7 @@ In case you wish to translate a new language, send a message in #minetest-dev an
 
 Here is a list of wiki pages for translating specific languages:
 
-* [German](https://dev.minetest.net/Translating/de "Translating/de")
+* [German](/Translating/de "Translating/de")
 
 ### Special strings
 
@@ -97,7 +97,7 @@ To start a new translation, copy `template.txt` to create `__builtin.<LANGUAGE_C
 Translating mods and games
 --------------------------
 
-To learn how Luanti mods and games are translated, go to [Translation/Mods and Games](https://dev.minetest.net/Translation/Mods_and_Games "Translation/Mods and Games").
+To learn how Luanti mods and games are translated, go to [Translation/Mods and Games](/Translation/Mods_and_Games "Translation/Mods and Games").
 
 Untranslatable texts
 --------------------
