@@ -8,5 +8,5 @@ DisablePathToLower = true
 [params]
     BookTheme = 'auto'
     BookSection = '*'
-    BookRepo = 'https://github.com/wsor4035/devwiki'
+    BookRepo = 'https://github.com/minetest/dev.luanti.org'
     BookEditPath = 'edit/master'
