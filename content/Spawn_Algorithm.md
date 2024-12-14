@@ -1,23 +1,23 @@
 # Spawn Algorithm
 The **spawn algorithm** tries to find a suitable spawn or respawn position for players. It is run whenever a player spawns or respawns.
 
-This page describes how Lunati's builtin spawn algorithm works, as of **version 5.7.0**. Note that individual mods and games can choose to override the spawning behavior. The setting `static_spawn_point` can also override it.
+This page describes how luanti's builtin spawn algorithm works, as of **version 5.7.0**. Note that individual mods and games can choose to override the spawning behavior. The setting `static_spawn_point` can also override it.
 
 [toc]
 
 ## Overview
-If the setting `static_spawn_point` is set, Lunati will spawn new players at this position.
+If the setting `static_spawn_point` is set, luanti will spawn new players at this position.
 
-If this setting is not set, and no mod introduces its own spawning behavior, Lunati will apply an algorithm to find a spawn point automatically. It works like this:
+If this setting is not set, and no mod introduces its own spawning behavior, luanti will apply an algorithm to find a spawn point automatically. It works like this:
 
-Basically, Lunati checks random position in a square centered on (0,0). Then it tries to find a suitable Y height to spawn the player in. If it did, that position is the spawn position. Otherwise, it increases the square size and tries again (with a new random position in that square).
+Basically, luanti checks random position in a square centered on (0,0). Then it tries to find a suitable Y height to spawn the player in. If it did, that position is the spawn position. Otherwise, it increases the square size and tries again (with a new random position in that square).
 
 The first square has a size of 3×3. If the first attempt failed, the search radius increases by 1, now it picks a random position in a 5×5 square (still centered on (0,0)). This is repeated until a valid spawn position is found. If the search square becomes too big or out of mapgen limits, the spawn search aborts and (0,0,0) will be used as the spawn position as a desperate fallback.
 
 The algorithm makes up to 4001 attempts before giving up.
 
 ## The Spawn Algorithm
-Assuming that `static_spawn_point` is *not* set and no mod provides its own spawning behavior, Lunati will follow this algorithm to find a spawn position automatically:
+Assuming that `static_spawn_point` is *not* set and no mod provides its own spawning behavior, luanti will follow this algorithm to find a spawn position automatically:
 
 1. Create a variable named `range` and set it to 1
 2. If `range` is greater than or equal to 4000, or `range` is greater than the mapgen limit, terminate the algorithm and return (0,0,0) as the spawn position. Otherwise, continue.
