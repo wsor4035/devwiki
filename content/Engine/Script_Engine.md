@@ -12,7 +12,7 @@ There are basicaly two initialization phases, on creation of application prototy
 
 Note about the image: Its partially outdated. Since commit 4e1f50035e860a00636ca5d804c267119df99601, the registerModApiModule function has been removed.
 
-[![Script Engine initialization](/images/scriptapi_init.png)](/images/scriptapi_init.png "Script Engine initialization")
+[![Script Engine initialization](/images/scriptapi_init.webp)](/images/scriptapi_init.webp "Script Engine initialization")
 
 Common
 ------
@@ -28,8 +28,8 @@ Prefix: s\_
 
 cpp\_api provides interface required by c++ core functions. It's designed to be added as single class ScriptApi. This class inherits features from all submodules within cpp. ScriptApi is responsible for mod api management too. Any function required by all modules are implemented in ScriptApiBase, thus each modul inherits this class. To avoid inheritance problems each module has to be derived "virtual". The class design is layered as follows:
 
-  
-[![components.png](/images/components.png)](/images/components.png)
+
+[![components](/images/components.webp)](/images/components.webp)
 
 lua\_api
 --------

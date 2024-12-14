@@ -2,7 +2,7 @@
 
 The profiler graphs show the performance of Luanti in a more detailed fashion. This information is useful for engine developers. The profiler graphs are shown when you hit the debug key (F5 by default) twice.
 
-[![Profiler graph.png](/images/Profiler_graph.png)](/images/Profiler_graph.png)
+[![Profiler graph](/images/Profiler_graph.webp)](/images/Profiler_graph.webp)
 
 The following graphs are available:
 

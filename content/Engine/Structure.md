@@ -1,5 +1,5 @@
 # Engine/Structure
-[![](/images/500px-minetest-0.3-dfd-visio.png)](/images/500px-minetest-0.3-dfd-visio.png)
+[![](/images/minetest-0.3-dfd-visio.webp)](/images/minetest-0.3-dfd-visio.webp)
 
 0.3 data flow diagram - still mostly accurate.
 

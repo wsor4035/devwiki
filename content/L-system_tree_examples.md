@@ -28,7 +28,7 @@ treedef={
 
 ### Screenshot
 
-[![Giant Dry Shrub.png](/images/420px-Giant_Dry_Shrub.png)](/images/420px-Giant_Dry_Shrub.png)
+[![Giant Dry Shrub](/images/Giant_Dry_Shrub.webp)](/images/Giant_Dry_Shrub.webp)
 
 Apple tree
 ----------
@@ -60,7 +60,7 @@ treedef = {
 
 ### Screenshot
 
-[![Apple Tree.png](/images/420px-Apple_Tree.png)](/images/420px-Apple_Tree.png)
+[![Apple Tree](/images/Apple_Tree.webp)](/images/Apple_Tree.webp)
 
 Acacia
 ------
