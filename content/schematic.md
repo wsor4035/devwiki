@@ -62,7 +62,7 @@ local my_schematic = {
 You can then provide my_schematic everytime a Schematic specifier is requested, for example in `core.register_decoration`.
 
 ## Placing schematics
-Schematics are placed either with core.place_schematic or at world generation with c`ore.register_decoration`.
+Schematics are placed either with core.place_schematic or at world generation with `core.register_decoration`.
 
 When using `core.register_decoration`, be aware that the decoration is placed inside a ground node and not on top, unlike simple decorations. You may want to add one layer for the roots of the schematic. See also in lua_api.md about the documentation of `core.register_decoration` for the flags to center the schematic on certain axes instead of placing it from a corner. Notice that you can only place the schematic from the center or the start of every axis and not an arbitrary offset.
 
