@@ -1,5 +1,5 @@
-# luanti NMPR
-The luanti engine is built on a small core, that was the original network multiplayer release of luanti (let's call it NMPR; the 2010-10-24 version). As the current code still largely bases on the NMPR, it is useful to look at how it works for getting a basic understanding of the engine.
+# Luanti NMPR
+The Luanti engine is built on a small core, that was the original network multiplayer release of luanti (let's call it NMPR; the 2010-10-24 version). As the current code still largely bases on the NMPR, it is useful to look at how it works for getting a basic understanding of the engine.
 
 Being around 10000 lines of code, it contains:
 
@@ -33,7 +33,7 @@ Players contain:
 - An Irrlicht scene node (that is rendered by Irrlicht)
 - move() method with collision detection
 
-In later versions of luanti, the environment also contains things like ActiveObjects and ABMs.
+In later versions of Luanti, the environment also contains things like ActiveObjects and ABMs.
 
 ## Network protocol
 The high-level network protocol of NMPR is delightfully simple. There are four commands for the server, and four commands for the client. Since this, a lot has been added and changed, but the basic idea stays the same.

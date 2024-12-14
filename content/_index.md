@@ -3,13 +3,13 @@ title: Main Page
 type: 'docs'
 ---
 
-# luanti Developer Wiki
+# Luanti Developer Wiki
 
-Welcome to the **luanti Developer Wiki**, here you learn how luanti and games and mods for luanti are developed.
+Welcome to the **Luanti Developer Wiki**, here you learn how Luanti and games and mods for Luanti are developed.
 
-**luanti** is a [game engine](https://en.wikipedia.org/wiki/Game_engine) inspired by Minecraft, Infiniminer and others. It's licensed under the GNU LGPL 2.1, with artwork generally covered by CC BY-SA 3.0. There are two major parts to the system, the first being a [core engine](/Engine/Structure "Engine structure") written in C++, the second being a modding API that exposes useful functions to a Lua environment.
+**Luanti** is a [game engine](https://en.wikipedia.org/wiki/Game_engine) inspired by Minecraft, Infiniminer and others. It's licensed under the GNU LGPL 2.1, with artwork generally covered by CC BY-SA 3.0. There are two major parts to the system, the first being a [core engine](/Engine/Structure "Engine structure") written in C++, the second being a modding API that exposes useful functions to a Lua environment.
 
-The luanti Wiki for players is located at [wiki.minetest.net](https://wiki.minetest.net/).
+The Luanti Wiki for players is located at [wiki.minetest.net](https://wiki.minetest.net/).
 
 Contribute to Luanti!
 ---------------------

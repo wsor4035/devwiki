@@ -1,5 +1,5 @@
-# luanti Schematic File Format
-The **luanti Schematic File Format** if the file format used by Luanti when schematics are seralized by e.g. `core.create_schematic`. Schematic files are supposed to have “`.mts`” as a file name suffix. This document describes the MTS format native to Luanti.
+# Luanti Schematic File Format
+The **Luanti Schematic File Format** if the file format used by Luanti when schematics are seralized by e.g. `core.create_schematic`. Schematic files are supposed to have “`.mts`” as a file name suffix. This document describes the MTS format native to Luanti.
 
 Informal definition
 -------------------

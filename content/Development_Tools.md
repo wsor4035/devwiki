@@ -23,7 +23,7 @@ Mod development
 ### Web applications
 
 * [Luanti Biome Point Visualizer](https://wuzzy.codeberg.page/LiBPoV/): Edit and visualize biome heat/humidity points in a Voronoi diagram ([source code](https://codeberg.org/Wuzzy/LiBPoV))
-* [luanti Formspec Editor](https://luk3yx.gitlab.io/minetest-formspec-editor/): Visual formspec editor
+* [Luanti Formspec Editor](https://luk3yx.gitlab.io/minetest-formspec-editor/): Visual formspec editor
 
 ### Luanti games and mods
 
@@ -34,7 +34,7 @@ Scripts
 
 ### Formspecs
 
-* [luanti Formspec Editor](https://luk3yx.gitlab.io/minetest-formspec-editor/): A great online tool with drag and drop that allows you to import and export formspecs in different versions
+* [Luanti Formspec Editor](https://luk3yx.gitlab.io/minetest-formspec-editor/): A great online tool with drag and drop that allows you to import and export formspecs in different versions
 * [Perlin noise tuner](https://codepen.io/treer/pen/gOPZyov?editors=0010) Visualizes 2D Perlin noise that Luanti will generate with different noiseparams. (Emulation of Luanti Perlin noise can be wrong in extremes/edge-cases due to precision of JavaScript number type)
 
 ### Translation
