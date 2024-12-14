@@ -232,10 +232,10 @@ playerpos.y = playerpos.y+1  -- playerpos.y is not an integer
 Good:
 
 ```lua
-local node_up   = minetest.get_node(pos_up)
-local node_down = minetest.get_node(pos_down)
+local node_up   = core.get_node(pos_up)
+local node_down = core.get_node(pos_down)
 -- Too long relative to the other lines, don't align with it
-local node_up_1_east_2_north_3 = minetest.get_node(pos_up_1_east_2_north_3)
+local node_up_1_east_2_north_3 = core.get_node(pos_up_1_east_2_north_3)
 ```
 
 

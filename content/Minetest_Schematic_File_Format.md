@@ -1,5 +1,5 @@
-# Minetest Schematic File Format
-The **Minetest Schematic File Format** if the file format used by Luanti when schematics are seralized by e.g. `core.create_schematic`. Schematic files are supposed to have “`.mts`” as a file name suffix. This document describes the MTS format native to Luanti.
+# Lunati Schematic File Format
+The **Lunati Schematic File Format** if the file format used by Luanti when schematics are seralized by e.g. `core.create_schematic`. Schematic files are supposed to have “`.mts`” as a file name suffix. This document describes the MTS format native to Luanti.
 
 Informal definition
 -------------------

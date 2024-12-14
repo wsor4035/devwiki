@@ -6,7 +6,7 @@ Translating the engine
 
 Translations of the Luanti engine are [automated using Weblate](https://hosted.weblate.org/projects/minetest/minetest/). Register an account, select the “Minetest” project (or “Luanti” if it has been renamed) and start translating. Translation is a continuous effort and the texts will change almost at every version.
 
-The developers usually will update the translation templates shortly before a new release. If you translate a long time before a release, your translation updates will still be included, but your translation will likely be incomplete because almost every new version comes with new things to translate. Check out the [News forum](https://forum.minetest.net/viewforum.php?f=18) to see if a new release is imminent.
+The developers usually will update the translation templates shortly before a new release. If you translate a long time before a release, your translation updates will still be included, but your translation will likely be incomplete because almost every new version comes with new things to translate. Check out the [News forum](https://forum.luanti.org/viewforum.php?f=18) to see if a new release is imminent.
 
 In case you wish to translate a new language, send a message in #minetest-dev and a coredev can add it.
 

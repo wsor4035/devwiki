@@ -39,8 +39,8 @@ Other useful links
 
 * Check out [ContentDB](https://content.minetest.net/) to see mods that have been published by the community.
 * Get mod help from the community:
-    * [Forums](https://forum.minetest.net/viewforum.php?f=47)
+    * [Forums](https://forum.luanti.org/viewforum.php?f=47)
     * [Discord](https://discord.gg/minetest)
     * [Matrix](https://matrix.to/#/#minetest:tchncs.de)
     * ...[more](https://www.minetest.net/get-involved/)
-* Suggest a mod idea in the [mod request thread](https://forum.minetest.net/viewtopic.php?f=9&t=2434).
+* Suggest a mod idea in the [mod request thread](https://forum.luanti.org/viewtopic.php?f=9&t=2434).

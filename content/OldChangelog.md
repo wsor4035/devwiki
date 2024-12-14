@@ -234,7 +234,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 
 0.4.15 was released on Dec 22, 2016.
 
-No official changelog exists yet, however you can find an unofficial one here: [https://forum.minetest.net/viewtopic.php?p=243949#p243949](https://forum.minetest.net/viewtopic.php?p=243949#p243949)
+No official changelog exists yet, however you can find an unofficial one here: [https://forum.luanti.org/viewtopic.php?p=243949#p243949](https://forum.luanti.org/viewtopic.php?p=243949#p243949)
 
 0.4.13 → 0.4.14
 ---------------
@@ -843,7 +843,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 ### Bug fixes
 
 * Fixed face shading issues _(RealBadAngel)_
-* Fixed crash reported here: [https://forum.minetest.net/viewtopic.php?f=6&t=9726](https://forum.minetest.net/viewtopic.php?f=6&t=9726) _(Novatux)_
+* Fixed crash reported here: [https://forum.luanti.org/viewtopic.php?f=6&t=9726](https://forum.luanti.org/viewtopic.php?f=6&t=9726) _(Novatux)_
 * Fixed flipped textures for drawtype "glasslike" _(sapier)_
 * Fixed indexing error in timer processing _(Zefram)_
 * Made tooltip\_show\_delay=0 work _(Zefram)_
@@ -1368,7 +1368,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added `minetest.register_decoration()` _(kwolekr)_
 * Added schematic support; new functions `minetest.place_schematic()` and `minetest.create_schematic()` _(kwolekr)_
 * Seperated formspecs of furnace and chests to provide override by mods _(BlockMen)_
-* Added Lua VoxelManip _(kwolekr)_ [http://forum.minetest.net/viewtopic.php?id=6396](http://forum.minetest.net/viewtopic.php?id=6396)
+* Added Lua VoxelManip _(kwolekr)_ [http://forum.luanti.org/viewtopic.php?id=6396](http://forum.luanti.org/viewtopic.php?id=6396)
 * Added vector helpers _(ShadowNinja)_
 * Added `range` to item definition _(PilzAdam)_
 * Added `after_use` to item definition _(Novatux)_
@@ -1419,7 +1419,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added sandstone bricks and desert stone bricks _(PilzAdam & VanessaE)_
 * Added coal block, crafted out of 9 coal lumps _(Zeg9)_
 * Added flowers to craft dyes; flowers and grass grow now on dirt\_with\_grass _(0gb.us, PilzAdam, VanessaE, ironzorg)_
-* Added farming mod; wheat can be used to bake bread and cotton can be used to craft wool _(PilzAdam)_ [http://forum.minetest.net/viewtopic.php?id=6067](http://forum.minetest.net/viewtopic.php?id=6067)
+* Added farming mod; wheat can be used to bake bread and cotton can be used to craft wool _(PilzAdam)_ [http://forum.luanti.org/viewtopic.php?id=6067](http://forum.luanti.org/viewtopic.php?id=6067)
 
 **Smaller gameplay tweaks**
 
@@ -1441,8 +1441,8 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added icons to select games in menu; `menu/menu_<background/overlay/header/footer>.png` of selected game is used in the main menu (TP can use `<gameid>_menu_<background/overlay/header/footer>.png`) _(celeron55)_
 * Added `--videomodes` option to show available video modes _(kahrl)_
 * Added ability to play `main_menu.ogg` (`main_menu.<1-9>.ogg` are supported too; they are choosen randomly if present) in main menu _(RealBadAngel)_
-* Drop common mods system, _Survival_ and _Build_ game; minetest\_game includes all common mods and the bones mod from _Survival_ now _(PilzAdam)_ [http://forum.minetest.net/viewtopic.php?id=6034](http://forum.minetest.net/viewtopic.php?id=6034)
-* Changed mod system a bit: All user mods are installed in `$path_user/mods/` now; they can be enabled per world in the configure world window or in `world.mt` with `load_mod_<modname>` _(PilzAdam)_ [http://forum.minetest.net/viewtopic.php?id=6066](http://forum.minetest.net/viewtopic.php?id=6066)
+* Drop common mods system, _Survival_ and _Build_ game; minetest\_game includes all common mods and the bones mod from _Survival_ now _(PilzAdam)_ [http://forum.luanti.org/viewtopic.php?id=6034](http://forum.luanti.org/viewtopic.php?id=6034)
+* Changed mod system a bit: All user mods are installed in `$path_user/mods/` now; they can be enabled per world in the configure world window or in `world.mt` with `load_mod_<modname>` _(PilzAdam)_ [http://forum.luanti.org/viewtopic.php?id=6066](http://forum.luanti.org/viewtopic.php?id=6066)
 * Split `init.lua` of the default mod into several files _(PilzAdam)_
 * Moved scriptapi to a subfolder _(sapier, celeron55 & kahrl)_
 

@@ -35,7 +35,7 @@ Apple tree
 
 ### Profile
 
-Works in any game with basic map generation. This tree is used as the example tree in the mod “[L-System Tree Utility](https://forum.minetest.net/viewtopic.php?f=11&t=9458)”.
+Works in any game with basic map generation. This tree is used as the example tree in the mod “[L-System Tree Utility](https://forum.lunati.org/viewtopic.php?f=11&t=9458)”.
 
 ### Definition
 
