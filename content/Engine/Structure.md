@@ -40,44 +40,35 @@ Threads
 ### Stand-alone server
 
 * main
-
-* Doesn't do much
+  * Doesn't do much
 
 * ServerThread (Server)
-
-* Runs the server
+  * Runs the server
 
 * EmergeThread (Server)
-
-* Fetches and generates world
+  * Fetches and generates world
 
 ### Client-only
 
 * main
-
-* Runs almost everything in main game loop
+  * Runs almost everything in main game loop
 
 * MeshUpdateThread (Client)
-
-* Does mesh updates in the background
+  * Does mesh updates in the background
 
 ### Singleplayer
 
 * main
-
-* Runs almost everything except server in main game loop
+  * Runs almost everything except server in main game loop
 
 * MeshUpdateThread (Client)
-
-* Does mesh updates in the background
+  * Does mesh updates in the background
 
 * ServerThread (Server)
-
-* Runs the server
+  * Runs the server
 
 * EmergeThread (Server)
-
-* Fetches and generates world
+  * Fetches and generates world
 
 Classes
 -------
