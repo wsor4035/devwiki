@@ -1,4 +1,4 @@
-# Development troubleshooting - Minetest Developer Wiki
+# Development troubleshooting
 Lua API
 -------
 

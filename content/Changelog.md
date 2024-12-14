@@ -1484,10 +1484,10 @@ As a major release, 5.0.0 will break some mods written for 0.4.x versions. We tr
 * Minetest now uses C++11 instead of C++03, make sure you have a compatible system (Windows Vista, Debian 8, Ubuntu 16.04, CentOS 7, macOS 10.7, …)
 * Breaks network compatibility with 0.4.x. 0.4.x clients won't be able to connect to 5.x servers and vice-versa. Fix: update clients and servers to 5.x
 * Attachment and player positions have been shifted by 1 node, to allow support for custom player selection boxes. Fix: update default and player\_api, subtract `10` from any attachment positions, shift the origin of player models to the feet
-* Formspec theming using prepended strings. This may cause wrong backgrounds to appear on formspecs. Fix: see [https://forum.minetest.net/viewtopic.php?f=18&t=20646](https://forum.minetest.net/viewtopic.php?f=18&t=20646)
+* Formspec theming using prepended strings. This may cause wrong backgrounds to appear on formspecs. Fix: see [https://forum.luanti.org/viewtopic.php?f=18&t=20646](https://forum.luanti.org/viewtopic.php?f=18&t=20646)
 * depends.txt and description.txt have been deprecated. Fix: use _description_, _depends_, and _optional\_depends_ in mod.conf, game.conf, or texture\_pack.conf instead
 * modpack.txt has been deprecated. Fix: rename to or add _modpack.conf_.
-* Use of deprecated methods such as _object:setpos()_ is now warned about. Fix: [replace them with correct functions](https://forum.minetest.net/viewtopic.php?f=18&t=20403)
+* Use of deprecated methods such as _object:setpos()_ is now warned about. Fix: [replace them with correct functions](https://forum.luanti.org/viewtopic.php?f=18&t=20403)
 * _player:get/set\_attribute()_ is now deprecated. Fix: use _player:get\_meta()_ instead
 * _nodeupdate()_ was removed. Fix: replace with _minetest.check\_for\_falling_.
 * Clouds API: changed speed param from 'y' to 'z'

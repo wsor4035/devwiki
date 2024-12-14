@@ -25,7 +25,7 @@ If you want to track down _which_ PNGs are broken, set the debug level (`debug_l
 
 As Luanti develops, some API functions fall out of use and become deprecated in favour of newer functions with different names. Looking at console log or debug log output should give you the deprecation warnings that your mod throws. See the warning, which might give the name of the new function, and the Lua API for any eventual change in behaviour it has.
 
-When upgrading your mod from version 0.4.x to 5.x, you may use the [MT-replace-deprecated.sh](https://gist.github.com/SmallJoker/cb89c3f9e4be27a0e8bc10ced1c5fc31) script ([forum thread](https://forum.minetest.net/viewtopic.php?f=18&t=20403)) which can automatically rename some deprecated functions.
+When upgrading your mod from version 0.4.x to 5.x, you may use the [MT-replace-deprecated.sh](https://gist.github.com/SmallJoker/cb89c3f9e4be27a0e8bc10ced1c5fc31) script ([forum thread](https://forum.luanti.org/viewtopic.php?f=18&t=20403)) which can automatically rename some deprecated functions.
 
 To abort on any execution of a deprecated function, you can set the “deprecated\_lua\_api\_handling” setting to “error”, useful during development to clearly see any deprecated functions being used.
 
@@ -102,16 +102,16 @@ Quality checklist
 
 Here's a list of things to check in your game or mod to improve general quality and to avoid common pitfalls. Not all things might apply for your game, always use good judgement.
 
-Note: Some of these can be checked quickly with [QA-Block](https://forum.minetest.net/viewtopic.php?t=15759). See also: [Development Tools](/Development_Tools "Development Tools").
+Note: Some of these can be checked quickly with [QA-Block](https://forum.luanti.org/viewtopic.php?t=15759). See also: [Development Tools](/Development_Tools "Development Tools").
 
 ### Preventing crashes, exploits and bugs
 
 * In `minetest.after`, do you consider that any external variable or object might become nil or disappear in the meantime?[\[1\]](#cite_note-1)
-* In formspecs, did you check for all [Time Of Check is not Time Of Use vulnerabilities](https://forum.minetest.net/viewtopic.php?f=47&t=19129)?
-* In formspecs, do you [Never Trust User-Provided Data](https://forum.minetest.net/viewtopic.php?f=47&t=19129)?
+* In formspecs, did you check for all [Time Of Check is not Time Of Use vulnerabilities](https://forum.luanti.org/viewtopic.php?f=47&t=19129)?
+* In formspecs, do you [Never Trust User-Provided Data](https://forum.luanti.org/viewtopic.php?f=47&t=19129)?
 * In formspecs, do you enclose all variable, unpredictable text in `minetest.formspec_escape`? [\[2\]](#cite_note-2)
 * Does the game behave properly when restarted?[\[3\]](#cite_note-3)
-* Did you check if implementing [mod security](https://forum.minetest.net/viewtopic.php?f=18&t=12471) is necessary? If yes, did you implement it?
+* Did you check if implementing [mod security](https://forum.luanti.org/viewtopic.php?f=18&t=12471) is necessary? If yes, did you implement it?
 * For singleplayer games: Do you error out if someone tries to run your game in multiplayer?[\[4\]](#cite_note-4)
 * Do you restrict detached inventories to players, where necessary?[\[5\]](#cite_note-5)
 
@@ -177,7 +177,7 @@ Footnotes
 3.  [↑](#cite_ref-3) Some game data might be accidentally reset or just not be persisted across restarts. For example, rainy weather might be reset to clear because it was not saved.
 4.  [↑](#cite_ref-4) Use `minetest.is_singleplayer` to check. Use Lua's `error` function to error out, or just kick all players.
 5.  [↑](#cite_ref-5) Detached inventories are sent to everyone unless you specify a name in the registration. So other players using a modified/hacked client could theoretically alter any detached inventory without an attached name.
-6.  [↑](#cite_ref-6) The keyword “`local`” should be your new friend. Everything that does not need to be visible outside should be made local. This will avoid a lot of weird bugs caused by mods overwriting their global variables each other. As a rule of thumb, your mod should only have up to 1 global variable which is also the same name as the mod. Make this a table in which you include all global stuff. You can use [QA-Block](https://forum.minetest.net/viewtopic.php?t=15759) to find suspicious global variables.
+6.  [↑](#cite_ref-6) The keyword “`local`” should be your new friend. Everything that does not need to be visible outside should be made local. This will avoid a lot of weird bugs caused by mods overwriting their global variables each other. As a rule of thumb, your mod should only have up to 1 global variable which is also the same name as the mod. Make this a table in which you include all global stuff. You can use [QA-Block](https://forum.luanti.org/viewtopic.php?t=15759) to find suspicious global variables.
 7.  [↑](#cite_ref-7) See also: [MT-replace-deprecated.sh](/MT-replace-deprecated.sh "MT-replace-deprecated.sh")
 8.  [↑](#cite_ref-8) See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
 9.  [↑](#cite_ref-9) See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")

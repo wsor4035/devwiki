@@ -12,10 +12,10 @@ Using Script API
 
 Very simple; no reason not to do so:
 
-```
-local t1 = minetest.get_us_time()
+```lua
+local t1 = core.get_us_time()
 --... work here ...
-print(string.format("elapsed time: %g ms", (minetest.get_us_time() - t1) / 1000))
+print(string.format("elapsed time: %g ms", (core.get_us_time() - t1) / 1000))
 ```
 
 
@@ -80,12 +80,12 @@ See also: [vmanip#Tips\_for\_handling\_indices](/vmanip#Tips_for_handling_indice
 
 ### Benchmarking
 
-To test how often some function is executed in a second you can use something with a syntax similar to the one of [minetest.after](/index.php?title=minetest.after&action=edit&redlink=1 "minetest.after (page does not exist)"):
+To test how often some function is executed in a second you can use something with a syntax similar to the one of [core.after](/index.php?title=minetest.after&action=edit&redlink=1 "core.after (page does not exist)"):
 
 ```lua
 local TIME = 3
 
-local clock = minetest.get_us_time
+local clock = core.get_us_time
 local us = TIME * 1000000
 local function benchmark_function(fct, ...)
 	local start = clock()
@@ -112,7 +112,7 @@ hello got printed 65592.333333333 times a second
 ```
 
 
-you could also use `os.clock` instead of `minetest.get_us_time` (of course you then also need to remove that multiplying with 10⁶)
+you could also use `os.clock` instead of `core.get_us_time` (of course you then also need to remove that multiplying with 10⁶)
 
 Writing Script API
 ------------------

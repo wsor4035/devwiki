@@ -1,4 +1,4 @@
-# Mapgen Parameters - Minetest Developer Wiki
+# Mapgen Parameters
 All map generator algorithms have a few common parameters, plus any mapgen-specific options such as noise parameters or threshhold values.
 
 Mapgen parameter source precedence

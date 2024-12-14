@@ -1,5 +1,4 @@
 # Engine
-From Minetest Developer Wiki
 
 [Jump to navigation](#mw-head) [Jump to search](#searchInput)
 

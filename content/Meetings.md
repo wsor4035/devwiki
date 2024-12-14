@@ -979,7 +979,7 @@ Arranged by: Krock
 * Specify a rough 5.0.0 release date (month, year)
     * Freeze for multiple weeks for testing & fixing
 * Forums: Clarify which rules (amongst license) apply for WIP modpacks/mods/games
-    * [https://forum.minetest.net/viewtopic.php?t=20630](https://forum.minetest.net/viewtopic.php?t=20630)
+    * [https://forum.luanti.org/viewtopic.php?t=20630](https://forum.luanti.org/viewtopic.php?t=20630)
 
 **PR discussion/reviews**
 
@@ -1097,7 +1097,7 @@ Arranged by: Krock
 **0.4.17 release schedule**
 
 * Definitive release date
-    * Announced. 15 April 2018, see [https://forum.minetest.net/viewtopic.php?f=18&t=19905](https://forum.minetest.net/viewtopic.php?f=18&t=19905)
+    * Announced. 15 April 2018, see [https://forum.luanti.org/viewtopic.php?f=18&t=19905](https://forum.luanti.org/viewtopic.php?f=18&t=19905)
 * Any new, important bugfixes to backport?
     * Added the \`core.rotate\_node\` bugfix, otherwise probably not. It's pretty much stable.
 * Volunteer for cherry-picking the ToDo backport commits ([https://github.com/minetest/minetest/pull/6746](https://github.com/minetest/minetest/pull/6746))

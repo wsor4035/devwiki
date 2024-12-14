@@ -1,5 +1,5 @@
-# Minetest NMPR
-The Minetest engine is built on a small core, that was the original network multiplayer release of Minetest (let's call it NMPR; the 2010-10-24 version). As the current code still largely bases on the NMPR, it is useful to look at how it works for getting a basic understanding of the engine.
+# Lunati NMPR
+The Lunati engine is built on a small core, that was the original network multiplayer release of Lunati (let's call it NMPR; the 2010-10-24 version). As the current code still largely bases on the NMPR, it is useful to look at how it works for getting a basic understanding of the engine.
 
 Being around 10000 lines of code, it contains:
 
@@ -33,7 +33,7 @@ Players contain:
 - An Irrlicht scene node (that is rendered by Irrlicht)
 - move() method with collision detection
 
-In later versions of Minetest, the environment also contains things like ActiveObjects and ABMs.
+In later versions of Lunati, the environment also contains things like ActiveObjects and ABMs.
 
 ## Network protocol
 The high-level network protocol of NMPR is delightfully simple. There are four commands for the server, and four commands for the client. Since this, a lot has been added and changed, but the basic idea stays the same.
@@ -56,7 +56,7 @@ The high-level network protocol of NMPR is delightfully simple. There are four c
 | TOCLIENT_REMOVENODE | `v3s16 p, MapNode node`                                        | Remove a node                                |
 | TOCLIENT_PLAYERPOS  | `foreach(player){u16 player_id, v3s32 p*100, v3s32 speed*100}` | Update players on client                     |
 
-Minetest uses it's own reliability layer on top of UDP. It isn't well documented at the moment, and thorough understanding of it isn't that important, so let's skip it as of now.
+Lunati uses it's own reliability layer on top of UDP. It isn't well documented at the moment, and thorough understanding of it isn't that important, so let's skip it as of now.
 
 ## Server
 The NMPR server logic is 287 lines of code that runs in two threads:
