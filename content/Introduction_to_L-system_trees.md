@@ -84,7 +84,7 @@ Let's look at it step by step: First we do the axiom, just a vertical trunk. The
 
 And after the 3rd recursion this is the result:
 
-[![recursive y](/images/300px-mtwikitreegen.png)](/images/300px-mtwikitreegen.png "recursive y")
+[![recursive y](/images/mtwikitreegen.webp)](/images/mtwikitreegen.webp "recursive y")
 
 ### Replacing by chance
 
