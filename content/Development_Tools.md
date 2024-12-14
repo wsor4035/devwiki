@@ -13,7 +13,6 @@ Mod development
 
 ### Standalone software
 
-* [NodeBoxEditor](https://forum.minetest.net/viewtopic.php?f=14&t=2840): Build [node boxes](/index.php?title=Node_boxes&action=edit&redlink=1 "Node boxes (page does not exist)") by dragging their edges.
 * [MTS Editor](https://forum.minetest.net/viewtopic.php?f=14&t=23724): A program to create, view and edit Luanti schematics, but it supports other file formats (e.g. Minecraft schematics) as well
 * [Schematic Creator](https://forum.minetest.net/viewtopic.php?f=14&t=18992): A Java program to create schematics
 * [Model Creator](https://forum.minetest.net/viewtopic.php?f=14&t=18780&): A Java program to create meshes
