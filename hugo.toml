@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'Developer Wiki'
 theme = ['hugo-notice', 'hugo-book']
 enableGitInfo = true
-DisablePathToLower = true
 
 [params]
     BookTheme = 'auto'

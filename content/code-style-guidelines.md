@@ -1,6 +1,6 @@
 ---
 title: Code style guidelines
-alias:
+aliases:
 - /Code_style_guidelines
 ---
 
