@@ -1,3 +1,8 @@
+---
+title: Limitations
+---
+
+# Limitations
 This page lists various limitations that exist in the Luanti engine. This list could also be seen as a wishlist for far fetched features.
 
 Also see the [List of hardcoded features](/list-of-hardcoded-features) page for behaviour in the engine that is mostly hardcoded.
