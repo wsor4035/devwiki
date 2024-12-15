@@ -21,7 +21,7 @@ Add your points here. Most important comes first.
 
 **PR discussion/reviews**
 
-* bar
+* https://github.com/minetest/minetest/pulls?q=is%3Apr+is%3Aopen+scancodes
 
 Also consider:
 
