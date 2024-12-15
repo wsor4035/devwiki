@@ -2,6 +2,7 @@
 title: Merging core pull requests to upstream
 aliases:
 - /Merging_core_pull_requests_to_upstream
+- /merging-core-pull-requests-to-upstream
 ---
 
 # Merging core pull requests to upstream

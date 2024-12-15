@@ -2,6 +2,7 @@
 title: Git Guidelines
 aliases:
 - /Git_Guidelines
+- /git-guidelines
 ---
 
 # Git Guidelines

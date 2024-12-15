@@ -2,6 +2,7 @@
 title: All rules regarding development
 aliases:
 - /All_rules_regarding_to_development
+- /all-rules-regarding-development
 ---
 
 # All rules regarding development

@@ -2,6 +2,7 @@
 title: List of hardcoded features
 aliases:
 - /List_of_hardcoded_features
+- /list-of-hardcoded-features
 ---
 
 # List of hardcoded features
