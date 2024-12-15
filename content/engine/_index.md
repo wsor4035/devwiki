@@ -2,6 +2,7 @@
 title: Engine
 aliases:
 - /Engine/
+bookCollapseSection: true
 ---
 
 # Engine
