@@ -1,6 +1,8 @@
 ---
 title: Main Page
 type: 'docs'
+aliases:
+- "/Main_Page"
 ---
 
 # Luanti Developer Wiki
