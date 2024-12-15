@@ -5,8 +5,6 @@ This page intends to list all possible optimisation techniques that can be used 
 
 Lua map generators can use excessive memory if they are not using these 3 optimisations. Not using these optimizations can eventually lead to OOM (out-of-memory) errors because the Lua mapgen wasted way too much memory. Applying this advice is **strongly recommended**, and should make OOM errors much less likely. But there is no guarantee this will fix all OOM errors, your mapgen might still use excessive memory for other reasons, or the computer just has very limited memory.
 
-[toc]
-
 ## Only create perlin noise objects once
 The noise object is created by `core.get_perlin_map()`. It has to be created inside `register_on_generated()` to be usable, but only needs to be created once, many mapgen mods create it for every mapchunk, this consumes memory unnecessarily.
 

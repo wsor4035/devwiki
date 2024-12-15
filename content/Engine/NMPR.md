@@ -11,8 +11,6 @@ Being around 10000 lines of code, it contains:
 
 NMPR has been made available at [<https://github.com/celeron55/minetest_nmpr>](https://github.com/celeron55/minetest_nmpr) (easiest to build). Older source release is [here (source)](http://c55.me/random/2013-01/minetest_10-10-24_16-33-41_wonderful.tar.gz) (build like [this](http://gist.github.com/4578183)). Also the [original win32 release](http://c55.me/random/2010-10/old/minetest-c55-win32-101024164856.zip) is available (works in wine).
 
-[toc]
-
 ## Map (the voxels)
 ![Minetest Voxel Storage](/images/minetest_voxel_storage.webp)
 
