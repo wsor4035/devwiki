@@ -60,7 +60,7 @@ Divide by `1e6` to convert `time` into seconds.
 
 {{< notice info >}}
 The returned `time` is not portable and not relative to any specific point in time across restarts - keep it only in memory for use while the game is running.
-{{< notice info >}}
+{{< /notice >}}
 
 {{< notice tip >}}
 You can use the difference between ``core.get_us_time`` and the returned times to check whether a real-world timespan has passed, which is useful for rate limiting. For in-game timers, you might prefer adding up `dtime` or (if second precision is enough) using gametime.
