@@ -4,7 +4,10 @@ Luanti provides various utility functions to help with managing paths, files & d
 IMPORTANT: Mod security restricts file system access to the mod path (at load time) and the world path later on in secure environments, see [Lua Environment](/Lua_Environment/).
 
 ## Paths
-WARNING: Always operate on absolute paths, never on relative ones; no assumption about the current working directory can be made.
+
+{{< notice warning >}}
+Always operate on absolute paths, never on relative ones; no assumption about the current working directory can be made.
+{{< /notice >}}
 
 ### Normalization
 Luanti normalizes paths you pass into filesystem-related functions, replacing `/` with the platform-specific path delimiter (usually `\` on Windows, `/` on UNIX).
@@ -23,7 +26,9 @@ Gets the path of a mod, *if it is loaded*. If the mod isn't loaded, it will retu
 **Arguments:**
 - `modname` - `{type-string}`: The mod name
 
-TIP: Use `local modpath = core.get_modpath(core.get_current_modname())` rather than hardcoding your modname.
+{{< notice tip >}}
+Use `local modpath = core.get_modpath(core.get_current_modname())` rather than hardcoding your modname.
+{{< /notice >}}
 
 **Returns:**
 - `modpath` - `{type-string}`: The absolute, non-normalized path to the mod directory
@@ -39,7 +44,9 @@ No arguments.
 **Common Returns**
 - `success` - `{type-bool}`: Whether the operation succeeded.
 
-TIP: Use `assert` to error on failure.
+{{< notice tip >}}
+Use `assert` to error on failure.
+{{< /notice >}}
 
 ### `core.mkdir`
 Creates a directory and nonexistent parent directories.
@@ -54,7 +61,9 @@ Copies a source directory to a destination.
 - `source_path` - `{type-string}`: Path to the source directory to copy
 - `destination_path` - `{type-string}`: Path to the destination directory
 
-CAUTION: If the destination directory exists already, it will be overwritten.
+{{< notice warning >}}
+If the destination directory exists already, it will be overwritten.
+{{< /notice >}}
 
 ### `core.mvdir`
 Moves a source directory to a destination.
@@ -114,7 +123,11 @@ if this code block was atomic.
 All properly overridden by Luanti to apply mod security restrictions.
 
 * [`io.open(filename, mode)`](https://www.lua.org/manual/5.1/manual.html#pdf-io.open): Open a file for reading or writing.
-  * IMPORTANT: Use `rb` and `wb` rather than `r` and `w` for working with binary files, otherwise your code will break on Windows.
+
+{{< notice info >}}
+Use `rb` and `wb` rather than `r` and `w` for working with binary files, otherwise your code will break on Windows.
+{{< /notice >}}
+
 * [`io.lines([filename])`](https://www.lua.org/manual/5.1/manual.html#pdf-io.lines]): Get an iterator over the lines of a file.
 * [`io.tmpfile()`](https://www.lua.org/manual/5.1/manual.html#pdf-io.tmpfile): Get a handle for a temporary file.
 * [`os.tmpname()`](https://www.lua.org/manual/5.1/manual.html#pdf-os.tmpname): Get a name for a temporary file.
