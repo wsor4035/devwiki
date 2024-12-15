@@ -7,9 +7,7 @@ bookCollapseSection: true
 
 # Engine
 
-[Jump to navigation](#mw-head) [Jump to search](#searchInput)
-
-The engine section and the [Core Engine category](/Category:Core_Engine "Category:Core Engine") is for documentation of the Luanti engine, which consists of a C++ core and a Lua builtin script.
+The engine section is for documentation of the Luanti engine, which consists of a C++ core and a Lua builtin script.
 
 This page contains links to useful information.
 
@@ -20,8 +18,7 @@ Useful Resources
 * [Basic data structures](/Engine/Basic_data_structures "Engine/Basic data structures") - general data structures.
 * [Objects](/Engine/Objects "Engine/Objects") - documentation on active and static objects.
 * Doxygen - For a complete (but often missing comments) reference to code. You'll need to generate this yourself
-* See [all pages on the engine](/Category:Core_Engine "Category:Core Engine").
-* See [Rules and Guidelines](/Category:Rules_and_Guidelines "Category:Rules and Guidelines").
+* See [All rules regarding development](/engine-dev-process/all-rules-regarding-development).
 
 How to help improve documentation
 ---------------------------------
