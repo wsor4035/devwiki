@@ -91,13 +91,15 @@ Requires `((max - min) == 32767) or ((max-min) <= 6553))` for a proper distribut
 ### `SecureRandom`
 System-provided cryptographically secure random: An attacker should not be able to predict the generated sequence of random numbers. Use this when generating cryptographic keys or tokens.
 
-On Windows, the Win32 Crypto API is used to retrieve cryptographically secure random values which is available on every supported version of Windows. On any other platform it is retrieved from `/dev/urandom` which should be available on all Unix-like platforms such as Linux and Android. However it is theoretically still possible that a secure random source is not available, and you should use an assertion to make sure that a SecureRandom object is actually returned (see below).
+{{< notice note >}}
+On Windows, the Win32 Crypto API is used to retrieve cryptographically secure random values which is available on every supported version of Windows. On any other platform it is retrieved from `/dev/urandom` which should be available on all Unix-like platforms such as Linux and Android.
+{{< /notice >}}
 
 #### `SecureRandom()`
-Constructor: Returns a SecureRandom object or `nil` if no secure random source is available.
+Constructor: Returns a SecureRandom object.
 
-{{< notice tip >}}
-Use `assert(SecureRandom(), "no secure random available")` to error if no secure random source is available.
+{{< notice info >}}
+Previously this could return `nil` if it can't retrieve a source of randomness, but Luanti 5.10 will always return an object and throw an error on very obscure platforms where it is not available. From a modder's point of view you can rely on it always being available now.
 {{< /notice >}}
 
 #### `:next_bytes([count])`
@@ -141,7 +143,7 @@ Secure	0.11211887	µs/call
 | `math.random`  | very good (1x)   | up to 4          | global seed; seeded by default | very good      | no guarantees, but usually decent enough | not cryptographically secure | varies by platform                 |
 | `PcgRandom`    | okay (~14x)      | up to 4          | per-instance seed              | very good      | good, decent guarantees                  | not cryptographically secure | always the same                    |
 | `PseudoRandom` | okay (~15x)      | 1 to 2           | per-instance seed              | outright sucks | okay-ish                                 | not cryptographically secure | always the same                    |
-| `SecureRandom` | still okay (30x) | 1 to 2048        | not seedable                   |                |                                          | cryptographically secure     | varies by platform; may be missing |
+| `SecureRandom` | still okay (30x) | 1 to 2048        | not seedable                   |                |                                          | cryptographically secure     | varies by platform                 |
 
 Note: The performance comparison is a bit of an apples-to-oranges comparison for multiple reasons:
 
