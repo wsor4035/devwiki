@@ -38,35 +38,35 @@ These are the available mapgens described in brief:
 
 Here are examples of landscapes generated with the different map generators (using [Minetest Game](https://wiki.luanti.org/Games/Minetest_Game "Games/Minetest Game")):
 
-*   [![](https://wiki.luanti.org/images/thumb/a/af/Mapgen_v5.jpg/400px-Mapgen_v5.jpg)](https://wiki.luanti.org/File:Mapgen_v5.jpg)
+*   [![](/images/mapgen/Mapgen_v5.jpg)](/images/mapgen/Mapgen_v5.jpg)
     
     v5
     
-*   [![](https://wiki.luanti.org/images/thumb/1/15/Mapgen_v6.jpg/400px-Mapgen_v6.jpg)](https://wiki.luanti.org/File:Mapgen_v6.jpg)
+*   [![](/images/mapgen/Mapgen_v6.jpg)](/images/mapgen/Mapgen_v6.jpg)
     
     v6
     
-*   [![](https://wiki.luanti.org/images/thumb/b/b3/Mapgen_v7.jpg/400px-Mapgen_v7.jpg)](https://wiki.luanti.org/File:Mapgen_v7.jpg)
+*   [![](/images/mapgen/Mapgen_v7.jpg)](/images/mapgen/Mapgen_v7.jpg)
     
     v7
     
-*   [![](https://wiki.luanti.org/images/thumb/f/fa/Mapgen_carpathian.jpg/400px-Mapgen_carpathian.jpg)](https://wiki.luanti.org/File:Mapgen_carpathian.jpg)
+*   [![](/images/mapgen/Mapgen_carpathian.jpg)](/images/mapgen/Mapgen_carpathian.jpg)
     
     carpathian
     
-*   [![](https://wiki.luanti.org/images/thumb/1/1b/Mapgen_valleys.jpg/400px-Mapgen_valleys.jpg)](https://wiki.luanti.org/File:Mapgen_valleys.jpg)
+*   [![](/images/mapgen/Mapgen_valleys.jpg)](/images/mapgen/Mapgen_valleys.jpg)
     
     valleys
     
-*   [![](https://wiki.luanti.org/images/thumb/1/1a/Mapgen_flat.jpg/400px-Mapgen_flat.jpg)](https://wiki.luanti.org/File:Mapgen_flat.jpg)
+*   [![](/images/mapgen/Mapgen_flat.jpg)](/images/mapgen/Mapgen_flat.jpg)
     
     flat
     
-*   [![](https://wiki.luanti.org/images/thumb/0/00/Mapgen_fractals_fractal_1.jpg/400px-Mapgen_fractals_fractal_1.jpg)](https://wiki.luanti.org/File:Mapgen_fractals_fractal_1.jpg)
+*   [![](/images/mapgen/Mapgen_fractals_fractal_1.jpg)](/images/mapgen/Mapgen_fractals_fractal_1.jpg)
     
     fractal
     
-*   [![](https://wiki.luanti.org/images/thumb/d/d9/Mapgen_singlenode.jpg/400px-Mapgen_singlenode.jpg)](https://wiki.luanti.org/File:Mapgen_singlenode.jpg)
+*   [![](/images/mapgen/Mapgen_singlenode.jpg)](/images/mapgen/Mapgen_singlenode.jpg)
     
     singlenode
     
