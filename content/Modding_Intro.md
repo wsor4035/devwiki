@@ -37,7 +37,7 @@ Here are some useful tools that most modders use when making Luanti mods:
 Other useful links
 ------------------
 
-* Check out [ContentDB](https://content.minetest.net/) to see mods that have been published by the community.
+* Check out [ContentDB](https://content.luanti.org/) to see mods that have been published by the community.
 * Get mod help from the community:
     * [Forums](https://forum.luanti.org/viewforum.php?f=47)
     * [Discord](https://discord.gg/minetest)

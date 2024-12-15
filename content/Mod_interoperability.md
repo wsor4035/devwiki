@@ -21,7 +21,7 @@ Using `set_physics_override` to change player physical attributes is potentially
 
 There's a mod that solves the problem of interoperability:
 
-* [Player Physics API](https://content.minetest.net/packages/Wuzzy/playerphysics/) \[playerphysics\]: Lightweight API to modify player physics without interference. Setting the attributes directly is banned in this mod, instead mods can add and remove factors to speed, gravity and jump strength. The final physical attribute will be the product of all factors.
+* [Player Physics API](https://content.luanti.org/packages/Wuzzy/playerphysics/) \[playerphysics\]: Lightweight API to modify player physics without interference. Setting the attributes directly is banned in this mod, instead mods can add and remove factors to speed, gravity and jump strength. The final physical attribute will be the product of all factors.
 
 Note the idea of this mod requires that ALL mods use it. If even just one mod (except \[playerphysics\], of course) uses `set_physics_override` directly, interoperability is destroyed.
 
@@ -72,15 +72,15 @@ Mobs are non-player creatures to interact with the world, they may be peaceful o
 
 Note: Only mature mods with their own dedicated API are listed. Note: There are multiple mods with the short name “mobs”, you can only use one of these mods at once.
 
-* [Mobs Redo](https://content.minetest.net/packages/TenPlus1/mobs/) \[mobs\] Fork of Simple Mobs, is backwards-compatible to Simple Mobs
-* [Mobkit](https://content.minetest.net/packages/Termos/mobkit/) \[mobkit\]
-* [Creatura](https://content.minetest.net/packages/ElCeejo/creatura/) \[creatura\] An animal focused API
+* [Mobs Redo](https://content.luanti.org/packages/TenPlus1/mobs/) \[mobs\] Fork of Simple Mobs, is backwards-compatible to Simple Mobs
+* [Mobkit](https://content.luanti.org/packages/Termos/mobkit/) \[mobkit\]
+* [Creatura](https://content.luanti.org/packages/ElCeejo/creatura/) \[creatura\] An animal focused API
 
 See also: [Mobs page on the Community Wiki](http://wiki.minetest.net/Mobs)
 
 #### Protection
 
-“Protection” refers to a way to own a certain area in the world and preventing other players to make any changes in this area.  
+“Protection” refers to a way to own a certain area in the world and preventing other players to make any changes in this area.
 There are mods which add protection nodes, which protect within a range around the placed node, and mods which allow protecting whole chunks.
 
 Mods should use `core.is_protected` when testing whether a player owns a specific position. Protection mods simply override this function.
@@ -89,12 +89,12 @@ This section needs to be finished. Notes for general interoperability requiremen
 
 #### Other gameplay concepts
 
-* [Achievements](https://content.minetest.net/packages/rubenwardy/awards/) \[awards\]: API for adding your own achievements
-* [Treasurer](https://content.minetest.net/packages/Wuzzy/treasurer/) \[treasurer\]: API for randomly selecting a treasure out of a pool of previously registered treasures
+* [Achievements](https://content.luanti.org/packages/rubenwardy/awards/) \[awards\]: API for adding your own achievements
+* [Treasurer](https://content.luanti.org/packages/Wuzzy/treasurer/) \[treasurer\]: API for randomly selecting a treasure out of a pool of previously registered treasures
 
 #### Testing for pipeworks fake players
 
-[Pipeworks](https://content.minetest.net/packages/VanessaE/pipeworks/) \[pipeworks\] provides automation and creates fake players for that purpose. If you need to, these can be distinguished from real players by the field `is_fake_player` in their definition.
+[Pipeworks](https://content.luanti.org/packages/VanessaE/pipeworks/) \[pipeworks\] provides automation and creates fake players for that purpose. If you need to, these can be distinguished from real players by the field `is_fake_player` in their definition.
 
 ### Nodes
 
@@ -114,7 +114,7 @@ Many mods offer convenience functions to add new new nodes which follow a simple
     * [Display API](https://github.com/pyrollo/display_api) \[display\_api\]: Nodes with a dynamic display, e.g. digital clocks. See [Display Modpack](https://forum.luanti.org/viewtopic.php?f=11&t=13563)
     * [Font API](https://github.com/pyrollo/font_api) \[font\_api\]: Make textures from text and fonts. See [Display Modpack](https://forum.luanti.org/viewtopic.php?f=11&t=13563)
     * [Signs API](https://github.com/pyrollo/signs_api) \[signs\_api\]: Combining Font API and Display API, easy creation of any kind of signs. See [Display Modpack](https://forum.luanti.org/viewtopic.php?f=11&t=13563)
-* [Minetest Game](https://content.minetest.net/packages/Minetest/minetest_game/)
+* [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/)
     * \[default\]: Fences
     * \[beds\]: Beds
     * \[doors\]: Doors and trapdoors
@@ -128,7 +128,7 @@ Many mods offer convenience functions to add new new nodes which follow a simple
 
 These mods extend the possibilities of node definitions:
 
-* [Walkover](https://content.minetest.net/packages/lordfingle/walkover/) \[walkover\]: Adds callback function which is triggered when a player walks over the node
+* [Walkover](https://content.luanti.org/packages/lordfingle/walkover/) \[walkover\]: Adds callback function which is triggered when a player walks over the node
 
 #### Causing explosions
 
@@ -185,7 +185,7 @@ end
 
 If you create a new player attribute/stat (like health) and you want to expose it to the interface somehow, you can use:
 
-* [HUD Bars](https://content.minetest.net/packages/Wuzzy/hudbars/) \[hudbars\]: Add your own indicators like the “hearts” for health. Displayed in either a “progress bar”-like fashion, the classic statbars like in vanilla Luanti or a variant of the classic statbars with a simple background
+* [HUD Bars](https://content.luanti.org/packages/Wuzzy/hudbars/) \[hudbars\]: Add your own indicators like the “hearts” for health. Displayed in either a “progress bar”-like fashion, the classic statbars like in vanilla Luanti or a variant of the classic statbars with a simple background
 
 #### Messages
 

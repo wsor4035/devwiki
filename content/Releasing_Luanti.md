@@ -261,4 +261,4 @@ People who have access: rubenwardy + ???
 
 Minetest Game is no longer connected to our release cycle, so we can ignore it.
 
-The [Development Test](https://content.minetest.net/packages/Minetest/devtest/) package needs to be released **manually**. Make a new release, upload a ZIP file with Development Test as it looks like the Luanti source tree in the stable branch, and set the minimum and maximum Luanti versions to the exact Luanti version it is intended for.
+The [Development Test](https://content.luanti.org/packages/Minetest/devtest/) package needs to be released **manually**. Make a new release, upload a ZIP file with Development Test as it looks like the Luanti source tree in the stable branch, and set the minimum and maximum Luanti versions to the exact Luanti version it is intended for.
