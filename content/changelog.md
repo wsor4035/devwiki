@@ -15,7 +15,7 @@ Released on 10 November 2024.
 ### Deprecations and compatibility notes
 
 * **Minetest is now called Luanti.**
-    * The game executable name has changed, thus custom links and scripts might need maintenance.
+    * The executable name has changed, thus custom links and scripts might need maintenance.
     * Any `minetest.conf` files remain compatible (naming yet not changed).
     * For Unix: `$HOME/.minetest/` remains used for system-wide installations (naming yet not changed).
     * Mods may use the `core` table instead of the equivalent `minetest`. (see lua\_api.md)
