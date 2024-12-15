@@ -54,11 +54,17 @@ time = core.get_us_time()
 #### Returns
 - `time` - `{type-number}`: System-dependent timestamp in microseconds since an arbitrary starting point (µs)
 
-TIP: Divide by `1e6` to convert `time` into seconds.
+{{< notice tip >}}
+Divide by `1e6` to convert `time` into seconds.
+{{< /notice >}}
 
-CAUTION: The returned `time` is not portable and not relative to any specific point in time across restarts - keep it only in memory for use while the game is running.
+{{< notice info >}}
+The returned `time` is not portable and not relative to any specific point in time across restarts - keep it only in memory for use while the game is running.
+{{< notice info >}}
 
-TIP: You can use the difference between ``core.get_us_time`` and the returned times to check whether a real-world timespan has passed, which is useful for rate limiting. For in-game timers, you might prefer adding up `dtime` or (if second precision is enough) using gametime.
+{{< notice tip >}}
+You can use the difference between ``core.get_us_time`` and the returned times to check whether a real-world timespan has passed, which is useful for rate limiting. For in-game timers, you might prefer adding up `dtime` or (if second precision is enough) using gametime.
+{{< /notice >}}
 
 #### Example
 
@@ -69,7 +75,9 @@ local start = core.get_us_time()
 repeat until core.get_us_time() - start > 1e3 -- Wait for 1000 µs to pass
 ```
 
-WARNING: This blocks the server thread, possibly delaying the sending of packets that are sent each step and creating "lag". Use this only if absolutely necessary and only for very small timespans.
+{{< notice warning >}}
+This blocks the server thread, possibly delaying the sending of packets that are sent each step and creating "lag". Use this only if absolutely necessary and only for very small timespans.
+{{< /notice >}}
 
 ### `core.get_gametime`
 
@@ -98,10 +106,13 @@ core.after(0, function()
 	end
 end)
 ```
+{{< notice info >}}
+This naive implementation might be one server step ahead or behind `core.get_gametime`. Note that the initial gametime is rounded. Do not persist the values for this reason.
+{{< /notice >}}
 
-IMPORTANT: This naive implementation might be one server step ahead or behind `core.get_gametime`. Note that the initial gametime is rounded. Do not persist the values for this reason.
-
-TIP: Use this implementation only for measuring in-game timespans.
+{{< notice tip >}}
+Use this implementation only for measuring in-game timespans.
+{{< /notice >}}
 
 ### `core.register_globalstep`
 
@@ -118,9 +129,13 @@ end)
 #### Params
 - `dtime` - `{type-number}`: Delta (elapsed) time since last step in seconds
 
-TIP: Use globalsteps to poll for an event for which there are no callbacks, such as player controls (`player:get_player_control()`).
+{{< notice tip >}}
+Use globalsteps to poll for an event for which there are no callbacks, such as player controls (`player:get_player_control()`).
+{{< /notice >}}
 
-CAUTION: As globalsteps run every server step, they are highly performance-critical and must be well optimized. If globalsteps take longer than the server step to complete, the server thread is blocked and the server becomes "laggy".
+{{< notice info >}}
+As globalsteps run every server step, they are highly performance-critical and must be well optimized. If globalsteps take longer than the server step to complete, the server thread is blocked and the server becomes "laggy".
+{{< /notice >}}
 
 #### Examples
 
@@ -149,9 +164,13 @@ This will call `func` after at least `timer` seconds have passed. Note that ther
 
 Will call `func(...)` after at least `time` seconds have passed.
 
-TIP: Use `core.after(0, func)` to immediately do load-time stuff that is only possible at run-time, or to schedule something for the next server step.
+{{< notice tip >}}
+Use `core.after(0, func)` to immediately do load-time stuff that is only possible at run-time, or to schedule something for the next server step.
+{{< /notice >}}
 
-CAUTION: Scheduled calls that run in the same server step are executed in no particular order.
+{{< notice info >}}
+Scheduled calls that run in the same server step are executed in no particular order.
+{{< /notice >}}
 
 The following snippet emulates a globalstep, sending `Hello World!` to chat every server step:
 
@@ -179,17 +198,23 @@ end
 #### Returns
 - `job` - job object: Simple object providing a `job:cancel()` method to cancel a scheduled "job".
 
-CAUTION: `...` may be arbitrarily cut off at `nil` values, as Luanti uses a simple list to store the arguments. Don't include `nil`s in the arguments if possible or you may lose arguments.
+{{< notice info >}}
+`...` may be arbitrarily cut off at `nil` values, as Luanti uses a simple list to store the arguments. Don't include `nil`s in the arguments if possible or you may lose arguments.
+{{< /notice >}}
 
-TIP: If you have to call a function with ``nil``s in it's argument list, use a closure for reliable behavior:
+{{< notice tip >}}
+If you have to call a function with ``nil``s in it's argument list, use a closure for reliable behavior:
 
 ```lua
 core.after(time, function()
 	func(nil, arg, arg2, nil, nil)
 end)
 ```
+{{< /notice >}}
 
-NOTE: All scheduled callbacks are stored in a list until they are called. This list is traversed in linear time if *any* of the callbacks are executed. Excessive use of `core.after` may result in slow execution time.
+{{< notice note >}}
+All scheduled callbacks are stored in a list until they are called. This list is traversed in linear time if *any* of the callbacks are executed. Excessive use of `core.after` may result in slow execution time.
+{{< /notice >}}
 
 ## Entities
 

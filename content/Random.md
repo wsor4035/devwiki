@@ -8,7 +8,9 @@ Not restricted by mod security, these functions are available to both SSMs and C
 ### [`math.randomseed`](https://www.lua.org/manual/5.1/manual.html#pdf-math.randomseed)
 Seed the random. Luanti already does this for you using the system time.
 
-IMPORTANT: Do not seed the random to turn it into a deterministic random source as other mods may expect it to be "non-deterministic".
+{{< notice info >}}
+Do not seed the random to turn it into a deterministic random source as other mods may expect it to be "non-deterministic".
+{{< /notice >}}
 
 Conversely, do not rely on the random to have any particular seed either; other mods & the engine may have seeded it (using the system time) to be "non-deterministic".
 
@@ -29,13 +31,21 @@ math.randomseed(reseed)
 ### [`math.random`](https://www.lua.org/manual/5.1/manual.html#pdf-math.random)
 Get a random number. Very versatile; allows getting floats between `0` and `1` or integers in a range.
 
-NOTE: The random numbers between `0` and `1` do not provide a full 52-bit mantissa full of entropy; they usually have around 32 bits of entropy.
+{{< notice note >}}
+The random numbers between `0` and `1` do not provide a full 52-bit mantissa full of entropy; they usually have around 32 bits of entropy.
+{{< /notice >}}
 
-WARNING: When using this to obtain integers, make sure that both the upper & lower bound as well as their difference are within the C `int` range - otherwise you may get overflows & errors.
+{{< notice warning >}}
+When using this to obtain integers, make sure that both the upper & lower bound as well as their difference are within the C `int` range - otherwise you may get overflows & errors.
+{{< /notice >}}
 
-WARNING: This is not portable; different builds on different platforms will produce different random numbers. PUC Lua 5.1 builds use a system-provided random generator. LuaJIT builds use LuaJIT's PRNG implementation. Do not use `math.random` in mapgen, for example.
+{{< notice warning >}}
+This is not portable; different builds on different platforms will produce different random numbers. PUC Lua 5.1 builds use a system-provided random generator. LuaJIT builds use LuaJIT's PRNG implementation. Do not use `math.random` in mapgen, for example.
+{{< /notice >}}
 
-TIP: Use `math.random` as your go-to versatile "non-deterministic" random source.
+{{< notice tip >}}
+Use `math.random` as your go-to versatile "non-deterministic" random source.
+{{< /notice >}}
 
 ## Random Number Generators
 
@@ -49,7 +59,9 @@ Constructs a `PcgRandom` instance with the given seed, which should be an intege
 If `min` and `max` are both omitted, they default to `-2^31` (`-2147483648`) and `2^31 - 1` (`2147483647`) respectively.
 
 #### `:rand_normal_dist(min, max, [num_trials])`
-WARNING: No successful use of this function is documented. Consider implementing your own normal distribution instead.
+{{< notice warning >}}
+No successful use of this function is documented. Consider implementing your own normal distribution instead.
+{{< /notice >}}
 
 `min` and `max` are required; they need to be integers.
 
@@ -72,7 +84,9 @@ Constructor: Takes a `seed` and returns a `PseudoRandom` object.
 #### `:next([min, max])`
 If `min` and `max` are both omitted, they default to `0` and `2^16-1` (`32767`) respectively.
 
-WARNING: Requires `((max - min) == 32767) or ((max-min) <= 6553))` for a proper distribution.
+{{< notice warning >}}
+Requires `((max - min) == 32767) or ((max-min) <= 6553))` for a proper distribution.
+{{< /notice >}}
 
 ### `SecureRandom`
 System-provided cryptographically secure random: An attacker should not be able to predict the generated sequence of random numbers. Use this when generating cryptographic keys or tokens.
@@ -82,7 +96,9 @@ On Windows, the Win32 Crypto API is used to retrieve cryptographically secure ra
 #### `SecureRandom()`
 Constructor: Returns a SecureRandom object or `nil` if no secure random source is available.
 
-TIP: Use `assert(SecureRandom(), "no secure random available")` to error if no secure random source is available.
+{{< notice tip >}}
+Use `assert(SecureRandom(), "no secure random available")` to error if no secure random source is available.
+{{< /notice >}}
 
 #### `:next_bytes([count])`
 Only argument is `count`, an optional integer defaulting to `1` and limited to `2048` specifying how many bytes are to be returned. Returned as a Lua bytestring of length `count`

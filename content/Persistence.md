@@ -22,9 +22,13 @@ The following types are supported by JSON:
 * strings
 * tables (objects/arrays)
 
-NOTE: Negative and positive infinity are represented by numbers which exceed the double number range by a lot (plus/minus `1e9999`).
+{{< notice note >}}
+Negative and positive infinity are represented by numbers which exceed the double number range by a lot (plus/minus `1e9999`).
+{{< /notice >}}
 
-WARNING: The empty table `{}` (ambiguous: might be either `{}` or `[]`) and `nan` aren't supported by JSON and will be turned into `null`.
+{{< notice warning >}}
+The empty table `{}` (ambiguous: might be either `{}` or `[]`) and `nan` aren't supported by JSON and will be turned into `null`.
+{{< /notice >}}
 
 Tables may either:
 1. Contain only positive integer keys (represented as array) or
@@ -39,24 +43,33 @@ Else:: Returns `nil` and one of the following errors if it fails:
 * `Lua key to convert to JSON is not a string or number`
 * `Can't mix array and object values in JSON`
 
-WARNING: Hash tables containing only positive integer keys - a table of `core.hash_node_position` hashes for instance -
+{{< notice warning >}}
+Hash tables containing only positive integer keys - a table of `core.hash_node_position` hashes for instance -
 will be turned into *an array with holes*, that is, all `nil` values from `1` to the maximum index will be filled with `null`,
 which means terrible performance and possibly very large output generated from very small input.
 *Do not allow direct access to `core.write_json`* as it can be trivially used to DoS your server.
+{{< /notice >}}
 
-TIP: Sparse hash maps, should always be converted to objects, using only string keys, for JSON. You might do this just for serialization.
+{{< notice tip >}}
+Sparse hash maps, should always be converted to objects, using only string keys, for JSON. You might do this just for serialization.
+{{< /notice >}}
 
-WARNING: The JSON serializer is furthermore limited by its recursion depth: Only a recursion depth up to *16* is allowed. Very nested data structures can't be (de)serialized. Circular references will cause the JSON serializer to recurse until the maximum recursion depth is exceeded.
+{{< notice warning >}}
+The JSON serializer is furthermore limited by its recursion depth: Only a recursion depth up to *16* is allowed. Very nested data structures can't be (de)serialized. Circular references will cause the JSON serializer to recurse until the maximum recursion depth is exceeded.
+{{< /notice >}}
 
-TIP: Use the `json = assert(core.write_json(data))` idiom to not silently ignore errors when serializing.
+{{< notice tip >}}
+Use the `json = assert(core.write_json(data))` idiom to not silently ignore errors when serializing.
+{{< /notice >}}
 
 #### `core.parse_json(json, [nullvalue])`
 
 If `json` is valid JSON:: Returns the Lua value represented by the JSON string `json`, with `null` values deserialized to `nullvalue` (which defaults to `nil`).
 Else:: Returns `nil` and logs an error.
 
-TIP: If you must use JSON (to interact with a web interface, for instance), consider using your JSON library of choice;
-Lua-only implementations such as [`lunajson`](https://github.com/grafi-tt/lunajson/) are available.
+{{< notice tip >}}
+If you must use JSON (to interact with a web interface, for instance), consider using your JSON library of choice; Lua-only implementations such as [`lunajson`](https://github.com/grafi-tt/lunajson/) are available.
+{{< /notice >}}
 
 ### Lua
 
@@ -96,9 +109,13 @@ If `safe` is truthy, serialized functions will be deserialized to `nil`.
 This will trigger an error if functions are used as table keys (`{[function()end] = true}`).
 Otherwise, serialized functions will get an empty function environment set - only being able to operate on literals and arguments.
 
-TIP: Use of the `data = assert(core.deserialize(lua, safe))` idiom is recommended.
+{{< notice tip >}}
+Use of the `data = assert(core.deserialize(lua, safe))` idiom is recommended.
+{{< /notice >}}
 
-WARNING: [`core.deserialize` errors on large objects on LuaJIT](https://github.com/minetest/minetest/issues/7574)
+{{< notice warning >}}
+[`core.deserialize` errors on large objects on LuaJIT](https://github.com/minetest/minetest/issues/7574)
+{{< /notice >}}
 
 ## Engine-provided default persistence
 
@@ -140,7 +157,9 @@ If your data is rather larger or gets updated frequently, a full serialization m
 Performance can be improved at the expense of granularity by saving periodically and choosing "long" periods.
 A transaction log improves performance by only storing changes, at the expense of disk space.
 
-TIP: A mix of both approaches can provide satisfying results, logging only changes and rewriting the logfile periodically to keep disk space waste acceptable.
+{{< notice tip >}}
+A mix of both approaches can provide satisfying results, logging only changes and rewriting the logfile periodically to keep disk space waste acceptable.
+{{< /notice >}}
 
 For special cases like logging, an append-only file may be the ideal solution if using the global `core.log` is not desirable.
 

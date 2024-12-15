@@ -4,7 +4,9 @@ However it has more recently been given metatable methods for convenience.
 Unless otherwise noted, the `vector` type always refers to the metatable-enhanced variety.
 Do note that functions here will accept an old-style (non-metatable) `vector`, but you cannot perform metatable operations with said `vector`.
 
-TIP: The respective source code is located [here](https://github.com/minetest/minetest/blob/master/builtin/common/vector.lua).
+{{< notice tip >}}
+The respective source code is located [here](https://github.com/minetest/minetest/blob/master/builtin/common/vector.lua).
+{{< /notice >}}
 
 ## `vector` Namespace
 
@@ -244,14 +246,18 @@ Returns a new `vector` which is the inverse of `v`.
 
 Returns a new `vector` where each component of `a` is added to each respective component of `b`.
 
-NOTE: Unlike `vector.add()` this does not support adding `number` values.
+{{< notice note >}}
+Unlike `vector.add()` this does not support adding `number` values.
+{{< /notice >}}
 
 ### `metatable.__sub(a, b)`
 * `a`, `b`: `vector`
 
 Returns a new `vector` where each component of `a` is subtracted from each respective component of `b`.
 
-NOTE: Unlike `vector.subtract()` this does not support subtracting `number` values.
+{{< notice note >}}
+Unlike `vector.subtract()` this does not support subtracting `number` values.
+{{< /notice >}}
 
 ### `metatable.__mul(a, b)`
 * `a`: `vector` or `number`
@@ -259,7 +265,9 @@ NOTE: Unlike `vector.subtract()` this does not support subtracting `number` valu
 
 Returns a new `vector` where each component of `a` is multiplied by each respective component of `b`. Because of the way metatables work, either argument can be a `number` or a `vector` without any practical difference.
 
-CAUTION: This function assumes that one just one argument is a number, and will probably return confusing errors about "accessing a `nil` value" if two `vector` arguments are passed to it.
+{{< notice info >}}
+This function assumes that one just one argument is a number, and will probably return confusing errors about "accessing a `nil` value" if two `vector` arguments are passed to it.
+{{< /notice >}}
 
 ### `metatable.__div(a, b)`
 * `a`: `vector`
@@ -267,4 +275,6 @@ CAUTION: This function assumes that one just one argument is a number, and will 
 
 Returns a new `vector` where each component of `a` is divided by `b`.
 
-CAUTION: This function assumes `b` is a number, and will probably return confusing errors about "accessing a `nil` value" if it is not.
+{{< notice info >}}
+This function assumes `b` is a number, and will probably return confusing errors about "accessing a `nil` value" if it is not.
+{{< /notice >}}

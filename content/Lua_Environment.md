@@ -38,9 +38,13 @@ set_global()
 
 Warnings are identified by their location as returned by `debug.getinfo` (`short_src` and `currentline`) and won't be logged twice.
 
-WARNING: Accessing undeclared global variables will be an order of magnitude slower than accessing declared globals due to the executed strictness checking code.
+{{< notice warning >}}
+Accessing undeclared global variables will be an order of magnitude slower than accessing declared globals due to the executed strictness checking code.
+{{< /notice >}}
 
-TIP: These warnings are only triggered at run time as the global variable access or assignment occurs. It is recommended to use a linter like [`luacheck`](https://github.com/mpeterv/luacheck) to detect mistaken global variable usage statically at the time of development.
+{{< notice tip >}}
+These warnings are only triggered at run time as the global variable access or assignment occurs. It is recommended to use a linter like [`luacheck`](https://github.com/mpeterv/luacheck) to detect mistaken global variable usage statically at the time of development.
+{{< /notice >}}
 
 ### Checking for global existence
 
@@ -51,10 +55,14 @@ As Luanti implements global strictness over a metatable, `rawget(_G, name)` can 
 #### `core.global_exists(name)`
 Returns `true` if a global variable with the given `name` exists (is not `nil`), `false` otherwise. An error is thrown if `name` is not a string.
 
-NOTE: This wraps `rawget(_G, name)` in the end but might be considered more readable as it makes the intention clear.
+{{< notice note >}}
+This wraps `rawget(_G, name)` in the end but might be considered more readable as it makes the intention clear.
+{{< /notice >}}
 
 ## Standard Library Extensions
-NOTE: It is considered bad practice to extend the standard library yourself, as this may collide with other mods doing the same as well as future engine changes including Lua version upgrades. Put your extensions into distinct API tables instead of modifying Lua's builtin libraries.
+{{< notice note >}}
+It is considered bad practice to extend the standard library yourself, as this may collide with other mods doing the same as well as future engine changes including Lua version upgrades. Put your extensions into distinct API tables instead of modifying Lua's builtin libraries.
+{{< /notice >}}
 
 ### `math`
 
@@ -114,7 +122,9 @@ for i = 0, 255 do
 end
 ```
 
-WARNING: Platform-independence is not guaranteed: "The definitions of letter, space, and other character groups depend on the current locale." - [Lua 5.1 Reference Manual, section 5.4.1](https://www.lua.org/manual/5.1/manual.html#5.4.1)
+{{< notice warning >}}
+Platform-independence is not guaranteed: "The definitions of letter, space, and other character groups depend on the current locale." - [Lua 5.1 Reference Manual, section 5.4.1](https://www.lua.org/manual/5.1/manual.html#5.4.1)
+{{< /notice >}}
 
 #### `string.split(str, [delim], [include_empty], [max_splits], [sep_is_pattern])`
 * `str`: The string to split.

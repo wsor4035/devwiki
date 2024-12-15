@@ -9,7 +9,9 @@ This page lists the properties an object may have.
 
 Sets the max HP of a player.
 
-NOTE: Decreasing the `hp_max` value to below the current hp will trigger a damage flash.
+{{< notice note >}}
+Decreasing the `hp_max` value to below the current hp will trigger a damage flash.
+{{< /notice >}}
 
 ### `breath_max`
 * internal type: `u16`
@@ -44,9 +46,13 @@ Controls whether the object collides with nodes that are `walkable`.
 
 Controls whether the object collides with other objects.
 
-CAUTION: `physical` must be set to `true` for this to take effect!
+{{< notice info >}}
+`physical` must be set to `true` for this to take effect!
+{{< /notice >}}
 
-NOTE: This works with players as well but you may experience [strange bugs](https://github.com/minetest/minetest/issues/11783).
+{{< notice note >}}
+This works with players as well but you may experience [strange bugs](https://github.com/minetest/minetest/issues/11783).
+{{< /notice >}}
 
 ### `collisionbox`
 //This could maybe be linked somewhere else.
@@ -61,7 +67,9 @@ The collision box of an object. Wanted value is `{xmin, ymin, zmin, xmax, ymax, 
 
 The selection box of an object, if not set, uses `collisionbox`. Wanted value is `{xmin, ymin, zmin, xmax, ymax, zmax}` (in nodes from the center of the object/ object position).
 
-NOTE: This uses the same format as a nodebox cuboid.
+{{< notice note >}}
+This uses the same format as a nodebox cuboid.
+{{< /notice >}}
 
 ### `pointable`
 * field type: `bool`
@@ -84,7 +92,9 @@ Possible values:
 
 Sets what the object will look like.
 
-TIP: The `"wielditem"` value supports item hardware colorization
+{{< notice tip >}}
+The `"wielditem"` value supports item hardware colorization
+{{< /notice >}}
 
 ### `mesh`
 * field type: `string`
@@ -115,7 +125,9 @@ Wanted value is `{"texture.png", "texture.png", ...}`. The number of textures de
 * internal type: `ColorSpec list`
 * default value: `{{r = 255, g = 255, b = 255, a = 255}}`
 
-CAUTION: This feature is not functional.
+{{< notice info >}}
+This feature is not functional.
+{{< /notice >}}
 
 ### `spritediv`
 * field type: `2d_vector`
@@ -153,14 +165,18 @@ This sets the maximum height (in nodes) that an object can travel up if it colli
 
 How fast the object automatically rotates along the `y` axis in radians/second.
 
-NOTE: Does not (yet) work for attached entities
+{{< notice note >}}
+Does not (yet) work for attached entities
+{{< /notice >}}
 
 ### `automatic_face_movement_dir`
 * field type: `int` or `false`
 * unit: `degrees`
 * default value: `0`
 
-TIP: This property can be set to `false` to disable it.
+{{< notice tip >}}
+This property can be set to `false` to disable it.
+{{< /notice >}}
 
 Make the object automatically face the direction it is moving in, the value is the offset in degrees.
 
@@ -188,14 +204,18 @@ Text displayed above an object, typically used for names. If the object is a pla
 
 The color that the nametag text will be.
 
-TIP: This property can be set to `false` to disable it.
+{{< notice tip >}}
+This property can be set to `false` to disable it.
+{{< /notice >}}
 
 ### `nametag_bgcolor`
 * field type: `ColorSpec` or `false`
 
 The color that the nametag's background will be.
 
-TIP: This property can be set to `false` to not show a background.
+{{< notice tip >}}
+This property can be set to `false` to not show a background.
+{{< /notice >}}
 
 ### `automatic_face_movement_max_rotation_per_sec`
 * field type: `f32`
@@ -225,7 +245,9 @@ Only when using "wielditem" visual.
 
 Whether buggy semitransparency is enabled for the texture.
 
-WARNING: Faces, entities and other semitransparent world elements might not be rendered in the right order for semitransparency to work.
+{{< notice warning >}}
+Faces, entities and other semitransparent world elements might not be rendered in the right order for semitransparency to work.
+{{< /notice >}}
 
 ### `shaded`
 * field type: `bool`
@@ -249,13 +271,21 @@ A texture modifier that will be appended to the object's current textures for th
 
 The way these properties are laid out is in a table.
 
-NOTE: Extraneous properties will be ignored, but might be interpreted incorrectly by future versions of the engine, which is why it is recommended to prefix them with an underscore.
+{{< notice note >}}
+Extraneous properties will be ignored, but might be interpreted incorrectly by future versions of the engine, which is why it is recommended to prefix them with an underscore.
+{{< /notice >}}
 
-NOTE: This uses regular indexing so metatables work as expected.
+{{< notice note >}}
+This uses regular indexing so metatables work as expected.
+{{< /notice >}}
 
-WARNING: For all string properties, the maximum number of characters is the `u16` max value.
+{{< notice warning >}}
+For all string properties, the maximum number of characters is the `u16` max value.
+{{< /notice >}}
 
-NOTE: Number properties will be clamped to their value ranges.
+{{< notice note >}}
+Number properties will be clamped to their value ranges.
+{{< /notice >}}
 
 ## Example
 

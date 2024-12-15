@@ -41,7 +41,9 @@ The client can immediately show the FormSpec; the second approach requires the c
 
 The obvious disadvantage is that FormSpecs can't be dynamically generated in response to user interaction; formspecs must be mostly static. To alleviate this, formspecs provide context-dependant placeholders like the `context` or `current_player` inventory locations (see FormSpec).
 
-IMPORTANT: The `context` inventory location can only be used in FormSpecs using the special `formspec` NodeMetaData field. FormSpecs shown using `core.show_formspec` must use `nodemeta:<X>,<Y>,<Z>` to reference inventories instead.
+{{< notice info >}}
+The `context` inventory location can only be used in FormSpecs using the special `formspec` NodeMetaData field. FormSpecs shown using `core.show_formspec` must use `nodemeta:<X>,<Y>,<Z>` to reference inventories instead.
+{{< /notice >}}
 
 Another disadvantage is that plenty of redundant metadata - often a constant FormSpec - has to be stored with every node. This metadata also has to be sent to clients. Luanti's mapblock compression should be able to compress duplicate substrings - FormSpecs in this case - reasonably well though.
 
@@ -58,15 +60,21 @@ NodeMetaData is by default fully sent to clients; the special `formspec` and `in
 
 All other fields do not need to be sent to clients unless you want to explicitly support local mapsaving.
 
-TIP: Mark all other fields as private to reduce traffic.
+{{< notice tip >}}
+Mark all other fields as private to reduce traffic.
+{{< /notice >}}
 
 If you don't want clients to be able to see private NodeMetaData fields - usually to prevent cheating - you must mark them as private.
 
-NOTE: The private marking is tied to a key-value pair.
+{{< notice note >}}
+The private marking is tied to a key-value pair.
 - If the key-value pair is deleted, the private marking is deleted as well.
 - If the key-value pair is recreated, the private marking must be recreated as well.
+{{< /notice >}}
 
-NOTE: `to_table` and `from_table` do not keep track of which fields were marked as private.
+{{< notice note >}}
+`to_table` and `from_table` do not keep track of which fields were marked as private.
+{{< /notice >}}
 
 **Arguments:**
 - `keys` - `{type-string}` or list of `{type-string}`: Either:
@@ -84,7 +92,9 @@ Extends MetaData `:to_table()` by additionally adding an `inventory` field for
 a table `{[listname] = list}` where `list` is a list of ItemStrings
 (`""` for empty) with the same length as the size of the inventory list.
 
-TIP: Use `table = assert(meta:to_table())` to error if the operation failed.
+{{< notice tip >}}
+Use `table = assert(meta:to_table())` to error if the operation failed.
+{{< /notice >}}
 
 ### `:from_table(table)`
 Extends MetaData `:from_table(table)` to add support for the `inventory` field.
