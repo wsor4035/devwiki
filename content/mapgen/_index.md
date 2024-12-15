@@ -3,6 +3,7 @@ title: Map generator
 aliases:
 - "/Map_generator"
 - "/Map-Database"
+bookCollapseSection: true
 ---
 
 # Map generator

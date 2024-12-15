@@ -1,3 +1,4 @@
 ---
 title: Classes
+bookCollapseSection: true
 ---

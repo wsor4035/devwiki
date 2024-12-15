@@ -2,6 +2,7 @@
 title: Translation
 aliases:
 - /Translation
+bookCollapseSection: true
 ---
 
 # Translation
