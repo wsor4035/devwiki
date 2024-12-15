@@ -1,7 +1,7 @@
 baseURL = 'https://newdev.luanti.org/'
 languageCode = 'en-us'
 title = 'Developer Wiki'
-theme = 'hugo-book'
+theme = ['hugo-notice', 'hugo-book']
 enableGitInfo = true
 DisablePathToLower = true
 
