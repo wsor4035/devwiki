@@ -1,7 +1,9 @@
 # ItemStackMetaData
 ItemStackMetaData is a subclass of [[MetaData]] obtained via `stack:get_meta()` allowing for persistent storage of key-value pairs tied to ItemStacks.
 
-WARNING: ItemStack metadata is serialized with ItemStacks, increasing the ItemString length. Inventories have to store multiple ItemStrings, all of which an attacker will try to get to maximum length. Always limit the size of your ItemStackMetaData to keep inventories sendable.
+{{< notice warning >}}
+ItemStack metadata is serialized with ItemStacks, increasing the ItemString length. Inventories have to store multiple ItemStrings, all of which an attacker will try to get to maximum length. Always limit the size of your ItemStackMetaData to keep inventories sendable.
+{{< /notice >}}
 
 ## Special Fields
 
@@ -31,7 +33,9 @@ Alignment of the displayed item count value is encoded as `x_align + 4 * y_align
 | `2`   | Centered/Middle            | Centered/Middle          |
 | `3`   | Right                      | Bottom/Down              |
 
-TIP: Magic numbers make code unreadable. Add an explanatory comment when setting alignment:
+{{< notice tip >}}
+Magic numbers make code unreadable. Add an explanatory comment when setting alignment:
+{{< /notice >}}
 
 ```lua
 local meta = stack:get_meta()
@@ -80,4 +84,6 @@ Allows overriding the tool capabilities specified in the item definition.
   - `nil`: Clears the tool capability override, or
   - Tool capabilities table: Overrides the defined tool capabilities (see ItemDefinition for the table format)
 
-NOTE: The corresponding `:get_tool_capabilities` is not a method of ItemStackMetaData but rather of the "parent" ItemStack.
+{{< notice note >}}
+The corresponding `:get_tool_capabilities` is not a method of ItemStackMetaData but rather of the "parent" ItemStack.
+{{< /notice >}}

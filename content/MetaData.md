@@ -12,11 +12,17 @@ Subclasses tie the key-value store to various objects recognized by Luanti:
 ## Methods
 
 ### Getters
-NOTE: No type information is stored for values; values will be coerced to and from string as needed. Mods need to know which type they expect in order to call the appropriate getters & setters. Do not rely on coercion to work one way or another; never mix different types.
+{{< notice note >}}
+No type information is stored for values; values will be coerced to and from string as needed. Mods need to know which type they expect in order to call the appropriate getters & setters. Do not rely on coercion to work one way or another; never mix different types.
+{{< /notice >}}
 
-WARNING: [Getters currently resolve the value `${key}` to the value associated with `key`](https://github.com/minetest/minetest/issues/12577).
+{{< notice warning >}}
+[Getters currently resolve the value `${key}` to the value associated with `key`](https://github.com/minetest/minetest/issues/12577).
+{{< /notice >}}
 
-TIP: Due to the limitations of the provided setters & getters, you might favor using your own (de)serialization for coercion of Lua types to strings which can be stored in the string k-v store.
+{{< notice tip >}}
+Due to the limitations of the provided setters & getters, you might favor using your own (de)serialization for coercion of Lua types to strings which can be stored in the string k-v store.
+{{< /notice >}}
 
 * `core.write_json` & `core.parse_json` for Lua tables which are representable as JSON;
 * `core.serialize` & `core.deserialize` for arbitrary Lua tables (consisting of tables & primitive types);
@@ -101,13 +107,17 @@ Setters have no return values; they all take exactly two arguments: Key & value.
 **Arguments:**
 - `value` - `{type-number}`: The integer value to coerce to a string & associate with `key`
 
-WARNING: Integer refers to a C(++) `int` as internally used by the implementation - usually 32 bits wide - meaning it is unable to represent as large integer numbers as the Lua number type. Be careful when storing integers with large absolute values; they may overflow. Keep `value` between `-2^31` and `2^31 - 1`, both inclusive.
+{{< notice warning >}}
+Integer refers to a C(++) `int` as internally used by the implementation - usually 32 bits wide - meaning it is unable to represent as large integer numbers as the Lua number type. Be careful when storing integers with large absolute values; they may overflow. Keep `value` between `-2^31` and `2^31 - 1`, both inclusive.
+{{< /notice >}}
 
 #### `:set_float(key, value)`
 **Arguments:**
 - `value` - `{type-number}`: The floating-point value to coerce to a string & associate with `key`
 
-WARNING: The implementation internally uses the C(++) `float` type - usually 32 bits wide - whereas Lua guarantees 64-bit "double-precision" floating point numbers. This may lead to a precision loss. Large numbers in particular may be hardly representable.
+{{< notice warning >}}
+The implementation internally uses the C(++) `float` type - usually 32 bits wide - whereas Lua guarantees 64-bit "double-precision" floating point numbers. This may lead to a precision loss. Large numbers in particular may be hardly representable.
+{{< /notice >}}
 
 #### `:equals(other)`
 **Arguments:**
@@ -126,7 +136,9 @@ Converts the metadata to a Lua table representation.
     - `fields`: Table `{[key] = value, ...}`
     - Additional fields depending on the subclass
 
-TIP: Use `table = assert(meta:to_table())` to error if the operation failed.
+{{< notice tip >}}
+Use `table = assert(meta:to_table())` to error if the operation failed.
+{{< /notice >}}
 
 #### `:from_table(table)`
 Sets the key-value pairs to match those of a given table representation or clears the metadata.
@@ -139,4 +151,6 @@ Sets the key-value pairs to match those of a given table representation or clear
 **Returns:**
 - `value` - `{type-bool}`: whether loading the table representation succeeded
 
-TIP: Use `assert(meta:from_table(table))` to error if the operation failed.
+{{< notice tip >}}
+Use `assert(meta:from_table(table))` to error if the operation failed.
+{{< /notice >}}

@@ -46,11 +46,17 @@ You may use this to determine e.g. whether a target would be visible to a mob. R
 ## `Raycast(from_pos, to_pos, include_objects, include_liquid_nodes)`
 Creates a raycast object; OOP-constructor-style alias for `core.raycast`.
 
-IMPORTANT: [Raycasts work on selection-, not collision boxes, making them coherent with player pointing but not physics (collisions) unless selection- and collision boxes are identical.](https://github.com/minetest/minetest/issues/12673)
+{{< notice info >}}
+[Raycasts work on selection-, not collision boxes, making them coherent with player pointing but not physics (collisions) unless selection- and collision boxes are identical.](https://github.com/minetest/minetest/issues/12673)
+{{< /notice >}}
 
-TIP: Have selection boxes, collision boxes (and ideally even visuals) match for all nodes & entities if possible.
+{{< notice tip >}}
+Have selection boxes, collision boxes (and ideally even visuals) match for all nodes & entities if possible.
+{{< /notice >}}
 
-IMPORTANT: [Serverside raycasts do not support attachments properly; the server is unaware of model specificities, doesn't keep track of automatic rotation etc.](https://github.com/minetest/minetest/issues/10304)
+{{< notice info >}}
+[Serverside raycasts do not support attachments properly; the server is unaware of model specificities, doesn't keep track of automatic rotation etc.](https://github.com/minetest/minetest/issues/10304)
+{{< /notice >}}
 
 **Arguments:**
 - `from_pos` - `{type-vector}`: Starting position of the raycast (usually eye position)
@@ -100,7 +106,8 @@ end
 
 There is absolutely no need to manually step through raycasts using the latter two more verbose loops.
 
-IMPORTANT: Restartability is the ability of an iterator to start again. For example, `ipairs` is resumable:
+{{< notice info >}}
+Restartability is the ability of an iterator to start again. For example, `ipairs` is resumable:
 
 ```lua
 local t = {1, 2, 3}
@@ -137,6 +144,7 @@ for pt in ray do
 	-- will resume looping with the next pointed thing
 end
 ```
+{{< /notice >}}
 
 ## Examples
 

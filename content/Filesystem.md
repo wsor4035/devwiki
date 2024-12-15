@@ -1,7 +1,9 @@
 # Filesystem
 Luanti provides various utility functions to help with managing paths, files & directories.
 
-IMPORTANT: Mod security restricts file system access to the mod path (at load time) and the world path later on in secure environments, see [Lua Environment](/Lua_Environment/).
+{{< notice info >}}
+Mod security restricts file system access to the mod path (at load time) and the world path later on in secure environments, see [Lua Environment](/Lua_Environment/).
+{{< /notice >}}
 
 ## Paths
 

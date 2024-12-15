@@ -19,11 +19,17 @@ local emin, emax = voxelmanip:read_from_map(pos_min, pos_max)
 local voxelarea = VoxelArea:new{ MinEdge = emin, MaxEdge = emax }
 ```
 
-WARNING: Always pass the actual emerged min & max positions. Do not pass the desired min & max positions.
+{{< notice warning >}}
+Always pass the actual emerged min & max positions. Do not pass the desired min & max positions.
+{{< /notice >}}
 
-WARNING: Never pass fractional values as min- or max edge.
+{{< notice warning >}}
+Never pass fractional values as min- or max edge.
+{{< /notice >}}
 
-TIP: You can use `vector.floor`, `vector.round` or `vector.apply(vec, math.ceil)` to guarantee integer values.
+{{< notice tip >}}
+You can use `vector.floor`, `vector.round` or `vector.apply(vec, math.ceil)` to guarantee integer values.
+{{< /notice >}}
 
 The following methods can both be called in an imperative manner (`VoxelArea.<method>(self, ...)`) or an OOP manner (recommended): `self:<method>(...)`. The below examples are documented using the latter style, where `area` is a valid table with `VoxelArea` as the metatable.
 
@@ -39,7 +45,9 @@ Returns the volume of `area` as integer.
 
 `x`, `y`, `z` are absolute coordinates of a node within the area. Returns an integer index to be used for data tables returned by VoxelManip objects.
 
-WARNING: This will silently `floor` the returned index instead of throwing an error. Make sure that the coordinates you pass are (1) not fractional and (2) within the area.
+{{< notice warning >}}
+This will silently `floor` the returned index instead of throwing an error. Make sure that the coordinates you pass are (1) not fractional and (2) within the area.
+{{< /notice >}}
 
 ## `area:indexp(p)`
 
@@ -49,7 +57,9 @@ Shorthand for `area:index(p.x, p.y, p.z)`.
 
 Inverse to `area:indexp`. Returns the absolute node position corresponding to the `index` as a table with `x`, `y` and `z` fields.
 
-TIP: The returned table is missing the `vector` metatable. If it is not performance-critical, use `p = vector.new(area:position(index))` to create a copied vector with metatable.
+{{< notice tip >}}
+The returned table is missing the `vector` metatable. If it is not performance-critical, use `p = vector.new(area:position(index))` to create a copied vector with metatable.
+{{< /notice >}}
 
 ## `area:contains(x, y, z)`
 
@@ -63,7 +73,9 @@ Shorthand for `area:contains(p.x, p.y, p.z)`
 
 Returns `true` if `i` is between `1` and the `area` volume, both inclusive.
 
-WARNING: `area:containsi(area:indexp(p))` *is not equivalent to* `area:containsp(p)`, as `area:indexp` will happily produce valid indices for some out-of-area positions.
+{{< notice warning >}}
+`area:containsi(area:indexp(p))` *is not equivalent to* `area:containsp(p)`, as `area:indexp` will happily produce valid indices for some out-of-area positions.
+{{< /notice >}}
 
 ## `area:iter(minx, miny, minz, maxx, maxy, maxz)`
 
