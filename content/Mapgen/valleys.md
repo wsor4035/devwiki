@@ -7,7 +7,7 @@ aliases:
 Intro
 -----
 
-This is a collection of seed-value, descriptions and notable places for maps generated with [mapgen](https://wiki.luanti.org/Mapgen "Mapgen") valleys.
+This is a collection of seed-value, descriptions and notable places for maps generated with [mapgen](/Mapgen "Mapgen") valleys.
 
 Map as generated for [minetest-game](https://wiki.luanti.org/index.php?title=Minetest_Game&action=edit&redlink=1 "Minetest Game (page does not exist)"), without mods,  
 with standard values for the mapgenerator as of version 0.4.16

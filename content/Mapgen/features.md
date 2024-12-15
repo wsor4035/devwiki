@@ -146,4 +146,4 @@ This mapgen has support for lakes and hills which are disabled by default.
 See also
 --------
 
-*   [How to emulate mapgen v6 using a customised mapgen v7](https://wiki.luanti.org/How_to_emulate_mapgen_v6_using_a_customised_mapgen_v7 "How to emulate mapgen v6 using a customised mapgen v7")
+*   [How to emulate mapgen v6 using a customised mapgen v7](/How_to_emulate_mapgen_v6_using_a_customised_mapgen_v7 "How to emulate mapgen v6 using a customised mapgen v7")

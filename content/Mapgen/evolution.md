@@ -6,7 +6,7 @@ aliases:
 # Map Generator Evolution
 
 
-This article shows the development history of the [map generators](https://wiki.luanti.org/Map_generator "Map generator") in Luanti.
+This article shows the development history of the [map generators](/Map_generator "Map generator") in Luanti.
 
 Development of a single map generator
 -------------------------------------
