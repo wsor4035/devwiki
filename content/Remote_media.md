@@ -1,7 +1,7 @@
 # Remote media
-When connecting to a server, Minetest allows for media to be received over a remote HTTP server, as opposed to "traditionally" over the UDP server connection (assuming Minetest is compiled with cURL support and `enable_remote_media_server` is enabled.
+When connecting to a server, Luanti allows for media to be received over a remote HTTP server, as opposed to "traditionally" over the UDP server connection (assuming Luanti is compiled with cURL support and `enable_remote_media_server` is enabled.
 
-Usually this is a more efficient means of transferring for servers with large amounts of media, even if you host the HTTP server on the same computer as the Minetest server it should still be able to download faster. It is also useful for Minetest servers hosted on a low speed residential internet connection, where the media downloading can be offloaded to make it significantly faster and dedicate more of the connection to communication with the Minetest server.
+Usually this is a more efficient means of transferring for servers with large amounts of media, even if you host the HTTP server on the same computer as the Luanti server it should still be able to download faster. It is also useful for Luanti servers hosted on a low speed residential internet connection, where the media downloading can be offloaded to make it significantly faster and dedicate more of the connection to communication with the Luanti server.
 
 If a media file required on the server doesn't exist on the remote server or the media server can't be connected to for some reason, it will fall back to the traditional transfer method. This also applies if cURL support or the `enable_remote_media_server` setting is disabled.
 
@@ -32,7 +32,7 @@ collect_from () {
 
 mkdir -p media/
 # Change this 'collect_from' or add more lines of 'collect_from', the script will recursively
-# search for files with extensions of Minetest media in this folder.
+# search for files with extensions of Luanti media in this folder.
 # This is an example to be run in a game folder, but you can change this to anything to catch
 # all textures that a server uses.
 collect_from mods/

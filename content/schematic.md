@@ -15,14 +15,14 @@ Additional, schematics have the following features:
 ## Schematic specifier
 Functions that use schematics are passed a schematic specifier. A specifier can have 3 forms:
 
-* A .mts file name as a string (see [Minetest_Schematic_File_Format](/Minetest_Schematic_File_Format))
+* A .mts file name as a string
 * A raw data table
-* A registered schematic identifier as a number, returned by minetest.register_schematic
+* A registered schematic identifier as a number, returned by core.register_schematic
 
-**Schematic file**  
-You can write mts files in-game with the [Schematic Editor](https://content.minetest.net/packages/Wuzzy/schemedit/) mod or with [minetest.create_schematic](https://minetest.gitlab.io/minetest/minetest-namespace-reference/#schematics).
+**Schematic file**
+You can write mts files in-game with the [Schematic Editor](https://content.minetest.net/packages/Wuzzy/schemedit/) mod or with [minetest.create_schematic](https://api.luanti.org/core-namespace-reference/#schematics).
 
-**Schematic table**  
+**Schematic table**
 The schematic table has 2 mandatories attributes and 1 optional
 
 * size: the bounding box in nodes, a 3D vector
