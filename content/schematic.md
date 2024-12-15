@@ -1,6 +1,7 @@
 ---
 title: Schematic
-alias: /Schematic
+aliases:
+- /Schematic
 ---
 
 # Schematic
