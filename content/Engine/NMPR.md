@@ -14,7 +14,7 @@ NMPR has been made available at [<https://github.com/celeron55/minetest_nmpr>](h
 [toc]
 
 ## Map (the voxels)
-![Minetest Voxel Storage](/images/minetest_voxel_storage.webp)
+![Luanti Voxel Storage](/images/minetest_voxel_storage.webp)
 
 - The main content of the Map is a `map<v2s16, MapSector*>` container.
 - The main content of a MapSector is `map<s16, MapBlock*>`.
@@ -103,11 +103,11 @@ In NMPR, rendering of the Map works like this:
   - If it is not in front of the player, skip it
   - Draw the faces of the MapBlock
 
-This is how Minetest works up to this day, except:
-- At some point, instead of storing faces, Minetest was made to store [meshes](http://en.wikipedia.org/wiki/Polygon_mesh).
+This is how Luanti works up to this day, except:
+- At some point, instead of storing faces, Luanti was made to store [meshes](http://en.wikipedia.org/wiki/Polygon_mesh).
 - The mesh generator is managed by the Client.
-- In Minetest 0.3.1, [occlusion culling](http://en.wikipedia.org/wiki/Hidden_surface_determination#Occlusion_culling) was added to the render step
-- In Minetest 0.4.3, the list of MapBlocks to be rendered is cached, and sorted by texture
+- In Luanti 0.3.1, [occlusion culling](http://en.wikipedia.org/wiki/Hidden_surface_determination#Occlusion_culling) was added to the render step
+- In Luanti 0.4.3, the list of MapBlocks to be rendered is cached, and sorted by texture
 
 ### Main loop
 **Initialization:**
