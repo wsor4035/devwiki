@@ -20,7 +20,7 @@ Functions that use schematics are passed a schematic specifier. A specifier can 
 * A registered schematic identifier as a number, returned by core.register_schematic
 
 **Schematic file**
-You can write mts files in-game with the [Schematic Editor](https://content.minetest.net/packages/Wuzzy/schemedit/) mod or with [minetest.create_schematic](https://api.luanti.org/core-namespace-reference/#schematics).
+You can write mts files in-game with the [Schematic Editor](https://content.luanti.org/packages/Wuzzy/schemedit/) mod or with [minetest.create_schematic](https://api.luanti.org/core-namespace-reference/#schematics).
 
 **Schematic table**
 The schematic table has 2 mandatories attributes and 1 optional

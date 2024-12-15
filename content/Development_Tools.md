@@ -27,7 +27,7 @@ Mod development
 
 ### Luanti games and mods
 
-See the [Developer Tools](https://content.minetest.net/packages/?tag=developer_tools) tag in ContentDB.
+See the [Developer Tools](https://content.luanti.org/packages/?tag=developer_tools) tag in ContentDB.
 
 Scripts
 -------

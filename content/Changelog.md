@@ -372,7 +372,7 @@ Released on 8 April 2023
     * See [https://github.com/minetest/minetest/pull/12632](https://github.com/minetest/minetest/pull/12632) for details
 * Development Test is no longer being distributed in official Minetest releases
     * This was never meant for players to begin with, this “game” is exclusively meant for engine development
-    * To get it back, build Minetest from source code (recommended) or download Development Test from [ContentDB](https://content.minetest.net/packages/Minetest/devtest/)
+    * To get it back, build Minetest from source code (recommended) or download Development Test from [ContentDB](https://content.luanti.org/packages/Minetest/devtest/)
 
 ### Client / Audiovisuals
 
@@ -1433,7 +1433,7 @@ Released on 12 October 2019.
 
 Released March 4th
 
-  
+
 Note: 5.0.0 is based on 0.4.16, not 0.4.17. 0.4.17 was created by backporting changes from the development branch of 5.0.0
 
 ### Highlights
