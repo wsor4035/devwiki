@@ -37,5 +37,3 @@ Content Index
 -------------
 
 Before you start, you should look at the [terminology](https://wiki.minetest.net/Terminology).
-
-see left side pannel for pages
