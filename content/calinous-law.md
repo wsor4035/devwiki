@@ -1,6 +1,7 @@
 ---
+title: Calinou's Law
 aliases:
-- "/Calinou%27s_Law"
+- /Calinou%27s_Law
 ---
 
 # Calinou's Law

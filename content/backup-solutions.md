@@ -1,6 +1,7 @@
 ---
+title: Backup Solutions
 aliases:
-- "/Backup_Solutions"
+- /Backup_Solutions
 ---
 
 # Backup Solutions

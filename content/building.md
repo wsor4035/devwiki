@@ -1,6 +1,7 @@
 ---
+title: Building
 aliases:
-- "/Building"
+- /Building
 ---
 
 # Building
