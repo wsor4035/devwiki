@@ -1,3 +1,9 @@
+---
+aliases:
+- "/Translating_a_game_on_weblate"
+- "/Translating_a_game_on_Weblate"
+---
+
 # Translating a game on Weblate
 
 
