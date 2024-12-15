@@ -2,6 +2,7 @@
 title: All rules regarding development
 aliases:
 - /All_rules_regarding_to_development
+- /all-rules-regarding-development
 ---
 
 # All rules regarding development
@@ -26,5 +27,3 @@ Rules
 [Code style guidelines](/Code_style_guidelines)
 
 [Lua code style guidelines](/Lua_code_style_guidelines)
-
-[Android code style guidelines](/Android_code_style_guidelines)

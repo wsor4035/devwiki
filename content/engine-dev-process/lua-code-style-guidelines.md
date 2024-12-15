@@ -2,6 +2,7 @@
 title: Lua code style guidelines
 aliases:
 - /Lua_code_style_guidelines
+- /lua-code-style-guidelines
 ---
 
 # Lua code style guidelines

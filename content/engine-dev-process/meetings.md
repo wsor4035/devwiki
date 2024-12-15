@@ -2,6 +2,7 @@
 title: Meetings
 aliases:
 - /Meetings
+- /meetings
 ---
 
 # Meetings

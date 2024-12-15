@@ -2,6 +2,7 @@
 title: Releasing Luanti
 aliases:
 - /Releasing_Luanti
+- /releasing-luanti
 ---
 
 # Releasing Luanti
