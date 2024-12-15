@@ -21,7 +21,7 @@ Contribute to Luanti!
 * [Engine overview](/Engine)
 * Help [make a release](/Releasing_Luanti)
 
-#### Develop a mod
+#### Develop a mod or a game
 * Get [introduced to the mod API](/Modding_Intro)
 * Check out the [Lua API Documentation](https://github.com/minetest/minetest/blob/master/doc/lua_api.md)
 
