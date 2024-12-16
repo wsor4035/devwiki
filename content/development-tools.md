@@ -4,56 +4,46 @@ aliases:
 - /Development_Tools
 ---
 
-# Development Tools
+This page contains a list of tools that are useful for developing games and mods for Luanti, or working with parts of the engine.
 
-This article lists various free software tools which help in development of Luanti and mods for Luanti.
+In addition to this list, you can also see the [Development Tools](https://content.luanti.org/packages/?tag=developer_tools) tag on ContentDB for mods useful for development and the [modtools](https://github.com/minetest/modtools) repository for officially maintained modding tools.
 
-Luanti development
-------------------
+## Engine development
+- [Development Test](https://wiki.luanti.org/Games/Development_Test): A testing game for testing various engine features
+- [/minetest/util](https://github.com/minetest/minetest/tree/master/util): Various maintenance utilities
 
-* [Development Test](https://wiki.minetest.net/Games/Development_Test): A testing game for testing various engine features
-* [/minetest/util](https://github.com/minetest/minetest/tree/master/util): Various maintenance utilities
+## General Lua Tools
+- [luacheck](https://github.com/lunarmodules/luacheck): Lua linter and static code analyser (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html))
+- [busted](https://olivinelabs.com/busted/): Lua unit testing framework (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/unit_testing.html))
+- [Lua pattern viewer](https://gitspartv.github.io/lua-patterns/): A site like Regexr but for visualising and working with Lua patterns.
 
-Mod development
----------------
+## Debugging/profiling
+- [debug](https://content.luanti.org/packages/LMD/dbg/): Luanti mod library that offers more debugging capabilities.
+- [LuaJIT Profiler](https://content.luanti.org/packages/jwmhjwmh/jitprofiler/): Luanti mod that allows you to profile mods using LuaJIT's built-in profiler and Flamegraph.
 
-### Standalone software
+## Syntax highlighting/autocompletion
+- Minetest Tools ([VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=GreenXenith.minetest-tools), [OpenVSX](https://open-vsx.org/extension/GreenXenith/minetest-tools/)): Extension for VSCode and other Code - OSS based code editors that provides Lua API autocompletion and more
 
-* [MTS Editor](https://forum.luanti.org/viewtopic.php?f=14&t=23724): A program to create, view and edit Luanti schematics, but it supports other file formats (e.g. Minecraft schematics) as well
-* [Schematic Creator](https://forum.luanti.org/viewtopic.php?f=14&t=18992): A Java program to create schematics
-* [Model Creator](https://forum.luanti.org/viewtopic.php?f=14&t=18780&): A Java program to create meshes
-* [RocketLib Toolkit](https://forum.luanti.org/viewtopic.php?t=23891): Lua-based SQLite3 map reader
-* [luacheck](https://github.com/mpeterv/luacheck/): Lua linter and static code analyser (see also [the chapter rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html))
-* [busted](https://olivinelabs.com/busted/): Lua unit testing framework (see also [the chapter rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/unit_testing.html))
+## Schematics
+- [Schematic Editor](https://content.luanti.org/packages/Wuzzy/schemedit/): Luanti mod that allows you to import, edit and export schematics straight within Luanti.
+- [MTS Editor](https://forum.luanti.org/viewtopic.php?f=14&t=23724): Standalone program to view and edit Luanti schematics, but it supports other file formats (e.g. Minecraft schematics) as well.
+- [Lua2Mts](https://content.luanti.org/packages/Neuromancer/lua2mts/): Luanti mod to convert .lua schematics to .mts schematics.
 
-### Web applications
-
+## Biomes
 * [Luanti Biome Point Visualizer](https://wuzzy.codeberg.page/LiBPoV/): Edit and visualize biome heat/humidity points in a Voronoi diagram ([source code](https://codeberg.org/Wuzzy/LiBPoV))
-* [Luanti Formspec Editor](https://luk3yx.gitlab.io/minetest-formspec-editor/): Visual formspec editor
 
-### Luanti games and mods
+## Perlin Noise
+- [Perlin Explorer](https://content.luanti.org/packages/Wuzzy/perlin_explorer/): Luanti mod that allows you to experiment with all sorts of perlin noise.
+- [Perlin noise tuner](https://codepen.io/treer/pen/gOPZyov?editors=0010): Visualizes 2D Perlin noise that Luanti will generate with different noiseparams.(Emulation of Luanti Perlin noise can be wrong in extremes/edge-cases due to precision of JavaScript number type)
 
-See the [Developer Tools](https://content.luanti.org/packages/?tag=developer_tools) tag in ContentDB.
+## 3D models
+- Blender: Essential for making animated models in Luanti, see [Using Blender](https://wiki.minetest.land/Using_Blender).
+- [Blockbench](https://www.blockbench.net/): Useful for making static voxel models for Luanti.
 
-Scripts
--------
+## Formspecs
+- [formspec_editor](https://content.luanti.org/packages/Just_Visiting/formspec_editor/): Luanti game that allows you to write formspecs and preview them instantly within Luanti
+- [Luanti Formspec Editor](https://luk3yx.gitlab.io/minetest-formspec-editor/): WYSIWYG online formspec editor
 
-### Formspecs
-
-* [Luanti Formspec Editor](https://luk3yx.gitlab.io/minetest-formspec-editor/): A great online tool with drag and drop that allows you to import and export formspecs in different versions
-* [Perlin noise tuner](https://codepen.io/treer/pen/gOPZyov?editors=0010) Visualizes 2D Perlin noise that Luanti will generate with different noiseparams. (Emulation of Luanti Perlin noise can be wrong in extremes/edge-cases due to precision of JavaScript number type)
-
-### Translation
-
-* [Luanti Translation Tools](https://codeberg.org/Wuzzy/Luanti_Translation_Tools): Collection of Python scripts to manage mod translation files (\*.tr)
-
-#### Legacy
-
-* [update\_translations](https://github.com/FaceDeer/update_translations): Older version of the translation updater script included in Luanti Translation Tools
-* [findtext.lua](https://notabug.org/pgimeno/minetest/src/translation-toolchain/util/findtext.lua): Create mod translation template (buggy!) ([see also](https://forum.luanti.org/viewtopic.php?f=47&t=23330))
-* [updatetext.lua](https://notabug.org/pgimeno/minetest/src/translation-toolchain/util/updatetext.lua): Update mod translation template (buggy!) ([see also](https://forum.luanti.org/viewtopic.php?f=47&t=23330))
-
-Syntax highlighting
--------------------
-
-* [Vim syntax highlighting for \*.tr files](https://codeberg.org/Wuzzy/luanti_tr_vim_syntax)
+## Translation
+- [Gettext utils](https://www.gnu.org/software/gettext/): For maintaining content translations for the new .po/Gettext format
+- [mod_translation_updater](https://github.com/minetest/modtools/blob/main/mod_translation_updater.py): Python script to create and update legacy .tr mod translation files
