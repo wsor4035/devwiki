@@ -26,7 +26,7 @@ Functions that use schematics are passed a schematic specifier. A specifier can 
 * A registered schematic identifier as a number, returned by core.register_schematic
 
 ## Schematic file
-The MTS file format specifies a Luanti schematic in binary format.
+The MTS file format specifies a Luanti schematic in binary format. For information about the format see [Luanti Schematic File Format](/luanti-schematic-file-format/).
 
 The [Schematic Editor](https://content.luanti.org/packages/Wuzzy/schemedit/) mod allows you to conveniently export and import MTS schematic files without leaving the engine. The engine also has support for creating schematics through the Lua API with [core.create_schematic](https://api.luanti.org/core-namespace-reference/#schematics).
 
