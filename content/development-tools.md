@@ -22,6 +22,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 ## Debugging/profiling
 - [debug](https://content.luanti.org/packages/LMD/dbg/): Luanti mod library that offers more debugging capabilities.
 - [LuaJIT Profiler](https://content.luanti.org/packages/jwmhjwmh/jitprofiler/): Luanti mod that allows you to profile mods using LuaJIT's built-in profiler and Flamegraph.
+- [Warr1024's Minetest Server Docker Image](https://gitlab.com/sztest/minetestserver): Comes with useful debugging and performance profiling tools
 
 ## Syntax highlighting/autocompletion
 - Minetest Tools ([VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=GreenXenith.minetest-tools), [OpenVSX](https://open-vsx.org/extension/GreenXenith/minetest-tools/)): Extension for VSCode and other Code - OSS based code editors that provides Lua API autocompletion and more
@@ -56,4 +57,3 @@ In addition to this list, you can also see the [Development Tools](https://conte
 
 ## Misc.
 - [Definition Ripper](https://gitlab.com/sztest/defripper): Extract node and item definitions, generating decorative and inert facades from them
-- [Warr1024's Minetest Server Docker Image](https://gitlab.com/sztest/minetestserver): Comes with useful debugging and performance profiling tools
