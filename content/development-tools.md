@@ -17,6 +17,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 - [luacheck](https://github.com/lunarmodules/luacheck): Lua linter and static code analyser (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html))
 - [busted](https://olivinelabs.com/busted/): Lua unit testing framework (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/unit_testing.html))
 - [Lua pattern viewer](https://gitspartv.github.io/lua-patterns/): A site like [Regexr](https://regexr.com/) but for visualising and working with Lua patterns.
+- [Warr1024's Lua Code Tools](https://gitlab.com/Warr1024/luatools): Lua formatter & locals generator
 
 ## Debugging/profiling
 - [debug](https://content.luanti.org/packages/LMD/dbg/): Luanti mod library that offers more debugging capabilities.
@@ -29,6 +30,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 - [Schematic Editor](https://content.luanti.org/packages/Wuzzy/schemedit/): Luanti mod that allows you to import, edit and export schematics straight within Luanti.
 - [MTS Editor](https://forum.luanti.org/viewtopic.php?f=14&t=23724): Standalone program to view and edit Luanti schematics, but it supports other file formats (e.g. Minecraft schematics) as well.
 - [Lua2Mts](https://content.luanti.org/packages/Neuromancer/lua2mts/): Luanti mod to convert .lua schematics to .mts schematics.
+- [ASCII Art Schematics](https://content.luanti.org/packages/Warr1024/aaschems/): Library to manage Luanti schematics as ASCII art
 
 ## Biomes
 * [Luanti Biome Point Visualizer](https://wuzzy.codeberg.page/LiBPoV/): Edit and visualize biome heat/humidity points in a Voronoi diagram ([source code](https://codeberg.org/Wuzzy/LiBPoV))
@@ -48,3 +50,10 @@ In addition to this list, you can also see the [Development Tools](https://conte
 ## Translation
 - [Gettext utils](https://www.gnu.org/software/gettext/): For maintaining content translations for the new .po/Gettext format
 - [mod_translation_updater](https://github.com/minetest/modtools/blob/main/mod_translation_updater.py): Python script to create and update legacy .tr mod translation files
+
+## ContentDB
+- [cdbrelease](https://gitlab.com/sztest/cdbrelease): Release automation tool for ContentDB packages
+
+## Misc.
+- [Definition Ripper](https://gitlab.com/sztest/defripper): Extract node and item definitions, generating decorative and inert facades from them
+- [Warr1024's Minetest Server Docker Image](https://gitlab.com/sztest/minetestserver): Comes with useful debugging and performance profiling tools
