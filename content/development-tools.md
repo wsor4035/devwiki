@@ -4,6 +4,7 @@ aliases:
 - /Development_Tools
 ---
 
+# Development Tools
 This page contains a list of tools that are useful for developing games and mods for Luanti, or working with parts of the engine.
 
 In addition to this list, you can also see the [Development Tools](https://content.luanti.org/packages/?tag=developer_tools) tag on ContentDB for mods useful for development and the [modtools](https://github.com/minetest/modtools) repository for officially maintained modding tools.
@@ -15,7 +16,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 ## General Lua Tools
 - [luacheck](https://github.com/lunarmodules/luacheck): Lua linter and static code analyser (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html))
 - [busted](https://olivinelabs.com/busted/): Lua unit testing framework (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/unit_testing.html))
-- [Lua pattern viewer](https://gitspartv.github.io/lua-patterns/): A site like Regexr but for visualising and working with Lua patterns.
+- [Lua pattern viewer](https://gitspartv.github.io/lua-patterns/): A site like [Regexr](https://regexr.com/) but for visualising and working with Lua patterns.
 
 ## Debugging/profiling
 - [debug](https://content.luanti.org/packages/LMD/dbg/): Luanti mod library that offers more debugging capabilities.
@@ -37,8 +38,8 @@ In addition to this list, you can also see the [Development Tools](https://conte
 - [Perlin noise tuner](https://codepen.io/treer/pen/gOPZyov?editors=0010): Visualizes 2D Perlin noise that Luanti will generate with different noiseparams.(Emulation of Luanti Perlin noise can be wrong in extremes/edge-cases due to precision of JavaScript number type)
 
 ## 3D models
-- Blender: Essential for making animated models in Luanti, see [Using Blender](https://wiki.minetest.land/Using_Blender).
-- [Blockbench](https://www.blockbench.net/): Useful for making static voxel models for Luanti.
+- [Blender](https://www.blender.org/): Essential for making animated models in Luanti, see [Using Blender](https://wiki.luanti.org/Using_Blender).
+- [Blockbench](https://www.blockbench.net/): Useful for making static voxel models for Luanti, see [Using Blockbench](/using-blockbench/).
 
 ## Formspecs
 - [formspec_editor](https://content.luanti.org/packages/Just_Visiting/formspec_editor/): Luanti game that allows you to write formspecs and preview them instantly within Luanti
