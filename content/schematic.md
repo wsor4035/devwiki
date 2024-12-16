@@ -25,10 +25,14 @@ Functions that use schematics are passed a schematic specifier. A specifier can 
 * A raw data table
 * A registered schematic identifier as a number, returned by core.register_schematic
 
-**Schematic file**
-You can write mts files in-game with the [Schematic Editor](https://content.luanti.org/packages/Wuzzy/schemedit/) mod or with [minetest.create_schematic](https://api.luanti.org/core-namespace-reference/#schematics).
+## Schematic file
+The MTS file format specifies a Luanti schematic in binary format.
 
-**Schematic table**
+The [Schematic Editor](https://content.luanti.org/packages/Wuzzy/schemedit/) mod allows you to conveniently export and import MTS schematic files without leaving the engine. The engine also has support for creating schematics through the Lua API with [core.create_schematic](https://api.luanti.org/core-namespace-reference/#schematics).
+
+In addition to this there is the external program [MTSEdit](https://gitlab.com/bztsrc/mtsedit) where you can edit schematics in an isometric view.
+
+## Schematic table
 The schematic table has 2 mandatories attributes and 1 optional
 
 * size: the bounding box in nodes, a 3D vector
