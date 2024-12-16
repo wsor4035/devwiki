@@ -11,7 +11,7 @@ title: About This Site
 
 At the bottom of each page is an `edit this page` button. Clicking this will open up githubs web text editor where you can make text changes and commit. Alternatively you can use githubs vscode interface from the repo page by clicking the `.` key.
 
-## Significant Changes
+### Significant Changes
 *(for anyone)*
 
 * Please fork the repo (for non members of the repo, the `edit this page` option at the bottom of each page will walk you through this)
@@ -29,7 +29,7 @@ At the bottom of each page is an `edit this page` button. Clicking this will ope
 * Make a pr from the branch back to the repo
 * Wait for someone on the minetest docs team to review and merge
 
-## Building+Running Locally
+### Building+Running Locally
 *(anyone)*
 
 To build locally, you will need to first [install Hugo](https://gohugo.io/installation/).
