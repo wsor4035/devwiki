@@ -1,4 +1,4 @@
-baseURL = 'https://newdev.luanti.org/'
+baseURL = 'https://dev.luanti.org/'
 languageCode = 'en-us'
 title = 'Developer Wiki'
 theme = ['hugo-notice', 'hugo-book']
