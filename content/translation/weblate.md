@@ -33,8 +33,8 @@ Step 3: Update your POT and PO files
 
 Make sure your locale files are all up-to-date before uploading to Weblate. You also should follow these conventions for every mod:
 
-* All locale files follow the format "<modname>.<language>.po"
-* POT files are named "<modname>.pot"
+* All locale files follow the format `<modname>.<language>.po`
+* POT files are named `<modname>.pot`
 
 Step 4: Create the Weblate project
 ----------------------------------
