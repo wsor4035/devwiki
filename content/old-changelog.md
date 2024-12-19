@@ -805,7 +805,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Removed proller from credits _(proller)_
 * Updated default control documentation _(BlockMen)_
 * Made lighting CPU-only by removing finalColorBlend implementation from shaders _(RealBadAngel)_
-* Added /dummyball <count> command to the minimal game _(kahrl)_
+* Added `/dummyball <count>` command to the minimal game _(kahrl)_
 * Made the LuaJIT exception wrapper handle more exceptions _(kahrl)_
 * Added missing doc for minetest.get\_us\_time() _(sapier)_
 * Made HTTPFetch use the configured bind\_address _(ShadowNinja)_
