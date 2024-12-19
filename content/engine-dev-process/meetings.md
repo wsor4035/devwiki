@@ -1108,7 +1108,7 @@ Arranged by: Krock
 * Any new, important bugfixes to backport?
     * Added the \`core.rotate\_node\` bugfix, otherwise probably not. It's pretty much stable.
 * Volunteer for cherry-picking the ToDo backport commits ([https://github.com/minetest/minetest/pull/6746](https://github.com/minetest/minetest/pull/6746))
-    * \``<sfan5>` probably me\` ([http://irc.minetest.net/minetest-dev/2018-03-31#i\_5264276](http://irc.minetest.net/minetest-dev/2018-03-31#i_5264276))
+    * `<sfan5>` probably me ([http://irc.minetest.net/minetest-dev/2018-03-31#i\_5264276](http://irc.minetest.net/minetest-dev/2018-03-31#i_5264276))
 
 2018-03-10
 ----------
