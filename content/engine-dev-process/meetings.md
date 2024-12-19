@@ -1078,7 +1078,7 @@ Arranged by: Krock
 **PR discussion/review**
 
 * Android joystick ([https://github.com/minetest/minetest/pull/7126](https://github.com/minetest/minetest/pull/7126))
-* Formspecs: Add a `<use\_color\_alpha>` parameter to the box\[\] element ([https://github.com/minetest/minetest/pull/7116](https://github.com/minetest/minetest/pull/7116))
+* Formspecs: Add a `<use_color_alpha>` parameter to the box\[\] element ([https://github.com/minetest/minetest/pull/7116](https://github.com/minetest/minetest/pull/7116))
     * Causes errors in-game for older clients but doesn't affect playability - merge or not?
 * Colorize command parameters and privilege names ([https://github.com/minetest/minetest/pull/7019](https://github.com/minetest/minetest/pull/7019))
     * Improves readability - does it need \`string.format\` for a possibly prettier code?
