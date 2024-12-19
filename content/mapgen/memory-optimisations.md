@@ -2,6 +2,7 @@
 title: Mapgen memory optimisations
 aliases:
 - /Mapgen_memory_optimisations
+- /mapgen-memory-optimisations
 ---
 
 # Mapgen memory optimisations

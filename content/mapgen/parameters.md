@@ -2,6 +2,7 @@
 title: Mapgen Parameters
 aliases:
 - /Mapgen_Parameters
+- /mapgen-parameters
 ---
 
 # Mapgen Parameters
