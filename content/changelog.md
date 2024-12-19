@@ -547,7 +547,7 @@ Released on 4 August 2022
 * Fix item entity Z-fighting (_appgurueu_)
 * Use mod names/titles instead of technical names to display (_GoodClover_)
 * Fix texture packs not showing as enabled in mainmenu (_rubenwardy_)
-* Debug screen now shows "<unknown node>" at the top if an unknown node is pointed (_Wuzzy_)
+* Debug screen now shows "`<unknown node>`" at the top if an unknown node is pointed (_Wuzzy_)
 * Enable chat clickable weblinks by default (Ctrl+Click) (_Froggo_)
 * HUD: Fix outdated selection boxes (_appgurueu_)
 * Make `no_screenshot` image more clear (_Zughy_)
@@ -569,7 +569,7 @@ Released on 4 August 2022
 * Commands: Some numbers can be replaced or prepended with "`~`" for values relative to the current one (_Wuzzy_)
     * "`~`" is equivalent to "`~0`"
     * Supported commands: `/deleteblocks`, `/emergeblocks`, `/fixlight`, `/spawnentity`, `/teleport`, `/time`
-    * Example: "`/teleport 15 ~5 ~`" teleports to (15, <current Y coordinate plus 5>, <current Z coordinate>)
+    * Example: "`/teleport 15 ~5 ~`" teleports to (15, `<current Y coordinate plus 5>`, `<current Z coordinate>`)
 * Don't allow banning in singleplayer (_sfan5_)
 * Docs: Add description of privileges (_x2048_)
 * Increase max FPS on Android to 60 (_ROllerozxa_)
