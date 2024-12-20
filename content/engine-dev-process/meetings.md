@@ -1078,7 +1078,7 @@ Arranged by: Krock
 **PR discussion/review**
 
 * Android joystick ([https://github.com/minetest/minetest/pull/7126](https://github.com/minetest/minetest/pull/7126))
-* Formspecs: Add a <use\_color\_alpha> parameter to the box\[\] element ([https://github.com/minetest/minetest/pull/7116](https://github.com/minetest/minetest/pull/7116))
+* Formspecs: Add a `<use_color_alpha>` parameter to the box\[\] element ([https://github.com/minetest/minetest/pull/7116](https://github.com/minetest/minetest/pull/7116))
     * Causes errors in-game for older clients but doesn't affect playability - merge or not?
 * Colorize command parameters and privilege names ([https://github.com/minetest/minetest/pull/7019](https://github.com/minetest/minetest/pull/7019))
     * Improves readability - does it need \`string.format\` for a possibly prettier code?
@@ -1108,7 +1108,7 @@ Arranged by: Krock
 * Any new, important bugfixes to backport?
     * Added the \`core.rotate\_node\` bugfix, otherwise probably not. It's pretty much stable.
 * Volunteer for cherry-picking the ToDo backport commits ([https://github.com/minetest/minetest/pull/6746](https://github.com/minetest/minetest/pull/6746))
-    * \`<sfan5> probably me\` ([http://irc.minetest.net/minetest-dev/2018-03-31#i\_5264276](http://irc.minetest.net/minetest-dev/2018-03-31#i_5264276))
+    * `<sfan5>` probably me ([http://irc.minetest.net/minetest-dev/2018-03-31#i\_5264276](http://irc.minetest.net/minetest-dev/2018-03-31#i_5264276))
 
 2018-03-10
 ----------

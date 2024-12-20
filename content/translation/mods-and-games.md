@@ -41,7 +41,7 @@ Here’s just a quick summary on how to use it:
 
 *   A popular tool to edit PO files is Poedit
 *   To **create** a new translation, use Poedit on the ".pot" file
-*   To **edit** an existing translation, use Poedit on the file named "<name>.<language>.po", e.g. "example.de.po" for a German translation
+*   To **edit** an existing translation, use Poedit on the file named `<name>.<language>.po`, e.g. "example.de.po" for a German translation
 
 ### TR format
 
