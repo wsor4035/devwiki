@@ -29,6 +29,8 @@ Add your points here. Most important comes first.
 **PR discussion/reviews**
 
 * https://github.com/minetest/minetest/pulls?q=is%3Apr+is%3Aopen+scancodes
+* <y5nw> celeron55: may I propose moving the discussion about me to the 2024-10-13 meeting? (mainly due to personal reasons)
+   * (context: being a core dev) past date, but appears to not have been discussed yet?
 
 Also consider:
 
