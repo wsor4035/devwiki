@@ -1,3 +1,8 @@
 .container {
     max-width: 90rem;
 }
+
+.markdown img {
+    /* Circumvent SCSS min function, we need the browser's one */
+    max-width: #{"min(100%, 32rem)"};
+}
