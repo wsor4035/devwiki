@@ -67,6 +67,7 @@ You can disable the spell checker without triggering build warnings using Hugo's
 This text is spell-checked.
 
 {{/* cspell:disable */}}
+
 The text is not splel-checked ;)
 
 {{/* cspell:enable */}}
