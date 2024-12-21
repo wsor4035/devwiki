@@ -1,0 +1,8 @@
+{
+    "devDependencies": {
+        "cspell": "^8.17.1"
+    },
+    "scripts": {
+        "test": "cspell content"
+    }
+}

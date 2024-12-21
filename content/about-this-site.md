@@ -54,6 +54,13 @@ To launch the Hugo development server run `hugo server`. It will watch and regen
 
 To generate the site once without starting the server you can simply run `hugo`.
 
+Some additional checks are run in [Node](npmjs.org):
+
+```bash
+npm install
+npm test
+```
+
 ## Contribution Rules
 
 **This is subject to change**
