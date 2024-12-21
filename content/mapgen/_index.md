@@ -15,7 +15,7 @@ The Luanti engine provides several built-in map generators implemented in C++. I
 
 In addition to this you can also [write your own mapgen in Lua](/mapgen/custom-lua-mapgen), based on the `singlenode` built-in map generator that generates an empty world.
 
-### Overview
+## Overview
 
 These are the available mapgens described in brief:
 
@@ -34,7 +34,7 @@ All map generators have biomes. In all map generators except `v6`, these biomes 
 
 Also, all map generators allow for a lot of configuration in the advanced settings.
 
-#### Gallery
+### Gallery
 
 Here are examples of landscapes generated with the different map generators:
 
@@ -76,13 +76,13 @@ Here are examples of landscapes generated with the different map generators:
 
     [![](/images/mapgen/Mapgen_singlenode.jpg)](/images/mapgen/Mapgen_singlenode.jpg)
 
-### Description
+## Description
 
 All map generators described in full detail.
 
 To learn more about detailed configuration, see [Map generator features](/mapgen/features "Map generator features"). To learn more about the history of the map generators, see [Map Generator Evolution](/mapgen/evolution "Map Generator Evolution").
 
-#### v5
+### v5
 
 Notable for its unique and somewhat strange terrain shape and occasional floating islands which often look like blobs. Extreme overhanging terrain is not uncommon and the landscape is sometimes realistic, sometimes strange and challenging. The oceans can sometimes reach extreme depths as well. While the landscape is not exactly realistic, this mapgen is intentionally included in Luanti because its uniqueness and weirdness also has a special appeal to some.
 
@@ -90,7 +90,7 @@ Like most map generators, v5 generates many caves in the underground. The caves 
 
 Landscapes are based on 3D Perlin noise.
 
-#### v6
+### v6
 
 Notable for rather flat and simple hills and cliffs. The landscape is rather simple, the hills don't extend above Y=47 and there are no natural terrain overhangs (ignoring caves). The weirdness of v5 is eliminated.
 
@@ -104,31 +104,31 @@ Other unique features include: Large patches of dirt and sand in the underground
 
 Generated entirely using 2D Perlin noise.
 
-#### v7
+### v7
 
 Generates a very large-scale environment with large biomes and plains. One of the most unique features in this map generator are the broad and deep water canals (called “ridges”) at sea level, but they can be disabled. This mapgen also has the unique feature of supporting floating islands high in the sky (see [Map generator features](/mapgen/features "Map generator features")), but they are disabled by default.
 
 The generated caves are broad, often have lots of space and are often very long and complex and like to branch off. Sudden drops are not unusual. Deep in the underground, giant caves may form (like in v5).
 
-Uses 2D and 3D Perlin noise. It mapgen the default selection since version 0.4.15.
+Uses 2D and 3D Perlin noise. This mapgen is the default selection since version 0.4.15.
 
-#### carpathian
+### carpathian
 
 Vast and relatively flat plains, rolling hills and complex, realistic mountain ranges dominate the landscape. Mountains come in several forms. In mountain ranges, ridges and terraced mountains can form. Rarely there are extremely big mountains and rarely there are fjords.
 
-#### valleys
+### valleys
 
 Generates a landscape featuring many hills, mountains and valleys. The valleys often contain rivers with river water. The rivers are very different than in v7, since they are not at ocean level and actually flow downhill. Another unique feature of this mapgen is the altitude chill. The biome temperature falls with the height which means that at high elevations, cold biomes are much more likely.
 
 The caves are similar to those of v7, but they tend to be much larger on average.
 
-#### flat
+### flat
 
 Generates a perfectly flat world (ignoring structures and caves) with biomes. It can be configured to add occasional hills and lakes.
 
 The generated caves are practically identical to those of v7.
 
-#### fractal
+### fractal
 
 Generates a map based on a fractal. It creates by far the weirdest terrain shapes, but its results are mostly predictable.
 
@@ -136,7 +136,7 @@ By default, a map based on the Mandelbrot set is generated. It is possible to ch
 
 The generated caves are practically identical to those of v7.
 
-#### singlenode
+### singlenode
 
 Generates an empty world.
 
