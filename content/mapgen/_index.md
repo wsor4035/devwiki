@@ -11,7 +11,7 @@ bookCollapseSection: true
 
 The **map generator** (“mapgen” for short) is the Luanti component that procedurally generates the world around the player.
 
-The Luanti engine provides several built-in map generators implemented in C++. It is possible to choose between them when creating a world. Most of them are based on Perlin noises, functions which allow associating to each point a random yet consistent value.
+The Luanti engine provides several built-in map generators implemented in C++. It is possible to choose between them when creating a world. Most of them are based on Perlin noises: functions which allow associating to each point a random yet consistent value.
 
 Additionally, you can [write your own mapgen in Lua](/mapgen/custom-lua-mapgen), based on the `singlenode` built-in map generator that generates an empty world.
 
