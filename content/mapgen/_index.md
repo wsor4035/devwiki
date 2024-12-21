@@ -140,7 +140,7 @@ The generated caves are practically identical to those of v7.
 
 Generates an empty world.
 
-To be precise: By default, this produces a world with only [air](/nodes/#air "Air") everywhere. For games it is possible to replace the air with a different node.
+To be precise: By default, this produces a world with only [Air](/nodes/#air "Air") everywhere. For games, it's possible to choose a different node by defining the `mapgen_singlenode` mapgen alias.
 
 It is intended to be used for mapgen mods which define their own map generation from scratch. This mapgen is not really useful if left unmodified.
 

@@ -7,7 +7,7 @@ aliases:
 # Map Generator Evolution
 
 
-This article shows the development history of the [map generators](/Map_generator "Map generator") in Luanti.
+This article shows the development history of the [map generators](/mapgen "Map generator") in Luanti.
 
 Development of a single map generator
 -------------------------------------
@@ -253,9 +253,3 @@ In Minetest Game, these rivers are made out of [River Water](https://wiki.luanti
 carpathian mapgen in Minetest 0.5.0-dev-8221d3bc
 
 Introduced in the developer version on 6th July 2017 by vlapsley. It has been first showcased [in the forums](https://forum.minetest.net/viewtopic.php?f=9&t=17174). About 1.5 years later, it was finally released in a stable Minetest release: Minetest 5.0.0. This mapgen is notable for its complex mountains (multiple variants: terraced, stepped, very big, ridged) and hills. Vast flat plains, mountains and oceans dominate the landscape. Fjords are also possible, but rare.
-
-See also
---------
-
-*   [Map Generator](https://wiki.luanti.org/Map_Generator "Map Generator")
-*   [Biomes](https://wiki.luanti.org/Biomes "Biomes")

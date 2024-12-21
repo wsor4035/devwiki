@@ -5,14 +5,14 @@ aliases:
 ---
 
 # How to emulate mapgen v6 using a customised mapgen v7
-Some players like aspects of [Mapgen](/Map_generator "Map generator") v6, but the [biomes](https://wiki.luanti.org/Biomes "Biomes") are hardcoded so it lacks many of the biomes defined in games such as [Minetest Game](https://wiki.luanti.org/Games/Minetest_Game "Games/Minetest Game"). It is also very different from the other mapgens in how it works and is more difficult to support in games.
+Some players like aspects of [Mapgen](/mapgen "Map generator") v6, but the biomes are hardcoded, so it's not possible for games to register their own biomes. It is also very different from the other mapgens in how it works and is more difficult to support in games.
 
 It is actually possible to approximately emulate Mapgen v6 in Mapgen v7 using customised settings. This is only possible in version 5.2.0 or later due to the “randomwalk” caves now being more configurable, allowing Mapgen v7 to have caves like in Mapgen v6.
 
 How to emulate mapgen v6
 ------------------------
 
-First, copy and paste the lines below into your [minetest.conf](https://wiki.luanti.org/Minetest.conf "Minetest.conf") file before starting a new Mapgen v7 world:
+First, copy and paste the lines below into your [`minetest.conf`](https://wiki.luanti.org/Minetest.conf "Minetest.conf") file before starting a new Mapgen v7 world:
 
 ```
 mgv7_spflags = nomountains, noridges, nofloatlands, nocaverns
@@ -76,11 +76,11 @@ mgv7_np_filler_depth = {
 ```
 
 
-Or you can set these parameters manually in the “All Settings” menu, but that will take much longer to do.
+Or you can set these parameters manually in the advanced settings, but that will take much longer to do.
 
 Then just create a new v7 world. Old v7 worlds will not be affected.
 
-If you want to return to normal, just delete these lines from minetest.conf again.
+If you want to return to normal, just delete these lines from `minetest.conf` again.
 
 Limitations
 -----------
@@ -91,8 +91,8 @@ The emulation is only approximate, it differs in the following ways:
 *   The cliff/slope transitions between the lowland and highland do not have a wide range of steepnesses, they are now all steep cliffs
 *   The number of small and large caves per mapchunk is fixed and not varied by noise or biome
 *   Using the same world seed as a Mapgen v6 world will probably not result in hills, lakes, cliffs, caves, dungeons etc. being in the same locations, even though the character and elements of the mapgen will be similar
-*   When using Minetest Game, [lava](https://wiki.luanti.org/Lava "Lava") is found below Y = -256 and ores are deeper, just like all non-v6 mapgens
+*   When using Minetest Game, lava is found below Y = -256 and ores are deeper, just like all non-v6 mapgens
 
 * * *
 
-**Note**: This page is based on a [forum post by paramat](https://forum.minetest.net/viewtopic.php?f=3&t=24831).
+This page is based on a [forum post by paramat](https://forum.minetest.net/viewtopic.php?f=3&t=24831).

@@ -109,7 +109,7 @@ The `"wielditem"` value supports item hardware colorization
 Name of the file of the mesh, only when using "mesh" visual.
 
 ### `visual_size`
-* field type: [`vector`](https://github.com/minetest/minetest_docs/blob/master/doc/classes/vector.adoc)
+* field type: [`vector`](/docs/classes/vector)
 * default value: `{x = 1, y = 1, z = 1}`
 
 Visual size multipliers. Wanted value is `{x = x, y = y, z = z}`. If `z` is not provided, `x` will be used for the `z` value.
