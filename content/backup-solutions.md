@@ -23,7 +23,7 @@ While SQLite databases are a single file (or a couple files, when WAL is enabled
 
 You should use `VACUUM INTO` with the `sqlite3` CLI if you want to create live backups of the database. This command makes a vacuumed copy of a SQLite database into another file, and is a lot safer than simply copying the database file as it is done transactionally and creates a consistent snapshot of the original database [(see the SQLite documentation)](https://www.sqlite.org/lang_vacuum.html#vacuum_with_an_into_clause).
 
-This is an example of a Bash script that can be used to copy the world files to a new backup directory `.BACKUP`, which could subsequently be compressed and versioned by timestamp:
+This is an example of a Bash script that can be used to copy the world files of `world` and make backups of the SQLite databases to a new backup directory `.BACKUP` next to the world's directory, which could subsequently be compressed and versioned by timestamp:
 
 ```bash
 #!/bin/bash
@@ -32,14 +32,15 @@ bakdir=".BACKUP"
 
 mkdir -p "${bakdir}/"
 
-for db in "auth" "map" "mod_storage" "players"; do
-    sqlite3 "world/${db}.sqlite" "VACUUM INTO '${bakdir}/${db}.sqlite';"
+for db in world/*.sqlite; do
+    base_name=$(basename "$db")
+    sqlite3 "${db}" "VACUUM INTO '${bakdir}/${base_name}';"
 done
 
 cp world/*.txt world/world.mt "${bakdir}/"
 ```
 
-If you have rollback enabled you may want to add another line for `rollback.sqlite`, and if you have mods that write more text files to the world folder rather than using mod storage you would add it to the list of files to copy in the final line.
+If you have mods that write more text files to the world folder rather than using mod storage you would add it to the list of files to copy in the final line.
 
 ### Cold backups
 If you just want to back up a singleplayer world then it is relatively easy to make a cold backup when Luanti is not running. Various methods from copying the directory in your file manager to creating a compressed archive will work.
