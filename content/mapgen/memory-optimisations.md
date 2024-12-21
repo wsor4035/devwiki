@@ -8,8 +8,6 @@ aliases:
 # Mapgen memory optimisations
 This page intends to list all possible optimisation techniques that can be used when writing a mapgen in Lua.
 
-*This page is based on paramat's [forum topic](https://forum.luanti.org/viewtopic.php?t=16043).*
-
 Lua map generators can use excessive memory if they are not using these 3 optimisations. Not using these optimizations can eventually lead to OOM (out-of-memory) errors because the Lua mapgen wasted way too much memory. Applying this advice is **strongly recommended**, and should make OOM errors much less likely. But there is no guarantee this will fix all OOM errors, your mapgen might still use excessive memory for other reasons, or the computer just has very limited memory.
 
 ## Only create perlin noise objects once
@@ -102,3 +100,7 @@ end
 ```
 
 This will significantly cut down on the amount of index calls required by the main mapgen loop.
+
+* * *
+
+This page is based on a [forum topic by paramat](https://forum.luanti.org/viewtopic.php?t=16043).

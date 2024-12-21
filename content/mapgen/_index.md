@@ -32,7 +32,7 @@ All map generators use so-called "mapgen aliases". These are node aliases define
 
 All map generators have biomes. In all map generators except `v6`, these biomes are defined by games and mods using the Biome API. If no biomes are defined, the result will be a stone-only landscape. The `v6` map generator is special because its biomes are completely predefined and can't be changed trivially.
 
-All map generators allow configuration in the advanced settings.
+All map generators allow configuration in the advanced settings. A list of all map generator settings can also be found in [minetest.conf.example](https://github.com/minetest/minetest/blob/master/minetest.conf.example).
 
 ### Gallery
 
@@ -140,7 +140,7 @@ The generated caves are practically identical to those of v7.
 
 Generates an empty world.
 
-To be precise: By default, this produces a world with only [air](/nodes/#air "Air") everywhere. For games it is possible to replace the air with a different node.
+To be precise: By default, this produces a world with only [Air](/nodes/#air "Air") everywhere. For games, it's possible to choose a different node by defining the `mapgen_singlenode` mapgen alias.
 
 It is intended to be used for mapgen mods which define their own map generation from scratch. This mapgen is not really useful if left unmodified.
 
@@ -148,6 +148,5 @@ See also
 --------
 
 *   [Stability of each mapgen](https://forum.luanti.org/viewtopic.php?f=18&t=19132), a post by paramat on the forums describing which map generators are "officially stable" (last updated 2019)
-*   [Map generator settings](/mapgen/settings "Map generator settings")
 *   [Map generator features](/mapgen/features "Map generator features")
 *   [Map Generator Evolution](/mapgen/evolution "Map generator evolution")
