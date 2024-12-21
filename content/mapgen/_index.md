@@ -32,7 +32,7 @@ All map generators use so-called "mapgen aliases". These are node aliases define
 
 All map generators have biomes. In all map generators except `v6`, these biomes are defined by games and mods using the Biome API. If no biomes are defined, the result will be a stone-only landscape. The `v6` map generator is special because its biomes are completely predefined and can't be changed trivially.
 
-Also, all map generators allow for a lot of configuration in the advanced settings.
+All map generators allow configuration in the advanced settings.
 
 ### Gallery
 
