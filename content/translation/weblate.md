@@ -17,7 +17,7 @@ This guide gives a **rough** (!) step-by-step guide on how to set-up Weblate for
 Step 1: Use the PO format
 -------------------------
 
-Weblate understands the PO file format natively, but not the Luanti-invented TR format (it’s just too obscure). So the first step is to make sure your game uses the gettext PO file instead of the Luanti-inventry TR format (which is less flexible anyway). The PO format is supported since Luanti 5.10.0.
+Weblate understands the PO file format natively, but not the Luanti-specific TR format (it’s just too obscure). So the first step is to make sure your game uses the gettext PO file instead of the Luanti-specific TR format (which is less flexible anyway). The PO format is supported since Luanti 5.10.0.
 
 The unofficial [Luanti Translation Tools](https://codeberg.org/Wuzzy/Luanti_Translation_Tools) contain a tool to convert from TR to PO and back.
 
@@ -55,8 +55,8 @@ Configure your component. Many fields are self-explanatory, but here's a list of
 
 * **Translation license**: Don't forget to set one!
 * **Translation flags**: Put in `placeholders:r"@[1-9]"`. This will highlight the placeholders `@1` to `@9` for the translators and also activates several useful error checkers
-* **Source string bug reporting address**: Translators can send e-mail to this address if they have a problem. This will also appear in the PO/POT files. Not strictly neccessary but may be helpful
-* **Repository browser**: Optional. Will add useful link to point translators directly to the string's origin in the source code. The syntax depends on the code hoster.
+* **Source string bug reporting address**: Translators can send e-mail to this address if they have a problem. This will also appear in the PO/POT files. Not strictly necessary but may be helpful
+* **Repository browser**: Optional. Will add useful link to point translators directly to the string's origin in the source code. The syntax depends on the code host.
     *   For [Codeberg](https://codeberg.org/), put in `https://codeberg.org/USER/PROJECT/src/branch/{{branch}}/mods/{{filename|parentdir}}#L{{line}}`. Replace `USER` and `PROJECT` with the correct URL parts, leave the rest intact.
     *   For others, figure it out yourself or just leave this field empty. :P
 

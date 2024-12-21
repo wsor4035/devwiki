@@ -33,11 +33,11 @@ Luanti is able to load textures from the models folder, but if you want to keep 
 Since Luanti does not use .mtl files for loading model materials, you need to specify them in the code. For example, for a node with the mesh drawtype you specify the model textures in the tiles table:
 
 ```lua
-core.register_node(":ozxa:red_block", {
+core.register_node(":test:red_block", {
 	description = "Red block",
-	tiles = { "ozxa_block_red.png" },
+	tiles = { "test_block_red.png" },
 	drawtype = "mesh",
-	mesh = "ozxa_block.obj"
+	mesh = "test_block.obj"
 })
 ```
 

@@ -110,7 +110,7 @@ Released on 15 September 2024.
 * Sneak-sumping onto a stack of 2 nodes is again possible (_SmallJoker_)
 * Clouds no longer disappear when approaching them (_sfan5_)
 * The CSM help dialogue now uses "." instead of "/" (_zmv7_)
-* Windows: disabled touchscreen autodetection due to lack of support of the non-SDL build (default for 5.9.x) (_rubenwardy_)
+* Windows: disabled touchscreen auto-detection due to lack of support of the non-SDL build (default for 5.9.x) (_rubenwardy_)
 
 ### World / Server / Environment
 
@@ -149,9 +149,9 @@ Released 2024-08-11
 * "mod\_translation\_updater.py" is now located at [https://github.com/minetest/modtools](https://github.com/minetest/modtools) (_Zughy_)
 * The setting "opaque\_water" is now called "translucent\_liquids". (_Xeno333_)
 * Disabling fog and camera updates now requires the "debug" privilege (_sfan5_)
-* Since 5.9.0-dev, the Minetest repository now includes IrrlichtMt. The minetest/irrlicht repository is no longer a dependecy of newer releases.
+* Since 5.9.0-dev, the Minetest repository now includes IrrlichtMt. The minetest/irrlicht repository is no longer a dependency of newer releases.
 * nodebox and mesh nodes now require `use_texture_alpha` to render with transparency (_sfan5_)
-* In the HUD elements defintion, `hud_elem_type` was renamed to `type` (_cx384_)
+* In the HUD elements definition, `hud_elem_type` was renamed to `type` (_cx384_)
 * Trusted mod directories are now readonly. Writing to any mod directory is now deprecated (_rubenwardy_)
 
 ### Work on SDL2
@@ -162,7 +162,7 @@ As part of Minetest's efforts to modernise and improve graphics code, we've been
 
 * Improved cross-platform touchscreen support. You can now use touchscreen controls on desktop without a special build. (_grorp_, _okias_)
 * F11 to toggle fullscreen
-* Support for hidef displays
+* Support for hi-def displays
 
 ### Client / Audiovisuals
 
@@ -225,7 +225,7 @@ As part of Minetest's efforts to modernise and improve graphics code, we've been
 * Improved `[combine` parameter checks (_sfan5_)
 * Fog API
     * Fix fog moon tint not working (_appgurueu_)
-    * Allow fog color to be overriden in all cases (_sfan5_)
+    * Allow fog color to be overridden in all cases (_sfan5_)
 * Fix revoke callbacks being run for `false` values passed to `set_privileges` (_appgurueu_)
 * Implement `pointabilities` API to selectively point or block the raycast of tool items (_cx384_, _lhofhansl_)
     * \+ Lua raycast support (_grorp_)
@@ -243,7 +243,7 @@ As part of Minetest's efforts to modernise and improve graphics code, we've been
 
 ### Misc / Maintenance
 
-* Many different documenation improvements
+* Many different documentation improvements
 * Mod translation script improvements (_srifqi_, _sfan5_)
 * Rename \`MINETEST\_SUBGAME\_PATH\` to \`MINETEST\_GAME\_PATH\` (_cx384_)
 * Updates of the bundled libraries and Lua fixes (via _sfan5_)
@@ -280,7 +280,7 @@ Released on 4 December 2023.
 * ContentDB GUI: Load package list asynchronously (_grorp_)
 * Option to invert direction or disable mouse wheel for hotbar item selection (_srifqi_)
 * Inventory mouse shortcut improvements (_OgelGames_)
-    * Holding down Shift+click while moving the mouse over item slots now continously moves items to other inventory (if available)
+    * Holding down Shift+click while moving the mouse over item slots now continuously moves items to other inventory (if available)
     * Press Shift+click on the crafting output slot to craft and move result to inventory
         * Left mouse button: Craft as many as possible
         * Mouse wheel: Craft 10 times
@@ -300,13 +300,13 @@ Released on 4 December 2023.
 * Android: Higher default graphics settings (_grorp_)
 * Android: Auto-detect locale (_grorp_)
 * Android: ignore broken language files (_srifqi_)
-* X11 (Linux): Add primary selection (copy & paste via select & middleclick) support (_DS_)
+* X11 (Linux): Add primary selection (copy & paste via select & middle-click) support (_DS_)
 
 ### World / Server / Environment
 
 * Major speedup for crafting shapeless craft recipes (Hocroft-Karp algorithm) (_DS_)
 * Fix crash on handling wallmounted nodes with invalid param2 (_savilli_)
-* Fix biomes not repecting their Y limits (_Radar6255_)
+* Fix biomes not respecting their Y limits (_Radar6255_)
     * Especially thin biomes will now be generated as intended.
 * Saner (HTTP) timeout limits and log messages (_sfan5_)
 
@@ -333,7 +333,7 @@ Released on 4 December 2023.
 
 ### Misc / Maintenance
 
-* Entity/Object fixes and unittests (_numberZero_)
+* Entity/Object fixes and unit tests (_numberZero_)
 * Lua environment cleanups and improvements (_sfan5_)
 * Various documentation improvements (_Zughy_, _Wuzzy_)
 * Inventory code fixes (_SmallJoker_, _DS_)

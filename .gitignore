@@ -12,5 +12,5 @@ hugo.linux
 # Temporary lock file while building
 /.hugo_build.lock
 
-# VS Code user files
-.vscode
+# Node
+node_modules
