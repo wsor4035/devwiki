@@ -14,6 +14,8 @@ Usually games and mods register their own nodes, but the engine also registers s
 ### Air
 Air (itemstring `air`, `CONTENT_AIR` in C++) is a technical node that exists in every generated area that no other node exists in. It is a fully transparent node, using the airlike drawtype and being unpointable.
 
+There is a node in every position of the voxel grid, i.e. there cannot be "nothing" somewhere. If it looks like nothing, it's usually Air. When the player digs a node, that node is usually replaced by Air.
+
 ### Ignore
 Ignore (itemstring `ignore`, `CONTENT_IGNORE` in C++) is an airlike technical node that exists in place of ungenerated and unloaded mapblocks. If `core.get_node` is called on an unloaded mapblock, it will return Ignore.
 
