@@ -8,14 +8,17 @@
     "words": [
         "bbproject",
         "Blockbench",
+        "Codeberg",
         "drawtype",
         "GLTF",
         "Luanti",
         "minetest",
+        "modname",
         "nodebox",
         "Nodeboxes",
         "objtonodebox",
-        "visualise"
+        "visualise",
+        "Weblate"
     ],
     // flagWords - list of words to be always considered incorrect
     // This is useful for offensive words and common spelling errors.
