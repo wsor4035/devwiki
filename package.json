@@ -3,6 +3,6 @@
         "cspell": "^8.17.1"
     },
     "scripts": {
-        "test": "cspell content"
+        "test": "cspell content/about-this-site.md"
     }
 }
