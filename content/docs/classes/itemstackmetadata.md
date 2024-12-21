@@ -5,7 +5,7 @@ aliases:
 ---
 
 # ItemStackMetaData
-ItemStackMetaData is a subclass of [[MetaData]] obtained via `stack:get_meta()` allowing for persistent storage of key-value pairs tied to ItemStacks.
+ItemStackMetaData is a subclass of [MetaData](/docs/classes/metadata/) obtained via `stack:get_meta()` allowing for persistent storage of key-value pairs tied to ItemStacks.
 
 {{< notice warning >}}
 ItemStack metadata is serialized with ItemStacks, increasing the ItemString length. Inventories have to store multiple ItemStrings, all of which an attacker will try to get to maximum length. Always limit the size of your ItemStackMetaData to keep inventories sendable.
