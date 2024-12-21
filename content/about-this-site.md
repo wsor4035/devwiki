@@ -61,6 +61,24 @@ npm install
 npm test
 ```
 
+You can disable the spell checker without triggering build warnings using this syntax:
+
+```md
+This text is spell-checked.
+
+{{% comment %}}
+<!-- cspell:disable -->
+{{% /comment %}}
+
+The text is not splel-checked ;)
+
+{{% comment %}}
+<!-- cspell:enable -->
+{{% /comment %}}
+
+Finally, this text is spell-checked again.
+```
+
 ## Contribution Rules
 
 **This is subject to change**
