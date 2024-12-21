@@ -6,7 +6,7 @@ aliases:
 
 # Map generator features
 
-This article shows the various special features which [map generators](/mapgen "Map generator") have and explains how to use them.
+This page shows the various special features which [map generators](/mapgen "Map generator") have and explains how to use them.
 
 {{< notice note >}}
 This page doesn't list all available mapgen features. For a full reference, search for `mg_flags` and `mg*_spflags` in [minetest.conf.example](https://github.com/minetest/minetest/blob/master/minetest.conf.example) instead.
