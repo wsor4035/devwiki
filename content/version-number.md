@@ -1,5 +1,7 @@
 ---
 title: Version Number
+alias:
+- /Version_number
 ---
 
 # Version Number
