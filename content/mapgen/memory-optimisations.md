@@ -84,7 +84,7 @@ end)
 ```
 
 ## Conserve VoxelArea:index calls
-What the `:index` method of [[VoxelArea]] does is convert the position provided with XYZ coordinates into the corresponding table index in the data table. This method is fast, but obviously not instant, doing some amount of calculations every time.
+What the `:index` method of [VoxelArea](/docs/classes/voxelarea/) does is convert the position provided with XYZ coordinates into the corresponding table index in the data table. This method is fast, but obviously not instant, doing some amount of calculations every time.
 
 In order to conserve the amount of calls to `:index`, you can take advantage of the fact incrementing the index will move you on the X-axis:
 

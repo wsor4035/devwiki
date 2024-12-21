@@ -10,10 +10,10 @@ MetaData is an interface implemented by various reference types implementing per
 ## Subclasses
 Subclasses tie the key-value store to various objects recognized by Luanti:
 
-* [[ModStorage]] - per mod
-* [[NodeMetaData]] - per node on the map
-* [[ItemStackMetaData]] - per item stack
-* [[PlayerMetaData]] - per player
+* [ModStorage](/docs/classes/modstorage/) - per mod
+* [NodeMetaData](/docs/classes/nodemetadata/) - per node on the map
+* [ItemStackMetaData](/docs/classes/itemstackmetadata/) - per item stack
+* [PlayerMetaData](/docs/classes/playermetadata/) - per player
 
 ## Methods
 

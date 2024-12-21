@@ -5,7 +5,7 @@ aliases:
 ---
 
 # ModStorage
-ModStorage is a per-world, per-mod persistent string key-value store implementing all methods of [[MetaData]].
+ModStorage is a per-world, per-mod persistent string key-value store implementing all methods of [MetaData](/docs/classes/metadata/).
 
 The granularity of the persisted snapshots is determined by the `map_save_interval` setting.
 
