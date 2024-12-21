@@ -19,7 +19,7 @@ In addition to this you can also [write your own mapgen in Lua](/mapgen/custom-l
 
 These are the available mapgens described in brief:
 
-*   `v5`: Unrealistic yet interesting landscape with frequent floating blobs and extreme terrain overhangs, and deep oceans. The weirdness has an appeal to some
+*   `v5`: Unrealistic yet interesting landscape with frequent floating blobs, extreme terrain overhangs, and deep oceans. The weirdness has an appeal to some
 *   `v6`: Simple hills, cliffs and plateaus, rather flat and small-scale mapgen, no terrain overhangs, predefined biomes
 *   `v7`: Very widespread landscape, tall mountains with overhanging terrain and far plains. Frequent large water canals at sea level
 *   `carpathian`: Complex and realistic mountains with multiple variants, sometimes reaching extreme heights, separated by oceans and far-reaching low and mostly flat plains
