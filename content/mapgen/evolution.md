@@ -20,37 +20,42 @@ Also dubbed “Version 0”, this section summarizes the earliest map generator 
 
 #### minetest-c55-101010000530
 
+*The first mapgen*  
 [![](/images/mapgen/First_mapgen.png)](/images/mapgen/First_mapgen.png)
 
-In the very first known version of Minetest-c55, there was just flat terrain made out of grass blocks with [stone](https://wiki.luanti.org/Stone "Stone") pyramids on top. There were a few holes. There were no other blocks or caves. The terrain was always the same.
+In the very first known version of Minetest-c55, there was just flat terrain made out of grass blocks with stone pyramids on top. There were a few holes. There were no other blocks or caves. The terrain was always the same.
 
 #### minetest-c55-101017205222
 
+*Undefinable terrain*  
 [![](/images/mapgen/Earliest_terrain.png)](/images/mapgen/Earliest_terrain.png)
 
 The terrain was no longer flat and the pyramids are gone. The terrain generation was horrible, but at least terrain could be generated. It consisted of grass blocks and stone at surface. Very simple squareish caves could be found below the surface. The terrain was still not random.
 
 #### minetest-c55-101024231736
 
+*First water generation*  
 [![](/images/mapgen/First_water_mapgen.png)](/images/mapgen/First_water_mapgen.png)
 
 [Water](https://wiki.luanti.org/Water "Water") has been added and forms oceans at a fixed sea level.
 
 #### minetest-c55-101101170627 (and later)
 
+*The first trees*  
 [![](/images/mapgen/Puita_jee.png)](/images/mapgen/Puita_jee.png)
 
+*More trees*  
 [![](/images/mapgen/Mapgen_updated.png)](/images/mapgen/Mapgen_updated.png)
 
+*Even more trees*  
 [![](/images/mapgen/Grumbuduts_ymparisto.png)](/images/mapgen/Grumbuduts_ymparisto.png)
 
 [Trees](https://wiki.luanti.org/Tree "Tree") with [leaves](https://wiki.luanti.org/Leaves "Leaves") were added in, but they were very basic. Bushes (a single leaves block on the ground) were added as well. These primitive bushes have been removed in a later version.
 
 ### Version 1
 
+*Not mapgen version 1, but very close to it.*  
 [![](/images/mapgen/Mapgen_v1.png)](/images/mapgen/Mapgen_v1.png)
-
-Not mapgen version 1, but very close to it.
 
 The first official mapgen was introduced in Minetest-c55 0.0.1. Features:
 
@@ -63,57 +68,58 @@ The first official mapgen was introduced in Minetest-c55 0.0.1. Features:
 
 ### Version 2 dev3
 
+*Mapgen 2 dev3*  
 [![](/images/mapgen/Mapgenv2_3.jpeg)](/images/mapgen/Mapgenv2_3.jpeg)
 
 Mountains were made more pronounced, ore generation was better and trees have been improved. Although this was a development version.
 
 ### Version 2 dev4
 
+*Mapgen 2 dev4*  
 [![](/images/mapgen/Mapgenv2_4.jpeg)](/images/mapgen/Mapgenv2_4.jpeg)
 
 Things were tuned a little better.
 
 ### Version 2
 
+*Mapgen 2*  
 [![](/images/mapgen/Scenery2.jpeg)](/images/mapgen/Scenery2.jpeg)
 
 [Sand](https://wiki.luanti.org/Sand "Sand") has been added and formed sand beaches. A simple mud flow algorithm smoothens out dirt / dirt with grass hills. The cave generation has seen notable improvements and [iron ore](https://wiki.luanti.org/Iron_Ore "Iron Ore") has been added as well.
 
 ### Version 3 "3d noise"
 
+*A giant cliff*  
 [![](/images/mapgen/Turbulence_cliff_test.jpeg)](/images/mapgen/Turbulence_cliff_test.jpeg)
 
 3D Perlin noise is used to generate this terrain.
 
 ### Version 4
 
+*Mapgen 4 biome*  
 [![](/images/mapgen/Mapgenv3_4.jpeg)](/images/mapgen/Mapgenv3_4.jpeg)
 
 More tweaking.
 
 ### Version 5
 
+*Historic mapgen version 5 in Minetest-c55 0.3.0*  
 [![](/images/mapgen/Minetest_mapgen5_funky.jpeg)](/images/mapgen/Minetest_mapgen5_funky.jpeg)
 
-Historic mapgen version 5 in Minetest-c55 0.3.0
-
-Official map generation for version 0.3.1. It still uses 3D Perlin noise like the previous versions and is iconic for its extreme and often “blobby” terrain. In the 0.3 versions, this map generator hat predefined biomes like the current v6 map generator. In Minetest-c55 0.4, it was removed, but has been revived later (→[#v5](#v5)).
+Official map generation for version 0.3.1. It still uses 3D Perlin noise like the previous versions and is iconic for its extreme and often “blobby” terrain. In the 0.3 versions, this map generator hat predefined biomes like the current v6 map generator. In Minetest-c55 0.4, it was removed, but has been revived later (see [v5](#v5)).
 
 This version of the map generator is also used in [Voxelands](https://wiki.luanti.org/Overview_of_Minetest_forks#Voxelands "Overview of Minetest forks"), a fork of Minetest-c55.
 
 ### Version 6
 
+*Mapgen version 6 in an early version of Minetest-c55 0.4*  
 [![](/images/mapgen/Screenshot_2438759180_mapgenv6.jpeg)](/images/mapgen/Screenshot_2438759180_mapgenv6.jpeg)
 
-Mapgen version 6 in an early version of Minetest-c55 0.4
-
+*Plains biome in mapgen version 6 (before Minetest-c55 0.4.3) with visible "terrain lines" which were fixed later*  
 [![](/images/mapgen/Plains.png)](/images/mapgen/Plains.png)
 
-Plains biome in mapgen version 6 (before Minetest-c55 0.4.3) with visible “terrain lines” which were fixed later
-
+*Mountains in mapgen version 6, before Minetest 0.4.7*  
 [![](/images/mapgen/Mountain.png)](/images/mapgen/Mountain.png)
-
-Mountains in mapgen version 6, before Minetest 0.4.7
 
 Version 6 of the map generator was introduced in Minetest-c55 0.4.0 to replace the map generator version 5. This version uses 2D Perlin noise again and the terrain is now much smoother and more realistic than of the previous version. Map generation has also become much faster.
 
@@ -130,19 +136,17 @@ In Minetest 0.4.15, v7 became the new default selection.
 
 ### v6
 
+*Mapgen v6 in Minetest 0.4.13-dev*  
 [![](/images/mapgen/Mapgen_v6.jpg)](/images/mapgen/Mapgen_v6.jpg)
-
-Mapgen v6 in Minetest 0.4.13-dev
 
 The mapgen “v6” (also known as “mgv6”) is the direct continuation of [version 6](#Version_6) (before support for multiple mapgens has been added) and has pretty much the same features. In Minetest 0.4.13, support for snow biomes and ice sheets has been introduced to v6. This mapgen it is still officially supported in Minetest, it will not be removed anytime soon and improvements and bugfixes are still applied from time to time.
 
 ### singlenode
 
+*singlenode mapgen in Minetest 0.4.13*  
 [![](/images/mapgen/Mapgen_singlenode.jpg)](/images/mapgen/Mapgen_singlenode.jpg)
 
-singlenode mapgen in Minetest 0.4.13
-
-This mapgen was introduced in Minetest 0.4.6 by [celeron55](https://wiki.luanti.org/Celeron55 "Celeron55"). It creates a world with only [Air](https://wiki.luanti.org/Air "Air") (can be changed with configuration) and is intended to be used by [mods](https://wiki.luanti.org/Mods "Mods") and [games](https://wiki.luanti.org/Games "Games") for making custom map generators, so they can start completely from scratch. The name “singlenode” means that it generates a _single_ type of _node_ everywhere, [Air](https://wiki.luanti.org/Air "Air") by default.
+This mapgen was introduced in Minetest 0.4.6 by [celeron55](https://wiki.luanti.org/Celeron55 "Celeron55"). It creates a world with only [Air](/nodes/#air) (can be changed with configuration) and is intended to be used by games and mods for making custom map generators, so they can start completely from scratch. The name “singlenode” means that it generates a _single_ type of _node_ everywhere, [Air](/nodes/#air) by default.
 
 This map generator has been hidden from the map generator selection screen for a couple of versions up to 0.4.16, in which it has been re-enabled again.
 
@@ -150,40 +154,31 @@ This map generator has been hidden from the map generator selection screen for a
 
 This mapgen was introduced in Minetest 0.4.6 by proller and contained many experimental features. It is based on v6. Major new features included floating islands at Y=500 and above, rare huge caves, and a more extreme terrain near the [world boundaries](https://wiki.luanti.org/World_boundaries "World boundaries") in form of larger biomes, higher mountains and deeper oceans. It has been removed in version 0.4.10 because it was considered to be of low quality.
 
-*   [![](/images/mapgen/Mapgen_indev_spawn.jpg)](/images/mapgen/Mapgen_indev_spawn.jpg)
+*   *Most of the surface in the indev mapgen is almost indentical to v6 (Minetest 0.4.9)*  
+    [![](/images/mapgen/Mapgen_indev_spawn.jpg)](/images/mapgen/Mapgen_indev_spawn.jpg)
 
-    Most of the surface in the indev mapgen is almost indentical to v6 (Minetest 0.4.9)
+*   *Floating islands in indev mapgen, Minetest 0.4.9*  
+    [![](/images/mapgen/Mapgen_indev_floating_islands.jpg)](/images/mapgen/Mapgen_indev_floating_islands.jpg)
 
-*   [![](/images/mapgen/Mapgen_indev_floating_islands.jpg)](/images/mapgen/Mapgen_indev_floating_islands.jpg)
+*   *Extreme terrain and a world boundary in indev mapgen, Minetest 0.4.9*  
+    [![](/images/mapgen/Mapgen_indev_edge.jpg)](/images/mapgen/Mapgen_indev_edge.jpg)
 
-    Floating islands in indev mapgen, Minetest 0.4.9
+*   *High mountains near the world boundaries in indev mapgen, Minetest 0.4.9*  
+    [![](/images/mapgen/Mapgen_indev_edge_mountains.jpg)](/images/mapgen/Mapgen_indev_edge_mountains.jpg)
 
-*   [![](/images/mapgen/Mapgen_indev_edge.jpg)](/images/mapgen/Mapgen_indev_edge.jpg)
-
-    Extreme terrain and a world boundary in indev mapgen, Minetest 0.4.9
-
-*   [![](/images/mapgen/Mapgen_indev_edge_mountains.jpg)](/images/mapgen/Mapgen_indev_edge_mountains.jpg)
-
-    High mountains near the world boundaries in indev mapgen, Minetest 0.4.9
-
-*   [![](/images/mapgen/Mapgen_indev_huge_cave.jpg)](/images/mapgen/Mapgen_indev_huge_cave.jpg)
-
-    A huge (and buggy) cave in indev mapgen, Minetest 0.4.9
-
+*   *A huge (and buggy) cave in indev mapgen, Minetest 0.4.9*  
+    [![](/images/mapgen/Mapgen_indev_huge_cave.jpg)](/images/mapgen/Mapgen_indev_huge_cave.jpg)
 
 ### v7
 
+*Mapgen v7 in Minetest 0.4.9 without biomes*  
 [![](/images/mapgen/Mapgen_v7_0_4_9.jpg)](/images/mapgen/Mapgen_v7_0_4_9.jpg)
 
-Mapgen v7 in Minetest 0.4.9 without biomes
-
+*Mapgen v7 in Minetest 0.4.13-dev with biomes*  
 [![](/images/mapgen/Mapgen_v7.jpg)](/images/mapgen/Mapgen_v7.jpg)
 
-Mapgen v7 in Minetest 0.4.13-dev with biomes
-
+*Floatlands of mapgen v7 in Minetest 0.4.15*  
 [![](/images/mapgen/Mapgen_v7_floatlands.jpg)](/images/mapgen/Mapgen_v7_floatlands.jpg)
-
-Floatlands of mapgen v7 in Minetest 0.4.15
 
 Also called “mgv7”. It was introduced in Minetest 0.4.7 by kwolekr, in which the map generator was still unusable. This map generator uses a combination of 2D and 3D Perlin noise. It is notable for its large rivers at Sea level. Caves in v7 are also very different than in v6, they are generally much larger.
 
@@ -196,25 +191,22 @@ This mapgen has a long history of development and has seen countless improvement
 
 ### math
 
+*“mandelbox” mode of the math mapgen in Minetest 0.4.9*  
 [![](/images/mapgen/Mapgen_math_mandelbox.jpg)](/images/mapgen/Mapgen_math_mandelbox.jpg)
 
-“mandelbox” mode of the math mapgen in Minetest 0.4.9
-
+*“mengersponge” mode of the math mapgen in Minetst 0.4.9 with lighting bugs*  
 [![](/images/mapgen/Mapgen_math_mengersponge.jpg)](/images/mapgen/Mapgen_math_mengersponge.jpg)
-
-“mengersponge” mode of the math mapgen in Minetst 0.4.9 with lighting bugs
 
 The mapgen “math” was introduced in Minetest 0.4.8 by proller. This was really a collection of 3 different map generators based on simple maths. It was capable of creating Menger sponges, mandelboxes and spheres. Mods could adds biomes with Minetest's biome API, but this was never used in Minetest Game, so only stone worlds were created by default.
 
-This map generator has been removed in Minetest 0.4.10 when proller left the project because it was considered to be of very low quality and had many obvious lighting problems ([\[1\]](https://forum.minetest.net/viewtopic.php?f=3&t=7256#p148920)).
+This map generator has been removed in Minetest 0.4.10 when proller left the project because it was considered to be of very low quality and had many obvious lighting problems (see [forum topic](https://forum.minetest.net/viewtopic.php?f=3&t=7256#p148920)).
 
 The math mapgen is being continued in [Freeminer](https://wiki.luanti.org/Overview_of_Minetest_forks#Freeminer "Overview of Minetest forks"), a fork of Minetest.
 
 ### v5
 
+*Modernized mapgen v5 in Minetest 0.4.13-dev*  
 [![](/images/mapgen/Mapgen_v5.jpg)](/images/mapgen/Mapgen_v5.jpg)
-
-Modernized mapgen v5 in Minetest 0.4.13-dev
 
 Also called “mgv5”. This mapgen is a revival of the [historic map generator version 5](#Version_5) from Minetest-c55 0.3. In Minetest 0.4.11, this historic map generator has been revived by paramat because of its iconic terrain shape.
 
@@ -222,14 +214,14 @@ But this mapgen is not identical to the historic version 5. The terrain shape is
 
 ### fractal
 
+*One of many possible terrains by the fractal mapgen in Minetest 0.4.13-dev*  
 [![](/images/mapgen/Mapgen_fractals_fractal_1.jpg)](/images/mapgen/Mapgen_fractals_fractal_1.jpg)
-
-One of many possible terrains by the fractal mapgen in Minetest 0.4.13-dev
 
 Introduced in Minetest 0.4.13 by paramat. It creates worlds based on fractals, specifically those based on 3D and 4D Mandelbrot and Julia sets, including a mandelbulb. As of version 0.4.15, there are 18 variants which this mapgen supports. This mapgen has a similar intention like the old math mapgen, but it has a very different feature set compared to math.
 
 ### flat
 
+*flat mapgen*  
 [![](/images/mapgen/Mapgen_flat.jpg)](/images/mapgen/Mapgen_flat.jpg)
 
 The flat map generator was introduced in Minetest 0.4.14 by paramat. It can be used with or without biomes, decorations, caves, dungeons, etc.
@@ -238,9 +230,8 @@ Technically, Minetest was able to generate flat maps since 0.4.5 by using a mapg
 
 ### valleys
 
+*valleys mapgen in Minetest 0.4.13-dev*  
 [![](/images/mapgen/Mapgen_valleys.jpg)](/images/mapgen/Mapgen_valleys.jpg)
-
-valleys mapgen in Minetest 0.4.13-dev
 
 Introduced in Minetest 0.4.14 by Duane Robertson. It is notable for its “valley”-like shapes and its flowing rivers. These rivers are very different than in v7: They flow downhill rather than being flat at ocean level.
 
@@ -248,8 +239,7 @@ In Minetest Game, these rivers are made out of [River Water](https://wiki.luanti
 
 ### carpathian
 
+*carpathian mapgen in Minetest 0.5.0-dev-8221d3bc*  
 [![](/images/mapgen/Mapgen_carpathian.jpg)](/images/mapgen/Mapgen_carpathian.jpg)
-
-carpathian mapgen in Minetest 0.5.0-dev-8221d3bc
 
 Introduced in the developer version on 6th July 2017 by vlapsley. It has been first showcased [in the forums](https://forum.minetest.net/viewtopic.php?f=9&t=17174). About 1.5 years later, it was finally released in a stable Minetest release: Minetest 5.0.0. This mapgen is notable for its complex mountains (multiple variants: terraced, stepped, very big, ridged) and hills. Vast flat plains, mountains and oceans dominate the landscape. Fjords are also possible, but rare.
