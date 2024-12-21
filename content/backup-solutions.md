@@ -15,9 +15,13 @@ With the default SQLite backends it will store e.g. map data in a `map.sqlite` f
 Below is more detailed advice when doing backups with the default SQLite configuration.
 
 ### Live backups
-If you are running a server then it would be nice to take live backups of the world without needing to shut down the server, so they can be done more regularly without causing players to be kicked.
+If you are running a server then it would be nice to take live backups of the world without needing to shut down the server, so they can be done more regularly without causing players to be kicked. It is however still recommended to make cold backups of the world while the server is shut down to guarantee that you produce consistent backups of the world.
 
-While SQLite databases are a single file (or a couple files, when WAL is enabled), you *should not* simply copy them while the server is running and the resulting backup will be corrupted if writes are being made in the meantime. You should instead use `VACUUM INTO` with the `sqlite3` CLI to create backups of the database. This command makes a vacuumed copy of a SQLite database into another file, and is a lot safer than simply copying the database file as it is done transactionally and creates a consistent snapshot of the original database [(see the SQLite documentation)](https://www.sqlite.org/lang_vacuum.html#vacuum_with_an_into_clause).
+{{< notice warning >}}
+While SQLite databases are a single file (or a couple files, when WAL is enabled), you *should not* simply copy them while the server is running and the resulting backup will be corrupted if writes are being made in the meantime.
+{{< /notice >}}
+
+You should use `VACUUM INTO` with the `sqlite3` CLI if you want to create live backups of the database. This command makes a vacuumed copy of a SQLite database into another file, and is a lot safer than simply copying the database file as it is done transactionally and creates a consistent snapshot of the original database [(see the SQLite documentation)](https://www.sqlite.org/lang_vacuum.html#vacuum_with_an_into_clause).
 
 This is an example of a Bash script that can be used to copy the world files to a new backup directory `.BACKUP`, which could subsequently be compressed and versioned by timestamp:
 
@@ -28,11 +32,9 @@ bakdir=".BACKUP"
 
 mkdir -p "${bakdir}/"
 
-sqlite3 world/auth.sqlite "VACUUM INTO '${bakdir}/auth.sqlite';"
-sqlite3 world/map.sqlite "VACUUM INTO '${bakdir}/map.sqlite';"
-sqlite3 world/mod_storage.sqlite "VACUUM INTO '${bakdir}/mod_storage.sqlite';"
-sqlite3 world/players.sqlite "VACUUM INTO '${bakdir}/players.sqlite';"
-sqlite3 world/rollback.sqlite "VACUUM INTO '${bakdir}/rollback.sqlite';"
+for db in "auth" "map" "mod_storage" "players"; do
+    sqlite3 "world/${db}.sqlite" "VACUUM INTO '${bakdir}/${db}.sqlite';"
+done
 
 cp world/*.txt world/world.mt "${bakdir}/"
 ```
