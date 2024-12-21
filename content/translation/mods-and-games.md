@@ -79,9 +79,7 @@ In the texts (both original and translated texts), some characters will be repla
 
 Consider the example mod `example`. You will find the file `template.txt` with this content:
 
-{{% comment %}}
-<!-- cspell:disable -->
-{{% /comment %}}
+{{/* cspell:disable */}}
 ```
 # textdomain:example
 Apple=
@@ -93,15 +91,11 @@ E-mail: <somebody@@example.org>=
 “@=” is the equals sign=
 This text@nhas 2 lines.=Dieser Text@nhat 2 Zeilen.
 ```
-{{% comment %}}
-<!-- cspell:enable -->
-{{% /comment %}}
+{{/* cspell:enable */}}
 
 A possible translation in German would be stored under `example.de.tr` with this content:
 
-{{% comment %}}
-<!-- cspell:disable -->
-{{% /comment %}}
+{{/* cspell:disable */}}
 ```
 # textdomain:example
 Apple=Apfel
@@ -113,26 +107,19 @@ E-mail: <somebody@@example.org>=E-Mail: <somebody@@example.org>
 “@=” is the equals sign.=»@=« ist das Gleichheitszeichen.
 This text@nhas 2 lines.=Dieser Text@nhat 2 Zeilen.
 ```
-{{% comment %}}
-<!-- cspell:enable -->
-{{% /comment %}}
+{{/* cspell:enable */}}
 
 For reference, this is how the English texts could _actually_ show up in Luanti (with the placeholders resolved):
 
-{{% comment %}}
-<!-- cspell:disable -->
-<!-- Wrap the whole list to avoid spacing issues -->
-{{% /comment %}}
 * Apple
 * Pickaxe
 * Welcome, Merlin!
+{{/* cspell:disable */}}
 * Gnerf has killed Hormel and gained 500 EXP.
+{{/* cspell:enable */}}
 * E-mail: <somebody@example.org>
 * “=” is the equals sign
 * This text
-{{% comment %}}
-<!-- cspell:enable -->
-{{% /comment %}}
 
 has 2 lines
 
