@@ -32,7 +32,7 @@ All map generators use so-called "mapgen aliases". These are node aliases define
 
 All map generators have biomes. In all map generators except `v6`, these biomes are defined by games and mods using the Biome API. If no biomes are defined, the result will be a stone-only landscape. The `v6` map generator is special because its biomes are completely predefined and can't be changed trivially.
 
-All map generators allow configuration in the advanced settings. A list of all map generator settings can be found in [minetest.conf.example](https://github.com/minetest/minetest/blob/master/minetest.conf.example).
+All map generators allow configuration in the advanced settings. A list of all map generator settings can also be found in [minetest.conf.example](https://github.com/minetest/minetest/blob/master/minetest.conf.example).
 
 ### Gallery
 
