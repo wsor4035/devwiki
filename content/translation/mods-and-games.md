@@ -64,7 +64,7 @@ To translate an entire game, you translate all the mods within that game.
 Here are the detailed rules of how the ".tr" file is structured.
 
 *   The lines that matter for you are all non-empty lines that do not start with "#". These are the translation lines. On the left side of the equals sign, the original text is written. On the right side of the equals sign, the translation has to be written. If the translation is empty, Luanti will display the original text instead.
-*   Do not change lines that start with "# textdomain:". These are need for technical reasons.
+*   Do not change lines that start with "# textdomain:". These are needed for technical reasons.
 *   You can add as many empty lines you want. They will be ignored
 *   Other lines that start with "#" are comments. Luanti will ignore them but they might contain some information for you. It is up to you whether you keep or remove these lines.
 
@@ -79,6 +79,9 @@ In the texts (both original and translated texts), some characters will be repla
 
 Consider the example mod `example`. You will find the file `template.txt` with this content:
 
+{{% comment %}}
+<!-- cspell:disable -->
+{{% /comment %}}
 ```
 # textdomain:example
 Apple=
@@ -90,10 +93,15 @@ E-mail: <somebody@@example.org>=
 “@=” is the equals sign=
 This text@nhas 2 lines.=Dieser Text@nhat 2 Zeilen.
 ```
-
+{{% comment %}}
+<!-- cspell:enable -->
+{{% /comment %}}
 
 A possible translation in German would be stored under `example.de.tr` with this content:
 
+{{% comment %}}
+<!-- cspell:disable -->
+{{% /comment %}}
 ```
 # textdomain:example
 Apple=Apfel
@@ -105,10 +113,16 @@ E-mail: <somebody@@example.org>=E-Mail: <somebody@@example.org>
 “@=” is the equals sign.=»@=« ist das Gleichheitszeichen.
 This text@nhas 2 lines.=Dieser Text@nhat 2 Zeilen.
 ```
-
+{{% comment %}}
+<!-- cspell:enable -->
+{{% /comment %}}
 
 For reference, this is how the English texts could _actually_ show up in Luanti (with the placeholders resolved):
 
+{{% comment %}}
+<!-- cspell:disable -->
+<!-- Wrap the whole list to avoid spacing issues -->
+{{% /comment %}}
 * Apple
 * Pickaxe
 * Welcome, Merlin!
@@ -116,6 +130,9 @@ For reference, this is how the English texts could _actually_ show up in Luanti 
 * E-mail: <somebody@example.org>
 * “=” is the equals sign
 * This text
+{{% comment %}}
+<!-- cspell:enable -->
+{{% /comment %}}
 
 has 2 lines
 

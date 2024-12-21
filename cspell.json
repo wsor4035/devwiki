@@ -14,9 +14,12 @@
         "Luanti",
         "minetest",
         "modname",
+        "modtools",
         "nodebox",
         "Nodeboxes",
         "objtonodebox",
+        "Poedit",
+        "textdomain",
         "visualise",
         "Weblate"
     ],
