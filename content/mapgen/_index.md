@@ -148,6 +148,5 @@ See also
 --------
 
 *   [Stability of each mapgen](https://forum.luanti.org/viewtopic.php?f=18&t=19132), a post by paramat on the forums describing which map generators are "officially stable" (last updated 2019)
-*   [Map generator settings](/mapgen/settings "Map generator settings")
 *   [Map generator features](/mapgen/features "Map generator features")
 *   [Map Generator Evolution](/mapgen/evolution "Map generator evolution")
